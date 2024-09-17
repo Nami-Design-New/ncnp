@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "fontRegular";
+  font-display: swap;
+  src: url(../fonts/BalooBhaijaan2-Regular.ttf);
+}
+[data-pc-preset=preset-1] {
+  --pc-sidebar-active-color: #276fe5;
+  --bs-blue: #276fe5;
+  --bs-primary: #276fe5;
+  --bs-primary-rgb: 39, 111, 229;
+  --bs-success: #0e9271;
+  --bs-success-rgb: 14, 146, 113;
+  --bs-primary-light: #e2fff9;
+  --bs-link-color: #276fe5;
+  --bs-link-color-rgb: 39, 111, 229;
+  --bs-link-hover-color: #017c64;
+  --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
+  --dt-row-selected: 39, 111, 229;
+  --bs-body-font-family: "fontRegular";
+}
+
+.pc-sidebar .pc-link {
+  text-transform: capitalize;
+}
+.pc-sidebar .pc-micon {
+  margin-right: 8px;
+}
+.pc-sidebar .pc-micon i {
+  font-size: 16px;
+}
+.pc-sidebar .pc-arrow i {
+  font-size: 12px;
+}
+.pc-sidebar .card.pc-user-card .pc-user-links {
+  gap: 8px;
+}
+.pc-sidebar .card.pc-user-card .pc-user-links i {
+  font-size: 20px;
+}
+.pc-sidebar .b-brand {
+  padding: 4px;
+}
+.pc-sidebar .b-brand img {
+  height: 40px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dataTableTable .image {
+  width: 100px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.f-6 {
+  font-size: 6px !important;
+}
+
+.f-8 {
+  font-size: 8px !important;
+}
+
+.f-10 {
+  font-size: 10px !important;
+}
+
+.f-12 {
+  font-size: 12px !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.f-20 {
+  font-size: 20px !important;
+}
+
+.f-22 {
+  font-size: 22px !important;
+}
+
+.f-24 {
+  font-size: 24px !important;
+}
+
+.f-26 {
+  font-size: 26px !important;
+}
+
+.f-28 {
+  font-size: 28px !important;
+}
+
+.f-30 {
+  font-size: 30px !important;
+}
+
+.f-32 {
+  font-size: 32px !important;
+}
+
+.f-34 {
+  font-size: 34px !important;
+}
+
+.f-36 {
+  font-size: 36px !important;
+}
+
+.f-38 {
+  font-size: 38px !important;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+.f-42 {
+  font-size: 42px !important;
+}
+
+.f-44 {
+  font-size: 44px !important;
+}
+
+.f-46 {
+  font-size: 46px !important;
+}
+
+.f-48 {
+  font-size: 48px !important;
+}
+
+.f-50 {
+  font-size: 50px !important;
+}
+
+.f-52 {
+  font-size: 52px !important;
+}
+
+.f-54 {
+  font-size: 54px !important;
+}
+
+.f-56 {
+  font-size: 56px !important;
+}
+
+.f-58 {
+  font-size: 58px !important;
+}
+
+.f-60 {
+  font-size: 60px !important;
+}
+
+.f-62 {
+  font-size: 62px !important;
+}
+
+.f-64 {
+  font-size: 64px !important;
+}
+
+.f-66 {
+  font-size: 66px !important;
+}
+
+.f-68 {
+  font-size: 68px !important;
+}
+
+.f-70 {
+  font-size: 70px !important;
+}
+
+.f-72 {
+  font-size: 72px !important;
+}
+
+.f-74 {
+  font-size: 74px !important;
+}
+
+.f-76 {
+  font-size: 76px !important;
+}
+
+.f-78 {
+  font-size: 78px !important;
+}
+
+.f-80 {
+  font-size: 80px !important;
+}
+
+.statusImage {
+  width: 40px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.auth-main.v2 .auth-form .card {
+  min-height: unset;
+}
+.auth-main.v2 .auth-form .card .card-body {
+  padding: 40px 24px;
+}
+.auth-main.v2 .auth-form .card .logo {
+  padding: 4px;
+  margin-bottom: 8px;
+}
+.auth-main.v2 .auth-form .card .logo img {
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+[data-pc-direction=rtl] .pc-sidebar .pc-arrow {
+  transform: rotate(180deg);
+}
+
+.apexcharts-canvas * {
+  font-family: "fontRegular" !important;
+}
+
+.btn-success {
+  --bs-btn-bg: #0e9271;
+  --bs-btn-border-color: #0e9271;
+  --bs-btn-hover-bg: #03644c;
+  --bs-btn-hover-border-color: #17ba92;
+  --bs-btn-focus-shadow-rgb: 63, 236, 193;
+  --bs-btn-active-bg: #17ba92;
+  --bs-btn-active-border-color: #16af89;
+  --bs-btn-disabled-bg: #0e9271;
+  --bs-btn-disabled-border-color: #0e9271;
+}/*# sourceMappingURL=custom.css.map */

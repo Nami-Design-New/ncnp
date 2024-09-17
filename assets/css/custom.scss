@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "fontRegular";
+    font-display: swap;
+    src: url(../fonts/BalooBhaijaan2-Regular.ttf);
+}
+
+[data-pc-preset="preset-1"] {
+    --pc-sidebar-active-color: #276fe5;
+    --bs-blue: #276fe5;
+    --bs-primary: #276fe5;
+    --bs-primary-rgb: 39, 111, 229;
+    --bs-success: #0e9271;
+    --bs-success-rgb: 14, 146, 113;
+
+    --bs-primary-light: #e2fff9;
+    --bs-link-color: #276fe5;
+    --bs-link-color-rgb: 39, 111, 229;
+    --bs-link-hover-color: #017c64;
+    --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
+    --dt-row-selected: 39, 111, 229;
+    --bs-body-font-family: "fontRegular";
+}
+
+.pc-sidebar {
+    .pc-link {
+        text-transform: capitalize;
+    }
+    .pc-micon {
+        margin-right: 8px;
+        i {
+            font-size: 16px;
+        }
+    }
+    .pc-arrow {
+        i {
+            font-size: 12px;
+        }
+    }
+    .card.pc-user-card .pc-user-links {
+        gap: 8px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+    .b-brand {
+        padding: 4px;
+        img {
+            height: 40px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.dataTableTable {
+    .image {
+        width: 100px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+$i: 6;
+@while $i<=80 {
+    .f-#{$i} {
+        font-size: #{$i}px !important;
+    }
+    $i: $i + 2;
+}
+.statusImage {
+    width: 40px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.auth-main.v2 .auth-form .card {
+    min-height: unset;
+    .card-body {
+        padding: 40px 24px;
+    }
+    .logo {
+        padding: 4px;
+        margin-bottom: 8px;
+        img {
+            height: 80px;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
+[data-pc-direction="rtl"] {
+    .pc-sidebar .pc-arrow {
+        transform: rotate(180deg);
+    }
+}
+.apexcharts-canvas * {
+    font-family: "fontRegular" !important;
+}
+
+.btn-success {
+    --bs-btn-bg: #0e9271;
+    --bs-btn-border-color: #0e9271;
+    --bs-btn-hover-bg: #03644c;
+    --bs-btn-hover-border-color: #17ba92;
+    --bs-btn-focus-shadow-rgb: 63, 236, 193;
+    --bs-btn-active-bg: #17ba92;
+    --bs-btn-active-border-color: #16af89;
+    --bs-btn-disabled-bg: #0e9271;
+    --bs-btn-disabled-border-color: #0e9271;
+}
