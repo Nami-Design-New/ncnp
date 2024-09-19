@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
   <!-- [Head] start -->
-
   <head>
     <title>الراجي</title>
     <!-- [Meta] -->
@@ -14,17 +13,21 @@
     <meta name="description" content=" الراجي  " />
     <!-- Favicon -->
     <link rel="icon" href="assets/images/fav.svg" type="image/x-icon" />
-
     <!-- icon -->
     <link rel="stylesheet" href="assets/fonts/fontawesome.css" />
     <!--  CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
     <link rel="stylesheet" href="assets/css/style-preset.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <!-- [Head] end -->
   <!-- [Body] Start -->
-
   <body
     data-pc-preset="preset-1"
     data-pc-sidebar-theme="light"
@@ -63,7 +66,6 @@
                 <span class="pc-mtext"> متابعه النموذج الشامل </span>
               </a>
             </li>
-            <!-- caption -->
             <!-- link -->
             <li class="pc-item">
               <a href="orders.html" class="pc-link">
@@ -513,28 +515,275 @@
             <div class="row align-items-center">
               <div class="col-md-12">
                 <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item" aria-current="page">Page</li>
+                  <li class="breadcrumb-item">
+                    <a href="index.html"> الرئيسية </a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    جدوله الزيارات للجمعيات
+                  </li>
                 </ul>
               </div>
+
               <div class="col-md-12">
-                <div class="page-header-title">
-                  <h2 class="mb-0">Page</h2>
+                <div class="page-header-title_visits">
+                  <i class="fa-sharp fa-regular fa-square-info"></i>
+                  <h2>الاجراءات التصحيحيه</h2>
                 </div>
+                <p class="warn">
+                  تنويه :تراجع الاجراءات الصحيحه خلال 30 يوم عمل من ارسال
+                  الاجراءات من قبل المنظمه
+                </p>
+              </div>
+            </div>
+
+            <div class="content_Vsits">
+              <div class="Forms">
+                <form>
+                  <div class="form_select_group">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر المعيار</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form_select_group">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر المؤشر</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form_select_group">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر الممارسه</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form_select_group">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر الحاله</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form_select_group">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر الممارسه</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form_select">
+                    <div class="form_group">
+                      <label for="fname"> تاريخ التصجيج من </label>
+                      <input type="text" id="fname" name="fname" />
+                    </div>
+
+                    <div class="form_group">
+                      <label for="lname"> تاريخ التصحيح الي </label>
+                      <input type="text" id="lname" name="lname" />
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
-        <div class="row">
-          <!-- CONTENT HERE -->
-
-          <!-- END CONTENT -->
+        <div>
+          <button class="search_btn">بحث</button>
+          <div class="Title">عد الاجراءات التصحيحه(21)</div>
         </div>
-        <!-- [ Main Content ] end -->
       </div>
+      <section class="Tabel_container">
+        <table>
+          <thead>
+            <tr class="table-headers">
+              <th scope="row" colspan="4" style="text-align: start">
+                الاجراءالتصحيحي
+              </th>
+              <th>النوع</th>
+              <th>الحاله</th>
+
+              <th>يتطلب التصحيح</th>
+              <th>تاريخ التصحيح</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" colspan="4">
+                <div class="td_egra">
+                  <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                  <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                </div>
+              </td>
+              <td>مخالفه</td>
+              <td>جديد</td>
+
+              <td>لا</td>
+              <td></td>
+
+              <td>
+                <button
+                  class="search_btn"
+                  style="background-color: #17ba92; color: #fff"
+                >
+                  اجراء
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" colspan="4">
+                <div class="td_egra">
+                  <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                  <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                </div>
+              </td>
+              <td>مخالفه</td>
+              <td>جديد</td>
+
+              <td>لا</td>
+              <td></td>
+
+              <td>
+                <button
+                  class="search_btn"
+                  style="background-color: #17ba92; color: #fff"
+                >
+                  اجراء
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" colspan="4">
+                <div class="td_egra">
+                  <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                  <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                </div>
+              </td>
+              <td>مخالفه</td>
+              <td>جديد</td>
+
+              <td>لا</td>
+              <td></td>
+
+              <td>
+                <button
+                  class="search_btn"
+                  style="background-color: #17ba92; color: #fff"
+                >
+                  اجراء
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" colspan="4">
+                <div class="td_egra">
+                  <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                  <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                </div>
+              </td>
+              <td>مخالفه</td>
+              <td>جديد</td>
+
+              <td>لا</td>
+              <td></td>
+
+              <td>
+                <button
+                  class="search_btn"
+                  style="background-color: #17ba92; color: #fff"
+                >
+                  اجراء
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="pagination">
+        <div class="pag_container">
+          <div class="paginate">
+            <button class="prevBtn">
+              <span class="prevBtn-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  width="24px"
+                  height="24px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  /></svg></span
+              ><span class="prevBtn-text">Prev</span>
+            </button>
+            <div class="containerBtns">
+              <div class="leftContainer"></div>
+              <button class="activeBtn"></button>
+              <div class="rightContainer"></div>
+            </div>
+            <button class="nextBtn">
+              <span class="nextBtn-text">Next</span>
+              <span class="nextBtn-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  width="24px"
+                  height="24px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- tabeel-->
+
+    <!-- 		End of Container -->
+
+    <!-- [Page Specific JS] start -->
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
     <!-- Required Js -->
     <script src="assets/js/plugins/popper.min.js"></script>
     <script src="assets/js/plugins/simplebar.min.js"></script>
@@ -557,6 +806,269 @@
     </script>
     <script>
       preset_change("preset-1");
+    </script>
+    <!-- charts -->
+    <script>
+      "use strict";
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          floatchart();
+        }, 500);
+      });
+      function floatchart() {
+        (function () {
+          // الرسم البياني
+          var options = {
+            chart: {
+              type: "line",
+              height: 200,
+              toolbar: {
+                show: false,
+              },
+            },
+            colors: ["#0d6efd"],
+            dataLabels: {
+              enabled: false,
+            },
+            markers: {
+              size: 7,
+              colors: "#0d6efd",
+              strokeColors: "#fff",
+              strokeWidth: 3,
+              hover: {
+                size: 4,
+              },
+            },
+            stroke: {
+              width: 1,
+              curve: "smooth",
+            },
+            plotOptions: {
+              bar: {
+                columnWidth: "45%",
+                borderRadius: 4,
+              },
+            },
+            grid: {
+              strokeDashArray: 4,
+            },
+            series: [
+              {
+                name: "الطلبات",
+                data: [50, 80, 60, 90, 70, 100, 40, 85, 65, 75, 55, 95], // بيانات المثال لجميع الأشهر
+              },
+            ],
+            yaxis: {
+              title: {
+                text: "عدد الطلبات",
+              },
+            },
+            xaxis: {
+              categories: [
+                "يناير",
+                "فبراير",
+                "مارس",
+                "أبريل",
+                "مايو",
+                "يونيو",
+                "يوليو",
+                "أغسطس",
+                "سبتمبر",
+                "أكتوبر",
+                "نوفمبر",
+                "ديسمبر",
+              ],
+              labels: {
+                hideOverlappingLabels: true,
+              },
+              axisBorder: {
+                show: false,
+              },
+              axisTicks: {
+                show: false,
+              },
+            },
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#requests-over-year-chart"),
+            options
+          );
+          chart.render();
+          // الرسم البياني
+          var options = {
+            chart: {
+              type: "bar",
+              height: 355,
+              toolbar: {
+                show: false,
+              },
+            },
+            colors: ["#198754"],
+            plotOptions: {
+              bar: {
+                columnWidth: "45%",
+                borderRadius: 4,
+              },
+            },
+            grid: {
+              strokeDashArray: 4,
+            },
+            series: [
+              {
+                name: "الطلبات",
+                data: [150, 130, 120, 110, 90, 80, 70, 60, 50, 40], // بيانات المثال لعدد الطلبات
+              },
+            ],
+            xaxis: {
+              categories: [
+                "الرياض",
+                "جدة",
+                "مكة",
+                "الدمام",
+                "المدينة ",
+                "تبوك",
+                "أبها",
+                "الخبر",
+                "بريدة",
+                "حائل",
+              ],
+              labels: {
+                hideOverlappingLabels: true,
+              },
+              axisBorder: {
+                show: false,
+              },
+              axisTicks: {
+                show: false,
+              },
+            },
+            yaxis: {
+              title: {
+                text: "عدد الطلبات",
+              },
+            },
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#most-requested-cities-chart"),
+            options
+          );
+          chart.render();
+        })();
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const countContainer = document.querySelector(".count");
+        const prevBtn = document.querySelector(".prevBtn");
+        const nextBtn = document.querySelector(".nextBtn");
+        const activeBtn = document.querySelector(".activeBtn");
+        const leftContainer = document.querySelector(".leftContainer");
+        const rightContainer = document.querySelector(".rightContainer");
+        const btns = document.querySelector(".containerBtns");
+
+        const countPage = 200;
+
+        const changeActiveBtn = (value) => {
+          activeBtn.textContent = value;
+          activeBtn.disabled = true;
+        };
+
+        const init = () => {
+          countContainer.textContent = countPage + " items";
+          changeActiveBtn(1);
+          updateRightContainer(1);
+          updateBlockBtn(1);
+        };
+
+        const handlePrevBtn = () => {
+          const curActive = Number(activeBtn.textContent) - 1;
+          updatePaginate(curActive);
+        };
+
+        const handleNextBtn = () => {
+          const curActive = Number(activeBtn.textContent) + 1;
+          updatePaginate(curActive);
+        };
+
+        const updatePaginate = (value) => {
+          changeActiveBtn(value);
+          updateBlockBtn(value);
+          updateLeftContainer(value);
+          updateRightContainer(value);
+        };
+
+        const handleBtnNumbers = (e) => {
+          const target = e.target.closest(".numberBtn")?.textContent;
+
+          if (target) updatePaginate(Number(target));
+        };
+
+        const updateBlockBtn = (value) => {
+          prevBtn.disabled = value === 1;
+          nextBtn.disabled = value === countPage;
+        };
+
+        const createButton = (text, classNames = [], disabled = false) => {
+          const button = document.createElement("button");
+          button.textContent = text;
+          button.classList.add(...classNames);
+          button.disabled = disabled;
+          return button;
+        };
+
+        const updateContainer = (container, array, disabledIndexes = []) => {
+          container.textContent = "";
+          for (let i = 0; i < array.length; i++) {
+            const text = disabledIndexes.includes(i) ? "..." : array[i];
+            const button = createButton(
+              text,
+              ["w-7", "h-7", "mx-2", "numberBtn", "w-32"],
+              disabledIndexes.includes(i)
+            );
+            container.appendChild(button);
+          }
+        };
+
+        const updateLeftContainer = (value) => {
+          if (value <= 5) {
+            updateContainer(
+              leftContainer,
+              Array.from({ length: value - 1 }, (_, i) => i + 1),
+              []
+            );
+          } else {
+            updateContainer(leftContainer, [1, 2, value - 2, value - 1], [1]);
+          }
+        };
+
+        const updateRightContainer = (value) => {
+          if (value >= countPage - 4) {
+            const tail = countPage - value;
+            updateContainer(
+              rightContainer,
+              Array.from({ length: tail }, (_, i) => i + value + 1),
+              []
+            );
+          } else {
+            updateContainer(
+              rightContainer,
+              [value + 1, value + 2, countPage - 1, countPage],
+              [1]
+            );
+          }
+        };
+
+        prevBtn.addEventListener("click", handlePrevBtn);
+        nextBtn.addEventListener("click", handleNextBtn);
+        btns.addEventListener("click", handleBtnNumbers);
+
+        init();
+      });
     </script>
   </body>
   <!-- [Body] end -->
