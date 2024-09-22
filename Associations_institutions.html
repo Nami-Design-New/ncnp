@@ -194,7 +194,6 @@
     <!-- [ Sidebar Menu ] end -->
     <!-- [ Header Topbar ] start -->
     <header class="pc-header">
-      
       <div class="header-wrapper">
         <!-- [Mobile Media Block] start -->
         <div class="pc-mob-drp">
@@ -537,10 +536,10 @@
             </div>
 
             <div class="content_Vsits">
-              <div class="Forms">
-                <form class="Form_system">
-                  <div class="check_group">
-                    <label class="type">الرجاء تحديد نوع الاسناد</label>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3 forms_container">
+                  <div class="check_group col-md-12">
+                    <label class="type"> هل لدي الجمعيه فروع؟</label>
 
                     <div class="check_group_inputs">
                       <div class="form-check">
@@ -551,7 +550,7 @@
                           id="flexRadioDefault1"
                         />
                         <label class="form-check-label" for="flexRadioDefault1">
-                          اسناد المقيمين الجمعيات
+                          لا
                         </label>
                       </div>
 
@@ -564,78 +563,112 @@
                           checked
                         />
                         <label class="form-check-label" for="flexRadioDefault2">
-                          اسناد المقيمين المالين
+                          نعم
                         </label>
                       </div>
                     </div>
                   </div>
 
-                  <div
-                    class="form_select_group d-flex align-items-center gap-2 mb-4"
-                  >
-                    <select
-                      class="form-select w-100"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر المقيم</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <button class="search_btn">عرض</button>
-                  </div>
-                </form>
-
-                <form>
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر نوع الجمعيات الاهليه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر مركز التنميه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر الجمعيه / المؤسسه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select">
-                    <div class="form_group">
-                      <label for="fname"> رقم التسجيل </label>
-                      <input type="text" id="fname" name="fname" />
+                  <div class="col-md-12">
+                    <div class="form_Btn col-md-7">
+                      <label for="validationCustom04" class="form-label"
+                        >اختر المقيم</label
+                      >
+                      <select
+                        class="form-select"
+                        id="validationCustom04"
+                        required
+                      >
+                        <option selected disabled value="">اختر...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
                     </div>
-
-                    <div class="form_group">
-                      <label for="lname"> اسم الجمعيه </label>
-                      <input type="text" id="lname" name="lname" />
+                    <div class="col-md-4">
+                      <button class="search_btn">عرض</button>
                     </div>
                   </div>
-                </form>
-              </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">
+                      النوع
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">
+                      مركز التنميه
+                    </label>
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر ...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      >الجمعيه / المؤسسه</label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر ...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">
+                      رقم التسجيل
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="validationCustom05" class="form-label"
+                      >اسم الجمعيه / المؤسسه</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">رقم التسجيل</div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -850,11 +883,6 @@
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">7</a></li>
-            <li class="page-item"><a class="page-link" href="#">8</a></li>
 
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>

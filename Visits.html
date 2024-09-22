@@ -538,77 +538,101 @@
             </div>
 
             <div class="content_Vsits">
-              <div class="Forms">
-                <form>
-                  <div class="form_select_group">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3 forms_container">
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      >النوع</label
+                    >
                     <select
                       class="form-select"
-                      aria-label="Default select example"
+                      id="validationCustom04"
+                      required
                     >
-                      <option selected>اختر النوع</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option selected disabled value="">اختر...</option>
+                      <option>...</option>
                     </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر مركز التنميه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر الحاله</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select">
-                    <div class="form_group">
-                      <label for="fname"> رقم التسجيل </label>
-                      <input
-                        type="text"
-                        id="fname"
-                        name="fname"
-                        placeholder="اختر"
-                      />
-                    </div>
-
-                    <div class="form_group">
-                      <label for="lname"> رقم التسجيل</label>
-                      <input
-                        type="text"
-                        id="lname"
-                        name="lname"
-                        placeholder="اختر"
-                      />
+                    <div class="invalid-feedback">
+                      Please select a valid state.
                     </div>
                   </div>
-                </form>
-              </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      >مركز التنميه</label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر ...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      >الحاله</label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label"
+                      >رقم التسجيل</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="validationCustom05" class="form-label"
+                      >اسم الجمعيه / المؤسسه</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">رقم التسجيل</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="search_btn" type="submit">بحث</button>
+                </div>
+              </form>
             </div>
+            
           </div>
         </div>
-        <button class="search_btn">بحث</button>
       </div>
 
       <section class="Tabel_container">
         <table>
           <thead>
-            <tr class="table-headers">
+            <tr>
               <th>سبب الغاء الزياره</th>
               <th>المقيم</th>
               <th>رقم التسجيل</th>
@@ -749,6 +773,7 @@
                 <button class="refuse">رفض</button>
               </td>
             </tr>
+
             <tr>
               <td class="Empty_td" scope="row" colspan="10">
                 تصفيه الجمعيه + ظرف طبي (عمليه جراحيه ) للررئيس المجلس
@@ -767,11 +792,6 @@
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">7</a></li>
-            <li class="page-item"><a class="page-link" href="#">8</a></li>
 
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
@@ -795,8 +815,6 @@
     </div>
 
     <!-- tabeel-->
-
-    <!-- 		End of Container -->
 
     <!-- [Page Specific JS] start -->
     <script src="assets/js/plugins/apexcharts.min.js"></script>

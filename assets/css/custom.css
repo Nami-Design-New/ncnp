@@ -299,11 +299,13 @@
   background-color: #276fe5;
 }
 
-.content_Vsits {
+.content_Vsits .forms_container {
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 8px;
   padding: 15px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .page-header-title_visits {
@@ -342,7 +344,7 @@ form {
 }
 
 .form_select_group {
-  width: 30%;
+  width: 33%;
 }
 .form_select_group .form-select {
   padding: 8px;
@@ -354,6 +356,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -361,6 +364,15 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.check_group .type {
+  color: #777;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  color: #777;
 }
 
 .check_group_inputs {
@@ -374,22 +386,31 @@ form {
 
 .search_btn {
   border: 1px solid #17ba92;
-  padding: 6px 15px;
+  padding: 8px 18px;
   background-color: #fff;
   font-size: 12px;
   color: #17ba92;
   border-radius: 7px;
+  margin: 10px;
+}
+
+.send_btn {
+  background-color: rgb(215, 158, 13);
+  border: 1px solid rgb(215, 158, 13);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  float: left;
 }
 
 .Tabel_container {
   padding: 25px;
+  overflow-y: hidden;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
   text-align: left;
-  overflow: hidden;
 }
 table td,
 table th {
@@ -436,7 +457,8 @@ table .total td {
 .tBtn {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 .tBtn .refuse {
   background-color: #fff;
@@ -473,71 +495,6 @@ table .total td {
   font-weight: bold;
 }
 
-.mobile-header {
-  display: none;
-}
-
-@media only screen and (max-width: 760px) {
-  p {
-    display: block;
-    font-weight: bold;
-  }
-  table tr td:not(:first-child),
-  table tr th:not(:first-child),
-  table tr td:not(.total-val) {
-    display: none;
-  }
-  table tr:nth-of-type(even) td:first-child {
-    background-color: white;
-  }
-  table tr:nth-of-type(odd) td:first-child {
-    background-color: white;
-  }
-  table tr:nth-of-type(even) td:not(:first-child) {
-    background-color: white;
-  }
-  table tr th:first-child {
-    width: 100%;
-    display: block;
-  }
-  table tr th:not(:first-child) {
-    width: 40%;
-    transition: transform 0.4s ease-out;
-    transform: translateY(-9999px);
-    position: relative;
-    z-index: -1;
-  }
-  table tr td:not(:first-child) {
-    transition: transform 0.4s ease-out;
-    transform: translateY(-9999px);
-    width: 60%;
-    position: relative;
-    z-index: -1;
-  }
-  table tr td:first-child {
-    display: block;
-    cursor: pointer;
-  }
-  table tr.total th {
-    width: 25%;
-    display: inline-block;
-  }
-  table tr td.total-val {
-    display: inline-block;
-    transform: translateY(0);
-    width: 75%;
-  }
-}
-@media only screen and (max-width: 300px) {
-  table tr th:not(:first-child) {
-    width: 50%;
-    font-size: 14px;
-  }
-  table tr td:not(:first-child) {
-    width: 50%;
-    font-size: 14px;
-  }
-}
 .pagination_container {
   padding: 25px;
 }
@@ -563,13 +520,30 @@ table .total td {
 }
 
 .wizard_steps {
-  width: 80%;
+  width: 100%;
+  height: 80dvh;
   margin: 0 auto;
   padding: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   background-color: #fff;
   margin-top: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 25px;
+}
+.wizard_steps .tab-pane {
+  width: 70% !important;
+}
+.wizard_steps h2 {
+  white-space: nowrap;
+}
+
+#bar {
+  width: 100%;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 a {
@@ -585,6 +559,7 @@ footer .footer_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .footer_container .logo img {
   width: 150px;

@@ -39,11 +39,12 @@
       </div>
     </div>
     <!-- [ Pre-loader ] End -->
-    <section class="wizard_steps">
+
+    <section class="wizard_steps container">
       <div class="row">
         <!-- [ sample-page ] start -->
-        <div class="col-sm-12">
-          <div id="basicwizard" class="form-wizard row justify-content-center">
+        <div class="col-sm-12 col-lg-12">
+          <div id="basicwizard" class="form-wizard row">
             <div class="col-sm-12 col-md-6 col-xxl-4 text-center">
               <h3>تسجيل الدخول</h3>
             </div>
@@ -104,17 +105,28 @@
               </div>
               <div class="card">
                 <div class="card-body">
-                  <div class="tab-content">
+                  <div class="tab-content" style="width: 80%">
                     <!-- START: Define your progress bar here -->
-                    <div id="bar" class="progress mb-3" style="height: 7px">
+
+                    <div
+                      id="bar"
+                      class="progress mb-3"
+                      style="height: 7px"
+                      max="70"
+                    >
                       <div
                         class="bar progress-bar progress-bar-striped progress-bar-animated bg-success"
                       ></div>
                     </div>
 
                     <!-- END: Define your progress bar here -->
+
                     <!-- START: Define your tab pans here -->
-                    <div class="tab-pane show active" id="contactDetail">
+                    <div
+                      class="tab-pane show active"
+                      id="contactDetail"
+                      style="margin: 0 auto"
+                    >
                       <h2>بيانات الجمعيه</h2>
                       <form id="contactForm" method="post" action="#">
                         <div class="row mt-4">
@@ -157,6 +169,7 @@
                         </div>
                       </form>
                     </div>
+
                     <!-- end contact detail tab pane -->
                     <div class="tab-pane" id="jobDetail">
                       <h2>بيانات ممثل الجمعيه</h2>
@@ -208,6 +221,7 @@
                         </div>
                       </form>
                     </div>
+
                     <!-- end job detail tab pane -->
                     <div class="tab-pane" id="educationDetail">
                       <h2>التحقق من جوال ممثل الجمعيه</h2>
@@ -230,6 +244,7 @@
                         </div>
                       </form>
                     </div>
+
                     <!-- end education detail tab pane -->
                     <div class="tab-pane" id="finish">
                       <div class="row d-flex justify-content-center">
@@ -243,6 +258,7 @@
                       </div>
                       <!-- end row -->
                     </div>
+
                     <!-- END: Define your tab pans here -->
                     <!-- START: Define your controller buttons here-->
                     <div class="d-flex wizard justify-content-between mt-3">
@@ -251,6 +267,7 @@
                           الاولي
                         </a>
                       </div>
+
                       <div class="d-flex">
                         <div class="previous me-2">
                           <a
@@ -269,6 +286,7 @@
                           </a>
                         </div>
                       </div>
+
                       <div class="last">
                         <a
                           href="javascript:void(0);"
@@ -289,6 +307,20 @@
         <!-- [ sample-page ] end -->
       </div>
     </section>
+    <footer>
+      <div class="footer_container">
+        <div class="logo">
+          <img src="assets/images/home-header-logo.svg" alt="" />
+        </div>
+        <div class="copyright">جميع الحقوق محفوظه 2020</div>
+        <div class="social">
+          <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+          <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+          <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+          <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+        </div>
+      </div>
+    </footer>
 
     <!-- [ Main Content ] end -->
     <!-- Required Js -->
@@ -315,6 +347,7 @@
       preset_change("preset-1");
     </script>
     <script src="assets/js/plugins/wizard.min.js"></script>
+
     <script>
       new Wizard("#basicwizard", {
         validate: true,

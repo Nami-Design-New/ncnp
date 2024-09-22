@@ -543,92 +543,134 @@
             </div>
 
             <div class="content_Vsits">
-              <div class="Forms">
-                <form>
-                  <div class="form_select_group">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3 forms_container">
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      >  المعيار    </label
+                    >
                     <select
                       class="form-select"
-                      aria-label="Default select example"
+                      id="validationCustom04"
+                      required
                     >
-                      <option selected>اختر المعيار</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option selected disabled value="">اختر...</option>
+                      <option>...</option>
                     </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر المؤشر</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر الممارسه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر الحاله</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select_group">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>اختر الممارسه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-
-                  <div class="form_select">
-                    <div class="form_group">
-                      <label for="fname"> تاريخ التصجيج من </label>
-                      <input type="text" id="fname" name="fname" />
-                    </div>
-
-                    <div class="form_group">
-                      <label for="lname"> تاريخ التصحيح الي </label>
-                      <input type="text" id="lname" name="lname" />
+                    <div class="invalid-feedback">
+                      Please select a valid state.
                     </div>
                   </div>
-                </form>
-              </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">
+                      المؤشر</label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر ...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label"
+                      > الممارسه </label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label"
+                      >  الحاله </label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label"
+                      >  النوع 
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">رقم التسجيل</div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label"
+                      >  تاريخ التصحيح - من </label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom05"
+                      required
+                    />
+                    <div class="invalid-feedback">رقم التسجيل</div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label"
+                      >   تاريخ التصحيح الي </label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">اختر...</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="col-12">
+                  <button class="search_btn" type="submit">بحث</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
         <div>
-          <button class="search_btn">بحث</button>
           <div class="Title">عد الاجراءات التصحيحه(21)</div>
         </div>
       </div>
       <section class="Tabel_container">
         <table>
           <thead>
-            <tr class="table-headers">
+            <tr>
               <th scope="row" colspan="4" style="text-align: start">
                 الاجراءالتصحيحي
               </th>
@@ -731,6 +773,8 @@
             </tr>
           </tbody>
         </table>
+
+        <button class="send_btn">ارسال الاجراءات التصحيحيه  للاعتماد</button>
       </section>
 
       <section class="pagination_container">
@@ -742,11 +786,6 @@
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">7</a></li>
-            <li class="page-item"><a class="page-link" href="#">8</a></li>
 
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
