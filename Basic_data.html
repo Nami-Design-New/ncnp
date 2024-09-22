@@ -58,6 +58,7 @@
         <div class="navbar-content">
           <ul class="pc-navbar">
             <!-- link -->
+
             <li class="pc-item">
               <a href="index.html" class="pc-link">
                 <span class="pc-micon">
@@ -66,24 +67,37 @@
                 <span class="pc-mtext"> متابعه النموذج الشامل </span>
               </a>
             </li>
+
             <!-- link -->
+
             <li class="pc-item">
-              <a href="orders.html" class="pc-link">
+              <a href="Associations_institutions.html" class="pc-link">
                 <span class="pc-micon">
-                  <i class="fa-regular fa-boxes-stacked"></i>
+                  <i class="fa-sharp fa-regular fa-user-plus"></i>
                 </span>
                 <span class="pc-mtext"> الاسناد التقييم </span>
               </a>
             </li>
+
             <!-- link -->
             <li class="pc-item">
               <a href="technician.html" class="pc-link">
                 <span class="pc-micon">
-                  <i class="fa-regular fa-users"></i>
+                  <i class="fa-sharp fa-regular fa-star"></i>
                 </span>
                 <span class="pc-mtext"> متابعه التقييم </span>
               </a>
             </li>
+
+            <li class="pc-item">
+              <a href="orders.html" class="pc-link">
+                <span class="pc-micon">
+                  <i class="fa-regular fa-id-card"></i>
+                </span>
+                <span class="pc-mtext"> متابعه التقارير </span>
+              </a>
+            </li>
+
             <!-- link -->
             <li class="pc-item">
               <a href="stors.html" class="pc-link">
@@ -93,9 +107,10 @@
                 <span class="pc-mtext"> الاجراءات التصحيحيه </span>
               </a>
             </li>
+
             <!-- link -->
             <li class="pc-item">
-              <a href="orders.html" class="pc-link">
+              <a href="Follow_groups.html" class="pc-link">
                 <span class="pc-micon">
                   <i class="fa-sharp fa-regular fa-box"></i>
                 </span>
@@ -105,22 +120,14 @@
 
             <!-- link -->
             <li class="pc-item">
-              <a href="orders.html" class="pc-link">
+              <a href="Follow_groups.html" class="pc-link">
                 <span class="pc-micon">
-                  <i class="fa-regular fa-id-card"></i>
+                  <i class="fa-sharp fa-regular fa-file-chart-pie"></i>
                 </span>
                 <span class="pc-mtext"> متابعه محضر الزياره </span>
               </a>
             </li>
-            <!-- link -->
-            <li class="pc-item">
-              <a href="orders.html" class="pc-link">
-                <span class="pc-micon">
-                  <i class="fa-regular fa-boxes-stacked"></i>
-                </span>
-                <span class="pc-mtext"> الاسناد التقييم </span>
-              </a>
-            </li>
+
             <!-- link -->
             <li class="pc-item">
               <a href="orders.html" class="pc-link">
@@ -132,14 +139,13 @@
             </li>
             <!-- link -->
             <li class="pc-item">
-              <a href="orders.html" class="pc-link">
+              <a href="systeamMang.html" class="pc-link">
                 <span class="pc-micon">
                   <i class="fa-regular fa-gear"></i>
                 </span>
                 <span class="pc-mtext"> اداره النظام </span>
               </a>
             </li>
-
             <!-- link -->
           </ul>
         </div>
@@ -190,7 +196,7 @@
     <header class="pc-header">
       <div class="header-wrapper">
         <!-- [Mobile Media Block] start -->
-        <div class="me-auto pc-mob-drp">
+        <div class="pc-mob-drp">
           <ul class="list-unstyled">
             <!-- ======= Menu collapse Icon ===== -->
             <li class="pc-h-item pc-sidebar-collapse">
@@ -245,7 +251,7 @@
           </ul>
         </div>
         <!-- [Mobile Media Block end] -->
-        <div class="ms-auto">
+        <div class="">
           <ul class="list-unstyled">
             <li class="dropdown pc-h-item">
               <a
@@ -534,8 +540,7 @@
               </div>
             </div>
 
-            <div class="content_Vsits d-flex flex-column gap-5" >
-
+            <div class="content_Vsits d-flex flex-column gap-5">
               <div class="Forms" style="border: 1px solid #eee; padding: 10px">
                 <form>
                   <div class="form_group">
@@ -799,44 +804,45 @@
               <div class="Forms" style="border: 1px solid #eee; padding: 10px">
                 <form>
                   <div class="form_group">
-                    <label for="fname"> عدد اجتماعات الجمعيه العموميه العاديه </label>
+                    <label for="fname">
+                      عدد اجتماعات الجمعيه العموميه العاديه
+                    </label>
                     <input type="text" id="fname" name="fname" />
                   </div>
-    
+
                   <div class="form_group">
-                    <label for="fname"> عدد اجتماعات الجمعيه العموميه  الغير العاديه </label>
+                    <label for="fname">
+                      عدد اجتماعات الجمعيه العموميه الغير العاديه
+                    </label>
                     <input type="text" id="lname" name="lname" />
                   </div>
-    
+
                   <div class="form_group">
-                    <label for="fname"> عدد اجتماعات    مجلس الاداره  </label>
+                    <label for="fname"> عدد اجتماعات مجلس الاداره </label>
                     <input type="text" id="lname" name="lname" />
                   </div>
-    
+
                   <div class="form_group">
                     <label for="fname"> الموظفين( غير سعودين ) </label>
                     <input type="text" id="lname" name="lname" />
                   </div>
-    
                 </form>
               </div>
 
-
-              <button class="search_btn"
-               style="display: inline-block ; margin: 0 auto; background-color: #17ba92; color: #fff; ">حفظ واستمرار</button>
-
-
-    
+              <button
+                class="search_btn"
+                style="
+                  display: inline-block;
+                  margin: 0 auto;
+                  background-color: #17ba92;
+                  color: #fff;
+                "
+              >
+                حفظ واستمرار
+              </button>
             </div>
           </div>
-
-
         </div>
-      </div>
-
-
-        </div>
-        <div></div>
       </div>
     </div>
 

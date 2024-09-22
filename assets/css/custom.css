@@ -538,98 +538,21 @@ table .total td {
     font-size: 14px;
   }
 }
-.pagination .pag_container {
-  padding: 10px;
-  width: 100%;
-  margin: 0 auto;
+.pagination_container {
+  padding: 25px;
+}
+.pagination_container nav {
   display: flex;
-  flex-direction: column;
-}
-.pagination .paginate {
-  padding: 32px 64px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #eee;
-}
-.pagination .paginate-details {
-  margin-top: 16px;
-  font-weight: 500;
-  text-align: center;
-}
-.pagination button {
-  background-color: transparent;
-  border: none;
-}
-.pagination .nextBtn {
-  margin-left: 32px;
-}
-.pagination .nextBtn {
-  margin-right: 32px;
-}
-.pagination .prevBtn,
-.pagination .nextBtn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: #000;
-}
-.pagination .nextBtn-icon,
-.pagination .prevBtn-icon {
-  display: flex;
-}
-.pagination .prevBtn svg {
-  margin-right: 6px;
-}
-.pagination .nextBtn svg {
-  margin-left: 6px;
-}
-.pagination .prevBtn svg,
-.pagination .nextBtn svg {
-  color: #2a3b52;
-}
-.pagination button[disabled].prevBtn,
-.pagination button[disabled].nextBtn {
-  cursor: not-allowed;
-  color: rgb(156 163 175/var(--tw-text-opacity));
-}
-.pagination .containerBtns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.pagination .leftContainer {
-  display: flex;
-  width: 190px;
-  justify-content: end;
-}
-.pagination .rightContainer {
-  display: flex;
-  width: 190px;
-  justify-content: start;
-}
-.pagination .activeBtn {
-  margin: 0 12px;
-  padding: 4px 6px;
-  min-width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #777;
-  font-size: 20px;
-  color: #fff;
 }
-.pagination .numberBtn {
-  cursor: pointer;
-  margin: 0 4px;
-  min-width: 40px;
-  padding: 4px;
-  font-size: 18px;
+.pagination_container nav ul li {
+  padding: 6px;
 }
-.pagination .numberBtn[disabled] {
-  cursor: not-allowed;
+.pagination_container nav ul li a {
+  color: #000;
+  background-color: #eee;
+  padding: 11px;
+  border-radius: 2px;
 }
 
 .Auth_form {
@@ -647,4 +570,39 @@ table .total td {
   margin-top: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 25px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+footer {
+  background-color: rgba(18, 81, 98, 0.9019607843);
+  padding: 15px;
+  max-height: auto;
+}
+footer .footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_container .logo img {
+  width: 150px;
+}
+footer .footer_container .copyright {
+  color: #fff;
+}
+footer .footer_container .social {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+footer .footer_container .social i {
+  font-size: 25px;
+}
+
+.header-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
 }/*# sourceMappingURL=custom.css.map */
