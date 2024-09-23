@@ -194,7 +194,8 @@ $i: 6;
 form {
   display: flex;
   gap: 25px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  flex-direction: column;
   // @media (max-width: 600px) {
   //   flex-wrap: wrap;
   // }
@@ -554,4 +555,19 @@ footer {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+}
+
+
+.pc-container {
+  min-height: calc(100dvh - 74px);
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+}
+
+table {
+  text-align: start;
+  border-bottom: 1px solid #ecf0f1;
 }

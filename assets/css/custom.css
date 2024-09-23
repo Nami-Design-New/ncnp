@@ -326,7 +326,7 @@
 form {
   display: flex;
   gap: 25px;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .form_group {
@@ -586,4 +586,19 @@ footer .footer_container .social i {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+}
+
+.pc-container {
+  min-height: calc(100dvh - 74px);
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+table {
+  text-align: start;
+  border-bottom: 1px solid #ecf0f1;
 }/*# sourceMappingURL=custom.css.map */
