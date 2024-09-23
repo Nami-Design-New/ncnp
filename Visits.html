@@ -2,7 +2,7 @@
 <html dir="rtl" lang="ar">
   <!-- [Head] start -->
   <head>
-    <title>الراجي</title>
+    <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
     <!-- [Meta] -->
     <meta charset="utf-8" />
     <meta
@@ -57,6 +57,7 @@
             />
           </a>
         </div>
+
         <div class="navbar-content">
           <ul class="pc-navbar">
             <!-- link -->
@@ -151,6 +152,7 @@
             <!-- link -->
           </ul>
         </div>
+
         <div class="card pc-user-card">
           <div class="card-body">
             <div class="d-flex align-items-center">
@@ -194,6 +196,7 @@
       </div>
     </nav>
     <!-- [ Sidebar Menu ] end -->
+
     <!-- [ Header Topbar ] start -->
     <header class="pc-header">
       <div class="header-wrapper">
@@ -206,11 +209,13 @@
                 <i class="fa-regular fa-bars"></i>
               </a>
             </li>
+
             <li class="pc-h-item pc-sidebar-popup">
               <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
                 <i class="fa-regular fa-bars"></i>
               </a>
             </li>
+
             <li class="dropdown pc-h-item d-inline-flex d-md-none">
               <a
                 class="pc-head-link dropdown-toggle arrow-none m-0"
@@ -222,6 +227,7 @@
               >
                 <i class="ph-duotone ph-magnifying-glass"></i>
               </a>
+
               <div class="dropdown-menu pc-h-dropdown drp-search">
                 <form class="px-3">
                   <div class="mb-0 d-flex align-items-center">
@@ -237,6 +243,7 @@
                 </form>
               </div>
             </li>
+
             <li class="pc-h-item d-none d-md-inline-flex">
               <form class="form-search">
                 <i class="ph-duotone ph-magnifying-glass icon-search"></i>
@@ -264,46 +271,9 @@
                 aria-haspopup="false"
                 aria-expanded="false"
               >
-                <i class="ph-duotone ph-sun-dim"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change('dark')"
-                >
-                  <i class="ph-duotone ph-moon"></i>
-                  <span>الوضع الداكن</span>
-                </a>
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change('light')"
-                >
-                  <i class="ph-duotone ph-sun-dim"></i>
-                  <span>الوضع الفاتح</span>
-                </a>
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change_default()"
-                >
-                  <i class="ph-duotone ph-cpu"></i>
-                  <span>الوضع الافتراضي</span>
-                </a>
-              </div>
-            </li>
-            <li class="dropdown pc-h-item">
-              <a
-                class="pc-head-link dropdown-toggle arrow-none me-0"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="false"
-                aria-expanded="false"
-              >
                 <i class="ph-duotone ph-option"></i>
               </a>
+
               <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
                 <a
                   href="#!"
@@ -321,6 +291,7 @@
                 </a>
               </div>
             </li>
+
             <li class="dropdown pc-h-item">
               <a
                 class="pc-head-link dropdown-toggle arrow-none me-0"
@@ -467,6 +438,7 @@
                 </div>
               </div>
             </li>
+
             <li class="dropdown pc-h-item">
               <a
                 class="pc-head-link dropdown-toggle arrow-none me-0"
@@ -804,10 +776,19 @@
           </div>
           <div class="copyright">جميع الحقوق محفوظه 2020</div>
           <div class="social">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            </a>
           </div>
         </div>
       </footer>
@@ -815,13 +796,13 @@
 
     <!-- tabeel-->
 
-    <!-- [Page Specific JS] start -->
-    <script src="assets/js/plugins/apexcharts.min.js"></script>
     <!-- Required Js -->
     <script src="assets/js/plugins/popper.min.js"></script>
     <script src="assets/js/plugins/simplebar.min.js"></script>
+
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.js"></script>
+
     <script>
       layout_change("light");
     </script>
@@ -840,269 +821,7 @@
     <script>
       preset_change("preset-1");
     </script>
-    <!-- charts -->
-    <script>
-      "use strict";
-      document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function () {
-          floatchart();
-        }, 500);
-      });
-      function floatchart() {
-        (function () {
-          // الرسم البياني
-          var options = {
-            chart: {
-              type: "line",
-              height: 200,
-              toolbar: {
-                show: false,
-              },
-            },
-            colors: ["#0d6efd"],
-            dataLabels: {
-              enabled: false,
-            },
-            markers: {
-              size: 7,
-              colors: "#0d6efd",
-              strokeColors: "#fff",
-              strokeWidth: 3,
-              hover: {
-                size: 4,
-              },
-            },
-            stroke: {
-              width: 1,
-              curve: "smooth",
-            },
-            plotOptions: {
-              bar: {
-                columnWidth: "45%",
-                borderRadius: 4,
-              },
-            },
-            grid: {
-              strokeDashArray: 4,
-            },
-            series: [
-              {
-                name: "الطلبات",
-                data: [50, 80, 60, 90, 70, 100, 40, 85, 65, 75, 55, 95], // بيانات المثال لجميع الأشهر
-              },
-            ],
-            yaxis: {
-              title: {
-                text: "عدد الطلبات",
-              },
-            },
-            xaxis: {
-              categories: [
-                "يناير",
-                "فبراير",
-                "مارس",
-                "أبريل",
-                "مايو",
-                "يونيو",
-                "يوليو",
-                "أغسطس",
-                "سبتمبر",
-                "أكتوبر",
-                "نوفمبر",
-                "ديسمبر",
-              ],
-              labels: {
-                hideOverlappingLabels: true,
-              },
-              axisBorder: {
-                show: false,
-              },
-              axisTicks: {
-                show: false,
-              },
-            },
-          };
-          var chart = new ApexCharts(
-            document.querySelector("#requests-over-year-chart"),
-            options
-          );
-          chart.render();
-          // الرسم البياني
-          var options = {
-            chart: {
-              type: "bar",
-              height: 355,
-              toolbar: {
-                show: false,
-              },
-            },
-            colors: ["#198754"],
-            plotOptions: {
-              bar: {
-                columnWidth: "45%",
-                borderRadius: 4,
-              },
-            },
-            grid: {
-              strokeDashArray: 4,
-            },
-            series: [
-              {
-                name: "الطلبات",
-                data: [150, 130, 120, 110, 90, 80, 70, 60, 50, 40], // بيانات المثال لعدد الطلبات
-              },
-            ],
-            xaxis: {
-              categories: [
-                "الرياض",
-                "جدة",
-                "مكة",
-                "الدمام",
-                "المدينة ",
-                "تبوك",
-                "أبها",
-                "الخبر",
-                "بريدة",
-                "حائل",
-              ],
-              labels: {
-                hideOverlappingLabels: true,
-              },
-              axisBorder: {
-                show: false,
-              },
-              axisTicks: {
-                show: false,
-              },
-            },
-            yaxis: {
-              title: {
-                text: "عدد الطلبات",
-              },
-            },
-          };
-          var chart = new ApexCharts(
-            document.querySelector("#most-requested-cities-chart"),
-            options
-          );
-          chart.render();
-        })();
-      }
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const countContainer = document.querySelector(".count");
-        const prevBtn = document.querySelector(".prevBtn");
-        const nextBtn = document.querySelector(".nextBtn");
-        const activeBtn = document.querySelector(".activeBtn");
-        const leftContainer = document.querySelector(".leftContainer");
-        const rightContainer = document.querySelector(".rightContainer");
-        const btns = document.querySelector(".containerBtns");
-
-        const countPage = 200;
-
-        const changeActiveBtn = (value) => {
-          activeBtn.textContent = value;
-          activeBtn.disabled = true;
-        };
-
-        const init = () => {
-          countContainer.textContent = countPage + " items";
-          changeActiveBtn(1);
-          updateRightContainer(1);
-          updateBlockBtn(1);
-        };
-
-        const handlePrevBtn = () => {
-          const curActive = Number(activeBtn.textContent) - 1;
-          updatePaginate(curActive);
-        };
-
-        const handleNextBtn = () => {
-          const curActive = Number(activeBtn.textContent) + 1;
-          updatePaginate(curActive);
-        };
-
-        const updatePaginate = (value) => {
-          changeActiveBtn(value);
-          updateBlockBtn(value);
-          updateLeftContainer(value);
-          updateRightContainer(value);
-        };
-
-        const handleBtnNumbers = (e) => {
-          const target = e.target.closest(".numberBtn")?.textContent;
-
-          if (target) updatePaginate(Number(target));
-        };
-
-        const updateBlockBtn = (value) => {
-          prevBtn.disabled = value === 1;
-          nextBtn.disabled = value === countPage;
-        };
-
-        const createButton = (text, classNames = [], disabled = false) => {
-          const button = document.createElement("button");
-          button.textContent = text;
-          button.classList.add(...classNames);
-          button.disabled = disabled;
-          return button;
-        };
-
-        const updateContainer = (container, array, disabledIndexes = []) => {
-          container.textContent = "";
-          for (let i = 0; i < array.length; i++) {
-            const text = disabledIndexes.includes(i) ? "..." : array[i];
-            const button = createButton(
-              text,
-              ["w-7", "h-7", "mx-2", "numberBtn", "w-32"],
-              disabledIndexes.includes(i)
-            );
-            container.appendChild(button);
-          }
-        };
-
-        const updateLeftContainer = (value) => {
-          if (value <= 5) {
-            updateContainer(
-              leftContainer,
-              Array.from({ length: value - 1 }, (_, i) => i + 1),
-              []
-            );
-          } else {
-            updateContainer(leftContainer, [1, 2, value - 2, value - 1], [1]);
-          }
-        };
-
-        const updateRightContainer = (value) => {
-          if (value >= countPage - 4) {
-            const tail = countPage - value;
-            updateContainer(
-              rightContainer,
-              Array.from({ length: tail }, (_, i) => i + value + 1),
-              []
-            );
-          } else {
-            updateContainer(
-              rightContainer,
-              [value + 1, value + 2, countPage - 1, countPage],
-              [1]
-            );
-          }
-        };
-
-        prevBtn.addEventListener("click", handlePrevBtn);
-        nextBtn.addEventListener("click", handleNextBtn);
-        btns.addEventListener("click", handleBtnNumbers);
-
-        init();
-      });
-    </script>
   </body>
-  <!-- [Body] end -->
+
+  <!-- end -->
 </html>

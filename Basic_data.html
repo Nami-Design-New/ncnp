@@ -2,7 +2,7 @@
 <html dir="rtl" lang="ar">
   <!-- [Head] start -->
   <head>
-    <title>الراجي</title>
+    <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
     <!-- [Meta] -->
     <meta charset="utf-8" />
     <meta
@@ -253,44 +253,6 @@
         <!-- [Mobile Media Block end] -->
         <div class="">
           <ul class="list-unstyled">
-            <li class="dropdown pc-h-item">
-              <a
-                class="pc-head-link dropdown-toggle arrow-none me-0"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="false"
-                aria-expanded="false"
-              >
-                <i class="ph-duotone ph-sun-dim"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change('dark')"
-                >
-                  <i class="ph-duotone ph-moon"></i>
-                  <span>الوضع الداكن</span>
-                </a>
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change('light')"
-                >
-                  <i class="ph-duotone ph-sun-dim"></i>
-                  <span>الوضع الفاتح</span>
-                </a>
-                <a
-                  href="#!"
-                  class="dropdown-item"
-                  onclick="layout_change_default()"
-                >
-                  <i class="ph-duotone ph-cpu"></i>
-                  <span>الوضع الافتراضي</span>
-                </a>
-              </div>
-            </li>
             <li class="dropdown pc-h-item">
               <a
                 class="pc-head-link dropdown-toggle arrow-none me-0"
@@ -1096,10 +1058,19 @@
           </div>
           <div class="copyright">جميع الحقوق محفوظه 2020</div>
           <div class="social">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            </a>
           </div>
         </div>
       </footer>
@@ -1109,8 +1080,6 @@
 
     <!-- 		End of Container -->
 
-    <!-- [Page Specific JS] start -->
-    <script src="assets/js/plugins/apexcharts.min.js"></script>
     <!-- Required Js -->
     <script src="assets/js/plugins/popper.min.js"></script>
     <script src="assets/js/plugins/simplebar.min.js"></script>
@@ -1135,159 +1104,6 @@
       preset_change("preset-1");
     </script>
     <!-- charts -->
-    <script>
-      "use strict";
-      document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function () {
-          floatchart();
-        }, 500);
-      });
-      function floatchart() {
-        (function () {
-          // الرسم البياني
-          var options = {
-            chart: {
-              type: "line",
-              height: 200,
-              toolbar: {
-                show: false,
-              },
-            },
-            colors: ["#0d6efd"],
-            dataLabels: {
-              enabled: false,
-            },
-            markers: {
-              size: 7,
-              colors: "#0d6efd",
-              strokeColors: "#fff",
-              strokeWidth: 3,
-              hover: {
-                size: 4,
-              },
-            },
-            stroke: {
-              width: 1,
-              curve: "smooth",
-            },
-            plotOptions: {
-              bar: {
-                columnWidth: "45%",
-                borderRadius: 4,
-              },
-            },
-            grid: {
-              strokeDashArray: 4,
-            },
-            series: [
-              {
-                name: "الطلبات",
-                data: [50, 80, 60, 90, 70, 100, 40, 85, 65, 75, 55, 95], // بيانات المثال لجميع الأشهر
-              },
-            ],
-            yaxis: {
-              title: {
-                text: "عدد الطلبات",
-              },
-            },
-            xaxis: {
-              categories: [
-                "يناير",
-                "فبراير",
-                "مارس",
-                "أبريل",
-                "مايو",
-                "يونيو",
-                "يوليو",
-                "أغسطس",
-                "سبتمبر",
-                "أكتوبر",
-                "نوفمبر",
-                "ديسمبر",
-              ],
-              labels: {
-                hideOverlappingLabels: true,
-              },
-              axisBorder: {
-                show: false,
-              },
-              axisTicks: {
-                show: false,
-              },
-            },
-          };
-          var chart = new ApexCharts(
-            document.querySelector("#requests-over-year-chart"),
-            options
-          );
-          chart.render();
-          // الرسم البياني
-          var options = {
-            chart: {
-              type: "bar",
-              height: 355,
-              toolbar: {
-                show: false,
-              },
-            },
-            colors: ["#198754"],
-            plotOptions: {
-              bar: {
-                columnWidth: "45%",
-                borderRadius: 4,
-              },
-            },
-            grid: {
-              strokeDashArray: 4,
-            },
-            series: [
-              {
-                name: "الطلبات",
-                data: [150, 130, 120, 110, 90, 80, 70, 60, 50, 40], // بيانات المثال لعدد الطلبات
-              },
-            ],
-            xaxis: {
-              categories: [
-                "الرياض",
-                "جدة",
-                "مكة",
-                "الدمام",
-                "المدينة ",
-                "تبوك",
-                "أبها",
-                "الخبر",
-                "بريدة",
-                "حائل",
-              ],
-              labels: {
-                hideOverlappingLabels: true,
-              },
-              axisBorder: {
-                show: false,
-              },
-              axisTicks: {
-                show: false,
-              },
-            },
-            yaxis: {
-              title: {
-                text: "عدد الطلبات",
-              },
-            },
-          };
-          var chart = new ApexCharts(
-            document.querySelector("#most-requested-cities-chart"),
-            options
-          );
-          chart.render();
-        })();
-      }
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </body>
   <!-- [Body] end -->
 </html>
