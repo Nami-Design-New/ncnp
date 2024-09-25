@@ -521,7 +521,7 @@ table .total td {
 
 .wizard_steps {
   width: 100%;
-  height: 100dvh;
+  min-height: calc(100dvh - 201px);
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
