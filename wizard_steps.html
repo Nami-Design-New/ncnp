@@ -28,38 +28,35 @@
 
   <section class="wizard_steps">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- [ sample-page ] start -->
-        <div class="col-sm-12 col-lg-12">
+        <div class="col-md-8">
           <div id="basicwizard" class="form-wizard row">
-            <div class="col-sm-12 col-md-6 col-xxl-4 text-center">
-              <h3>تسجيل الدخول</h3>
-            </div>
-            <div class="col-12">
+              <h3 class="text-center pt-3 pb-5">تسجيل الدخول</h3>
               <div class="card m-auto">
                 <div class="card-body p-3 d-block">
                   <ul class="nav nav-pills nav-justified">
                     <li class="nav-item" data-target-form="#contactDetailForm">
                       <a href="#contactDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link active">
-                        <span class="d-none d-sm-inline">1</span>
+                        <span class="fw-bold">1</span>
                       </a>
                     </li>
                     <!-- end nav item -->
                     <li class="nav-item" data-target-form="#jobDetailForm">
                       <a href="#jobDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
-                        <span class="d-none d-sm-inline">2</span>
+                        <span class="fw-bold">2</span>
                       </a>
                     </li>
                     <!-- end nav item -->
                     <li class="nav-item" data-target-form="#educationDetailForm">
                       <a href="#educationDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
-                        <span class="d-none d-sm-inline">3 </span>
+                        <span class="fw-bold">3 </span>
                       </a>
                     </li>
                     <!-- end nav item -->
                     <li class="nav-item">
                       <a href="#finish" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
-                        <span class="d-none d-sm-inline">4</span>
+                        <span class="fw-bold">4</span>
                       </a>
                     </li>
                     <!-- end nav item -->
@@ -76,15 +73,14 @@
                     <!-- END: Define your progress bar here -->
                     <!-- START: Define your tab pans here -->
                     <div class="tab-pane show active" id="contactDetail" style="margin: 0 auto">
-                      <h2>بيانات الجمعيه</h2>
+                      <h4>بيانات الجمعيه</h4>
                       <form id="contactForm" method="post" action="#" class="d-block">
                         <div class="row mt-4">
                           <div class="col">
                             <div class="row">
                               <div class="col-md-6">
                                 <div class="mb-3">
-                                  <label class="form-label">مركز التنميه
-                                  </label>
+                                  <label class="form-label">مركز التنميه </label>
                                   <input type="text" class="form-control" placeholder=" " />
                                 </div>
                               </div>
@@ -96,8 +92,7 @@
                               </div>
                               <div class="col-sm-12">
                                 <div class="mb-3">
-                                  <label class="form-label">رقم التسجيل
-                                  </label>
+                                  <label class="form-label">رقم التسجيل </label>
                                   <input type="email" class="form-control" placeholder="" />
                                 </div>
                               </div>
@@ -108,7 +103,7 @@
                     </div>
                     <!-- end contact detail tab pane -->
                     <div class="tab-pane" id="jobDetail">
-                      <h2>بيانات ممثل الجمعيه</h2>
+                      <h4>بيانات ممثل الجمعيه</h4>
                       <form id="jobForm" method="post" action="#" style="display: block">
                         <div class="row mt-4">
                           <div class="col-md-6">
@@ -140,7 +135,7 @@
                     </div>
                     <!-- end job detail tab pane -->
                     <div class="tab-pane" id="educationDetail">
-                      <h2>التحقق من جوال ممثل الجمعيه</h2>
+                      <h4>التحقق من جوال ممثل الجمعيه</h4>
                       <form id="educationForm" method="post" action="#" style="display: block">
                         <div class="row">
                           <div class="col-md-12">
@@ -176,18 +171,18 @@
                       </div>
                       <div class="d-flex">
                         <div class="previous me-2">
-                          <a href="javascript:void(0);" class="btn btn-secondary">
+                          <a href="javascript:void(0);" class="btn btn-outline-secondary">
                             السابق
                           </a>
                         </div>
                         <div class="next">
-                          <a href="javascript:void(0);" class="btn btn-secondary mt-3 mt-md-0">
+                          <a href="javascript:void(0);" class="btn btn-primary">
                             التالي
                           </a>
                         </div>
                       </div>
                       <div class="last d-none">
-                        <a href="javascript:void(0);" class="btn btn-secondary mt-3 mt-md-0">
+                        <a href="javascript:void(0);" class="btn btn-secondary">
                           الاخيره
                         </a>
                       </div>
@@ -198,7 +193,6 @@
               </div>
               <!-- end tab content-->
             </div>
-          </div>
         </div>
         <!-- [ sample-page ] end -->
       </div>

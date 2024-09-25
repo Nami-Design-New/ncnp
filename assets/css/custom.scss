@@ -5,19 +5,19 @@
 }
 
 :root {
-  --pc-sidebar-active-color: #125162;
+  --pc-sidebar-active-color: var(--bs-primary);
   --bs-blue: #16433c;
-  --bs-primary: #276fe5;
-  --bs-primary-rgb: 39, 111, 229;
+  --bs-primary: #125162;
+  --bs-primary-rgb: 18, 81, 98;
   --bs-success: #36b19cb2;
   --bs-success-rgb: 14, 146, 113;
 
   --bs-primary-light: #36b19cb2;
   --bs-link-color: #36b19cb2;
-  --bs-link-color-rgb: 39, 111, 229;
+  --bs-link-color-rgb: 18, 81, 98;
   --bs-link-hover-color: #017c64;
   --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
-  --dt-row-selected: 39, 111, 229;
+  --dt-row-selected: 18, 81, 98;
   --bs-font-sans-serif: "Neo Sans Arabic", sans-serif;
 }
 
@@ -158,7 +158,7 @@ $i: 6;
   padding: 10px 25px;
 }
 .primary {
-  background-color: #276fe5;
+  background-color: var(--bs-primary);
 }
 
 //content_Vsits
@@ -592,7 +592,7 @@ table {
           text-align: center;
           & span {
             padding: 10px 16px;
-            border: 1px solid #125162;
+            border: 1px solid var(--bs-primary);
             border-radius: 20px;
             background: #fff;
             font-size: 12px;
@@ -602,9 +602,9 @@ table {
 
         & .step.active {
           & span {
-            background: #125162;
+            background: var(--bs-primary);
             color: white;
-            border: 1px solid #125162;
+            border: 1px solid var(--bs-primary);
           }
         }
       }
@@ -649,7 +649,7 @@ table {
         border: none;
         border-radius: 12px;
         color: white;
-        background: #125162;
+        background: var(--bs-primary);
         font-size: 14px;
         &:active {
           outline: none;
@@ -671,6 +671,16 @@ table {
       & button {
         width: 100%;
       }
+    }
+  }
+}
+
+.form-wizard {
+  .nav-justified {
+    background-color: #eee;
+    border-radius: 8px;
+    .nav-link.active {
+      background-color: var(--bs-primary);
     }
   }
 }
