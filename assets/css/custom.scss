@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Neo Sans Arabic", sans-serif;
+  font-family: "Neo Sans Arabic";
   font-display: swap;
-  src: url(../fonts/NeoSansArabicBold.woff);
+  src: url(../fonts/NeoSansArabic.woff);
 }
 
 :root {
@@ -18,9 +18,7 @@
   --bs-link-hover-color: #017c64;
   --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
   --dt-row-selected: 39, 111, 229;
-  --bs-font-sans-serif : "Neo Sans Arabic", sans-serif;
-  --bs-body-font-family: "Neo Sans Arabic", sans-serif;
-  
+  --bs-font-sans-serif: "Neo Sans Arabic", sans-serif;
 }
 
 .pc-sidebar {
