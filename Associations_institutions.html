@@ -394,75 +394,74 @@
             <form class="needs-validation" novalidate>
               <div class="row g-3 forms_container">
                 <div class="check_group col-md-12">
-                  <label class="type"> هل لدي الجمعيه فروع؟</label>
+                  <label class="type">هل لدى الجمعية فروع؟</label>
                   <div class="check_group_inputs">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        لا
-                      </label>
+                      <input class="form-check-input" type="radio" name="hasBranches" id="noBranches" />
+                      <label class="form-check-label" for="noBranches">لا</label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                        checked />
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        نعم
-                      </label>
+                      <input class="form-check-input" type="radio" name="hasBranches" id="yesBranches" checked />
+                      <label class="form-check-label" for="yesBranches">نعم</label>
                     </div>
                   </div>
                 </div>
+            
                 <div class="col-md-12">
                   <div class="form_Btn col-md-7">
-                    <label for="validationCustom04" class="form-label">اختر المقيم</label>
-                    <select class="form-select" id="validationCustom04" required>
+                    <label for="evaluator" class="form-label">اختر المقيم</label>
+                    <select class="form-select" id="evaluator" required>
                       <option selected disabled value="">اختر...</option>
-                      <option>...</option>
+                      <option>مقيم 1</option>
+                      <option>مقيم 2</option>
                     </select>
-                    <div class="invalid-feedback"> Please select a valid state. </div>
+                    <div class="invalid-feedback">يرجى اختيار مقيم صحيح.</div>
                   </div>
                   <div class="col-md-4">
                     <button class="search_btn">عرض</button>
                   </div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom05" class="form-label">
-                    النوع
-                  </label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback"> Please provide a valid zip. </div>
+                  <label for="type" class="form-label">النوع</label>
+                  <input type="text" class="form-control" id="type" required />
+                  <div class="invalid-feedback">يرجى إدخال النوع.</div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">
-                    مركز التنميه
-                  </label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">اختر ...</option>
-                    <option>...</option>
+                  <label for="developmentCenter" class="form-label">مركز التنمية</label>
+                  <select class="form-select" id="developmentCenter" required>
+                    <option selected disabled value="">اختر...</option>
+                    <option>مركز 1</option>
+                    <option>مركز 2</option>
                   </select>
-                  <div class="invalid-feedback"> Please select a valid state. </div>
+                  <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">الجمعيه / المؤسسه</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">اختر ...</option>
-                    <option>...</option>
+                  <label for="organization" class="form-label">الجمعية / المؤسسة</label>
+                  <select class="form-select" id="organization" required>
+                    <option selected disabled value="">اختر...</option>
+                    <option>جمعية 1</option>
+                    <option>جمعية 2</option>
                   </select>
-                  <div class="invalid-feedback"> Please select a valid state. </div>
+                  <div class="invalid-feedback">يرجى اختيار جمعية أو مؤسسة.</div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom05" class="form-label">
-                    رقم التسجيل
-                  </label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback"> Please provide a valid zip. </div>
+                  <label for="registrationNumber" class="form-label">رقم التسجيل</label>
+                  <input type="text" class="form-control" id="registrationNumber" required />
+                  <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
                 </div>
+            
                 <div class="col-md-5">
-                  <label for="validationCustom05" class="form-label">اسم الجمعيه / المؤسسه</label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback">رقم التسجيل</div>
+                  <label for="organizationName" class="form-label">اسم الجمعية / المؤسسة</label>
+                  <input type="text" class="form-control" id="organizationName" required />
+                  <div class="invalid-feedback">يرجى إدخال اسم الجمعية أو المؤسسة.</div>
                 </div>
               </div>
             </form>
+            
           </div>
         </div>
       </div>

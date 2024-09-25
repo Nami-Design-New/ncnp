@@ -394,53 +394,69 @@
           <div class="content_Vsits">
             <form class="needs-validation" novalidate>
               <div class="row g-3 forms_container">
+                
+                <!-- Dropdown for Type -->
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">النوع</label>
-                  <select class="form-select" id="validationCustom04" required>
+                  <label for="typeSelect" class="form-label">النوع</label>
+                  <select class="form-select" id="typeSelect" required>
                     <option selected disabled value="">اختر...</option>
                     <option>...</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid state.
+                    يرجى اختيار نوع صالح.
                   </div>
                 </div>
+                
+                <!-- Dropdown for Development Center -->
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">مركز التنميه</label>
-                  <select class="form-select" id="validationCustom04" required>
+                  <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
+                  <select class="form-select" id="developmentCenterSelect" required>
                     <option selected disabled value="">اختر ...</option>
                     <option>...</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid state.
+                    يرجى اختيار مركز تنمية صالح.
                   </div>
                 </div>
+                
+                <!-- Dropdown for Status -->
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">الحاله</label>
-                  <select class="form-select" id="validationCustom04" required>
+                  <label for="statusSelect" class="form-label">الحالة</label>
+                  <select class="form-select" id="statusSelect" required>
                     <option selected disabled value="">اختر...</option>
                     <option>...</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid state.
+                    يرجى اختيار حالة صالحة.
                   </div>
                 </div>
+                
+                <!-- Registration Number Input -->
                 <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">رقم التسجيل</label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
+                  <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
+                  <input type="text" class="form-control" id="registrationNumberInput" required />
                   <div class="invalid-feedback">
-                    Please provide a valid zip.
+                    يرجى إدخال رقم تسجيل صالح.
                   </div>
                 </div>
+                
+                <!-- Association Name Input -->
                 <div class="col-md-5">
-                  <label for="validationCustom05" class="form-label">اسم الجمعيه / المؤسسه</label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback">رقم التسجيل</div>
+                  <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة</label>
+                  <input type="text" class="form-control" id="associationNameInput" required />
+                  <div class="invalid-feedback">
+                    يرجى إدخال اسم صالح للجمعية أو المؤسسة.
+                  </div>
                 </div>
+            
               </div>
+            
+              <!-- Submit Button -->
               <div class="col-12">
                 <button class="search_btn" type="submit">بحث</button>
               </div>
             </form>
+            
           </div>
         </div>
       </div>

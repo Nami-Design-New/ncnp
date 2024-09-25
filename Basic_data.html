@@ -425,364 +425,175 @@
                     <form class="needs-validation" novalidate>
                       <div class="row g-3 forms_container">
                         <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            الاسم الرسمي للجمعيه
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="associationName" class="form-label">الاسم الرسمي للجمعية</label>
+                          <input type="text" class="form-control" id="associationName" required />
+                          <div class="invalid-feedback">يرجى إدخال الاسم الرسمي.</div>
                         </div>
                         <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            اسم اشهره (في حاله كونه مغايرا للاسم الرسمي)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="alternativeName" class="form-label">اسم الشهرة (في حال كونه مغايرا للاسم الرسمي)</label>
+                          <input type="text" class="form-control" id="alternativeName" required />
+                          <div class="invalid-feedback">يرجى إدخال اسم الشهرة.</div>
                         </div>
                         <div class="col-md-4">
-                          <label for="validationCustom04" class="form-label">
-                            التصنيف النوعي
-                          </label>
-                          <select class="form-select" id="validationCustom04" required>
+                          <label for="classification" class="form-label">التصنيف النوعي</label>
+                          <select class="form-select" id="classification" required>
                             <option selected disabled value="">اختر...</option>
                             <option>...</option>
                           </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
+                          <div class="invalid-feedback">يرجى اختيار تصنيف صحيح.</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="registrationNumber" class="form-label">رقم شهادة التسجيل</label>
+                          <input type="text" class="form-control" id="registrationNumber" required />
+                          <div class="invalid-feedback">يرجى إدخال رقم شهادة التسجيل.</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="registrationDoc" class="form-label">إرفاق شهادة التسجيل</label>
+                          <input type="file" id="registrationDoc" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                        </div>
+                        <div class="col-md-4">
+                          <label class="form-label">هل يوجد للجمعية لوحة خارجية؟</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="hasExternalSign" id="externalSignNo" />
+                            <label class="form-check-label" for="externalSignNo">لا</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="hasExternalSign" id="externalSignYes" checked />
+                            <label class="form-check-label" for="externalSignYes">نعم</label>
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            رقم شهاده التسجيل
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
+                          <label class="form-label">اللوحة توضح رقم التسجيل؟</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="showsRegistration" id="registrationSignNo" />
+                            <label class="form-check-label" for="registrationSignNo">لا</label>
                           </div>
-                        </div>
-                        <div class="form_group col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            ارفاق شهاده التسجيل
-                          </label>
-                          <input type="file" id="docpicker"
-                            accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                        </div>
-                        <div class="check_group col-md-4">
-                          <label class="type">
-                            هل يوجد للجمعيه لوحه خارجه ؟</label>
-                          <div class="check_group_inputs">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault1" />
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                لا
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault2" checked />
-                              <label class="form-check-label" for="flexRadioDefault2">
-                                نعم
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="check_group col-md-4">
-                          <label class="type"> اللوحه توضح رقم التسجيل؟</label>
-                          <div class="check_group_inputs">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault1" />
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                لا
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault2" checked />
-                              <label class="form-check-label" for="flexRadioDefault2">
-                                نعم
-                              </label>
-                            </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="showsRegistration" id="registrationSignYes" checked />
+                            <label class="form-check-label" for="registrationSignYes">نعم</label>
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <label class="type">
-                            اللوحه تنص علي انا الجمعيه التعاونيه ؟</label>
-                          <div class="check_group_inputs">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault1" />
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                لا
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault2" checked />
-                              <label class="form-check-label" for="flexRadioDefault2">
-                                نعم
-                              </label>
-                            </div>
+                          <label class="form-label">اللوحة تنص على أنها جمعية تعاونية؟</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cooperativeSign" id="cooperativeSignNo" />
+                            <label class="form-check-label" for="cooperativeSignNo">لا</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cooperativeSign" id="cooperativeSignYes" checked />
+                            <label class="form-check-label" for="cooperativeSignYes">نعم</label>
                           </div>
                         </div>
                       </div>
+                    
                       <div class="Title">العنوان</div>
                       <div class="row g-3 forms_container">
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            المنطقه
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="region" class="form-label">المنطقة</label>
+                          <input type="text" class="form-control" id="region" required />
+                          <div class="invalid-feedback">يرجى إدخال المنطقة.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            المدينه
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="city" class="form-label">المدينة</label>
+                          <input type="text" class="form-control" id="city" required />
+                          <div class="invalid-feedback">يرجى إدخال المدينة.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الحي
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="neighborhood" class="form-label">الحي</label>
+                          <input type="text" class="form-control" id="neighborhood" required />
+                          <div class="invalid-feedback">يرجى إدخال الحي.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            اسم الشارع
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="street" class="form-label">اسم الشارع</label>
+                          <input type="text" class="form-control" id="street" required />
+                          <div class="invalid-feedback">يرجى إدخال اسم الشارع.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            رقم المبني
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="buildingNumber" class="form-label">رقم المبنى</label>
+                          <input type="text" class="form-control" id="buildingNumber" required />
+                          <div class="invalid-feedback">يرجى إدخال رقم المبنى.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الرمز البريدي
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="postalCode" class="form-label">الرمز البريدي</label>
+                          <input type="text" class="form-control" id="postalCode" required />
+                          <div class="invalid-feedback">يرجى إدخال الرمز البريدي.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            صندوق البريد
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="poBox" class="form-label">صندوق البريد</label>
+                          <input type="text" class="form-control" id="poBox" required />
+                          <div class="invalid-feedback">يرجى إدخال صندوق البريد.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الرقم الاضافي
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="additionalNumber" class="form-label">الرقم الإضافي</label>
+                          <input type="text" class="form-control" id="additionalNumber" required />
+                          <div class="invalid-feedback">يرجى إدخال الرقم الإضافي.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            رقم جوال الجمعيه
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="associationMobile" class="form-label">رقم جوال الجمعية</label>
+                          <input type="text" class="form-control" id="associationMobile" required />
+                          <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الهاتف
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="phone" class="form-label">الهاتف</label>
+                          <input type="text" class="form-control" id="phone" required />
+                          <div class="invalid-feedback">يرجى إدخال الهاتف.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الفاكس
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="fax" class="form-label">الفاكس</label>
+                          <input type="text" class="form-control" id="fax" required />
+                          <div class="invalid-feedback">يرجى إدخال الفاكس.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموقع الالكتروني
-                          </label>
-                          <input type="email" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="website" class="form-label">الموقع الإلكتروني</label>
+                          <input type="url" class="form-control" id="website" required />
+                          <div class="invalid-feedback">يرجى إدخال الموقع الإلكتروني.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            البريد الالكتروني
-                          </label>
-                          <input type="email" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <label for="validationCustom04" class="form-label">
-                            التصنيف النوعي
-                          </label>
-                          <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">اختر...</option>
-                            <option>...</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                        <div class="check_group col-md-3">
-                          <label class="type"> هل لدي الجمعيه فروع؟</label>
-                          <div class="check_group_inputs">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault1" />
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                لا
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault2" checked />
-                              <label class="form-check-label" for="flexRadioDefault2">
-                                نعم
-                              </label>
-                            </div>
-                          </div>
+                          <label for="email" class="form-label">البريد الإلكتروني</label>
+                          <input type="email" class="form-control" id="email" required />
+                          <div class="invalid-feedback">يرجى إدخال البريد الإلكتروني.</div>
                         </div>
                       </div>
+                    
                       <div class="Title">الموظفين</div>
                       <div class="row g-3 forms_container">
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            المظفين (ذكور)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="maleEmployees" class="form-label">الموظفين (ذكور)</label>
+                          <input type="number" class="form-control" id="maleEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفين الذكور.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين(اناث)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="femaleEmployees" class="form-label">الموظفين (إناث)</label>
+                          <input type="number" class="form-control" id="femaleEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفين الإناث.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين(سعوديون)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="saudiEmployees" class="form-label">الموظفين (سعوديون)</label>
+                          <input type="number" class="form-control" id="saudiEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفين السعوديين.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين(غير سعوديون)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="nonSaudiEmployees" class="form-label">الموظفين (غير سعوديين)</label>
+                          <input type="number" class="form-control" id="nonSaudiEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفين غير السعوديين.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين(دوام كلي)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="saudiFemaleEmployees" class="form-label">الموظفات (سعوديات)</label>
+                          <input type="number" class="form-control" id="saudiFemaleEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفات السعوديات.</div>
                         </div>
                         <div class="col-md-3">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين(دوام جزئي)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            الموظفين (المسجلين في التامينات لاجتماعيه)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
+                          <label for="nonSaudiFemaleEmployees" class="form-label">الموظفات (غير سعوديات)</label>
+                          <input type="number" class="form-control" id="nonSaudiFemaleEmployees" required />
+                          <div class="invalid-feedback">يرجى إدخال عدد الموظفات غير السعوديات.</div>
                         </div>
                       </div>
-                      <div class="Title">اجتماعات الجمعيه</div>
-                      <div class="row g-3 forms_container">
-                        <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            عدد اجتماعات الجمعيه العموميه العاديه (2021)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            عدد اجتماعات الجمعيه العموميه غير العاديه(2021)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <label for="validationCustom05" class="form-label">
-                            عدد اجتماعات مجلس الاداره (2021)
-                          </label>
-                          <input type="text" class="form-control" id="validationCustom05" required />
-                          <div class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <button class="search_btn" type="submit">
-                          حفظ واستمرار
-                        </button>
+                      
+                      <div class="d-grid gap-2 col-12 mx-auto">
+                        <button class="btn btn-primary" type="submit">إرسال</button>
                       </div>
                     </form>
+                    
                   </div>
                 </div>
               </div>

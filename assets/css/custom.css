@@ -533,6 +533,7 @@ table .total td {
 .wizard_nav {
   background-color: rgba(18, 81, 98, 0.9019607843);
   padding: 10px;
+  display: block;
 }
 .wizard_nav img {
   width: 150px;

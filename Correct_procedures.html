@@ -400,78 +400,62 @@
             <form class="needs-validation" novalidate>
               <div class="row g-3 forms_container">
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">
-                    المعيار
-                  </label>
-                  <select class="form-select" id="validationCustom04" required>
+                  <label for="standardSelect" class="form-label">المعيار</label>
+                  <select class="form-select" id="standardSelect" required>
                     <option selected disabled value="">اختر...</option>
                     <option>...</option>
                   </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
+                  <div class="invalid-feedback">يرجى اختيار معيار صحيح.</div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">
-                    المؤشر</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">اختر ...</option>
+                  <label for="indicatorSelect" class="form-label">المؤشر</label>
+                  <select class="form-select" id="indicatorSelect" required>
+                    <option selected disabled value="">اختر...</option>
                     <option>...</option>
                   </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
+                  <div class="invalid-feedback">يرجى اختيار مؤشر صحيح.</div>
                 </div>
+            
                 <div class="col-md-4">
-                  <label for="validationCustom04" class="form-label">
-                    الممارسه
-                  </label>
-                  <select class="form-select" id="validationCustom04" required>
+                  <label for="practiceSelect" class="form-label">الممارسة</label>
+                  <select class="form-select" id="practiceSelect" required>
                     <option selected disabled value="">اختر...</option>
                     <option>...</option>
                   </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
+                  <div class="invalid-feedback">يرجى اختيار ممارسة صحيحة.</div>
                 </div>
+            
                 <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">
-                    الحاله
-                  </label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
+                  <label for="statusInput" class="form-label">الحالة</label>
+                  <input type="text" class="form-control" id="statusInput" required />
+                  <div class="invalid-feedback">يرجى إدخال حالة صحيحة.</div>
                 </div>
+            
                 <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">النوع</label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback">رقم التسجيل</div>
+                  <label for="typeInput" class="form-label">النوع</label>
+                  <input type="text" class="form-control" id="typeInput" required />
+                  <div class="invalid-feedback">يرجى إدخال النوع الصحيح.</div>
                 </div>
+            
                 <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">
-                    تاريخ التصحيح - من
-                  </label>
-                  <input type="text" class="form-control" id="validationCustom05" required />
-                  <div class="invalid-feedback">رقم التسجيل</div>
+                  <label for="correctionFromDate" class="form-label">تاريخ التصحيح - من</label>
+                  <input type="date" class="form-control" id="correctionFromDate" required />
+                  <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح من.</div>
                 </div>
+            
                 <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">
-                    تاريخ التصحيح الي
-                  </label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
+                  <label for="correctionToDate" class="form-label">تاريخ التصحيح - إلى</label>
+                  <input type="date" class="form-control" id="correctionToDate" required />
+                  <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح إلى.</div>
                 </div>
               </div>
+            
               <div class="col-12">
                 <button class="search_btn" type="submit">بحث</button>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
