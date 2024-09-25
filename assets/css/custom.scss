@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "fontRegular";
+  font-family: "Neo Sans Arabic", sans-serif;
   font-display: swap;
-  src: url(../fonts/BalooBhaijaan2-Regular.ttf);
+  src: url(../fonts/NeoSansArabicBold.woff);
 }
 
-[data-pc-preset="preset-1"] {
+:root {
   --pc-sidebar-active-color: #125162;
   --bs-blue: #16433c;
   --bs-primary: #276fe5;
@@ -18,7 +18,9 @@
   --bs-link-hover-color: #017c64;
   --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
   --dt-row-selected: 39, 111, 229;
-  --bs-body-font-family: "fontRegular";
+  --bs-font-sans-serif : "Neo Sans Arabic", sans-serif;
+  --bs-body-font-family: "Neo Sans Arabic", sans-serif;
+  
 }
 
 .pc-sidebar {
@@ -95,7 +97,7 @@ $i: 6;
   }
 }
 .apexcharts-canvas * {
-  font-family: "fontRegular" !important;
+  font-family: "Neo Sans Arabic", sans-serif !important;
 }
 
 .btn-success {
@@ -473,7 +475,7 @@ table {
 ///auth
 
 .Auth_form {
-  width: 80%;
+  width: 100%;
   .form-control {
     border-radius: 25px;
   }
@@ -488,10 +490,9 @@ table {
 
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #fff;
-  margin-top: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 25px;
+  // background-color: #fff;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  // border-radius: 25px;
   .tab-pane {
     // width: 100% !important;
   }
@@ -658,10 +659,10 @@ table {
           -webkit-transform: translate(0px, 5px);
           box-shadow: 0px 1px 0px 0px;
         }
-        &#prevBtn{
+        &#prevBtn {
           background-color: transparent;
           color: #000;
-          border:1px solid #000;
+          border: 1px solid #000;
         }
       }
     }
