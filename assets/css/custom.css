@@ -401,6 +401,11 @@ form {
   float: left;
 }
 
+.Tabel_container {
+  padding: 16px 0;
+  overflow-y: hidden;
+}
+
 table {
   border-collapse: collapse;
   text-align: left;
