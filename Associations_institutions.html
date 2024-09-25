@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
   <link rel="stylesheet" href="assets/css/style-preset.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
-
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
@@ -380,270 +379,271 @@
                 <li class="breadcrumb-item">
                   <a href="index.html"> الرئيسية </a>
                 </li>
-                <li class="breadcrumb-item" aria-current="page">...</li>
+                <li class="breadcrumb-item" aria-current="page">
+                  الجمعيات والمؤسسات
+                </li>
               </ul>
             </div>
-            <div class="col-md-12">
-              <div class="page-header-title_visits">
-                <i class="fa-sharp fa-regular fa-square-info"></i>
-                <h2>اسناد الجمعيات والمؤسسات للمقيمين</h2>
+            <!-- <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="mb-0">لوحة التحكم</h2>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- [ breadcrumb ] end -->
+      <div class="page-header-title_visits p-2">
+        <i class="fa-sharp fa-regular fa-square-info"></i>
+        <h2>اسناد الجمعيات والمؤسسات للمقيمين</h2>
+      </div>
+      <div class="content_Vsits">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3 forms_container">
+            <div class="check_group col-md-12">
+              <label class="type">هل لدى الجمعية فروع؟</label>
+              <div class="check_group_inputs">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="hasBranches" id="noBranches" />
+                  <label class="form-check-label" for="noBranches">لا</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="hasBranches" id="yesBranches" checked />
+                  <label class="form-check-label" for="yesBranches">نعم</label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="content_Vsits">
-            <form class="needs-validation" novalidate>
-              <div class="row g-3 forms_container">
-                <div class="check_group col-md-12">
-                  <label class="type">هل لدى الجمعية فروع؟</label>
-                  <div class="check_group_inputs">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="hasBranches" id="noBranches" />
-                      <label class="form-check-label" for="noBranches">لا</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="hasBranches" id="yesBranches" checked />
-                      <label class="form-check-label" for="yesBranches">نعم</label>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="col-md-12">
-                  <div class="form_Btn col-md-7">
-                    <label for="evaluator" class="form-label">اختر المقيم</label>
-                    <select class="form-select" id="evaluator" required>
-                      <option selected disabled value="">اختر...</option>
-                      <option>مقيم 1</option>
-                      <option>مقيم 2</option>
-                    </select>
-                    <div class="invalid-feedback">يرجى اختيار مقيم صحيح.</div>
-                  </div>
-                  <div class="col-md-4">
-                    <button class="search_btn">عرض</button>
-                  </div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="type" class="form-label">النوع</label>
-                  <input type="text" class="form-control" id="type" required />
-                  <div class="invalid-feedback">يرجى إدخال النوع.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="developmentCenter" class="form-label">مركز التنمية</label>
-                  <select class="form-select" id="developmentCenter" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>مركز 1</option>
-                    <option>مركز 2</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="organization" class="form-label">الجمعية / المؤسسة</label>
-                  <select class="form-select" id="organization" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>جمعية 1</option>
-                    <option>جمعية 2</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار جمعية أو مؤسسة.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="registrationNumber" class="form-label">رقم التسجيل</label>
-                  <input type="text" class="form-control" id="registrationNumber" required />
-                  <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
-                </div>
-            
-                <div class="col-md-5">
-                  <label for="organizationName" class="form-label">اسم الجمعية / المؤسسة</label>
-                  <input type="text" class="form-control" id="organizationName" required />
-                  <div class="invalid-feedback">يرجى إدخال اسم الجمعية أو المؤسسة.</div>
-                </div>
+            <div class="col-md-12">
+              <div class="form_Btn col-md-7">
+                <label for="evaluator" class="form-label">اختر المقيم</label>
+                <select class="form-select" id="evaluator" required>
+                  <option selected disabled value="">اختر...</option>
+                  <option>مقيم 1</option>
+                  <option>مقيم 2</option>
+                </select>
+                <div class="invalid-feedback">يرجى اختيار مقيم صحيح.</div>
               </div>
-            </form>
-            
+              <div class="col-md-4">
+                <button class="search_btn">عرض</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="type" class="form-label">النوع</label>
+              <input type="text" class="form-control" id="type" required />
+              <div class="invalid-feedback">يرجى إدخال النوع.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="developmentCenter" class="form-label">مركز التنمية</label>
+              <select class="form-select" id="developmentCenter" required>
+                <option selected disabled value="">اختر...</option>
+                <option>مركز 1</option>
+                <option>مركز 2</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="organization" class="form-label">الجمعية / المؤسسة</label>
+              <select class="form-select" id="organization" required>
+                <option selected disabled value="">اختر...</option>
+                <option>جمعية 1</option>
+                <option>جمعية 2</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار جمعية أو مؤسسة.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="registrationNumber" class="form-label">رقم التسجيل</label>
+              <input type="text" class="form-control" id="registrationNumber" required />
+              <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
+            </div>
+            <div class="col-md-5">
+              <label for="organizationName" class="form-label">اسم الجمعية / المؤسسة</label>
+              <input type="text" class="form-control" id="organizationName" required />
+              <div class="invalid-feedback">يرجى إدخال اسم الجمعية أو المؤسسة.</div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-      <div>
+      <div class="p-3">
         <button class="search_btn">بحث الجمعيات / المؤسسات</button>
       </div>
+      <section class="Tabel_container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr class="table-headers">
+                <th>اختر</th>
+                <th>رقم التسجيل</th>
+                <th>المنطقه</th>
+                <th>مركز التنميه</th>
+                <th>التصنيف</th>
+                <th>الجمعيه</th>
+                <th>الهاتف</th>
+                <th>موعد وقت الزياره</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>4021</td>
+                <td>المنطقه الشرقيه</td>
+                <td>مركز التنميه الاجتماعيه بالدمام</td>
+                <td>التنميه والاسكان</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td>966562585998</td>
+                <td>9/15/2024</td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>2161</td>
+                <td>منطقه الرياض</td>
+                <td>مركز التنميه الاجتماعيه بالرياض</td>
+                <td>الثقافه والترفيه</td>
+                <td>جمعيه سفراء التراث</td>
+                <td>0110000000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>2100</td>
+                <td>منطقه جازان</td>
+                <td>مركز التنميه الاجتماعيه بجازان</td>
+                <td>الروابط المهنيه</td>
+                <td>جمعيه جازان للكمياء الصناعيه</td>
+                <td>0561030606</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>649</td>
+                <td>منطقه مكه المكرمه</td>
+                <td>مركز التنميه الاجتماعيه بالقوز</td>
+                <td>الخدمات الاجتماعيه</td>
+                <td>جمعيه البر الخيريه بمركزسبت الجاره</td>
+                <td>017700000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>2104</td>
+                <td>المنطقه الشرقيه</td>
+                <td>مركز التنميه الاجتماعيه بالدمام</td>
+                <td>الثقافه والترفيه</td>
+                <td>اسم الجمعيه دروزاه السعاده</td>
+                <td>0</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>2139</td>
+                <td>منطقه القصيم</td>
+                <td>مركز التنميه الاجتماعيه بعنبره</td>
+                <td>التنميه والاسكان</td>
+                <td>جمعيه يقين لشؤن الموتي بمحاافظه عنبره</td>
+                <td>01636500000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>2139</td>
+                <td>المنطقه الشرقيه</td>
+                <td>مركز التنميه الاجتماعيه بالدمام</td>
+                <td>الصحه</td>
+                <td>جمعيه الرمدي</td>
+                <td>0138186777</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>4051</td>
+                <td>المنطقه عسير</td>
+                <td>مركز التنميه الاجتماعيه برجال المع</td>
+                <td>الخدمات الاجتماعيه</td>
+                <td>جمعيه التنميه الاجتماعيه بمركز بمربه</td>
+                <td>0172250768</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>4211</td>
+                <td>منطقه مكه المكرمه</td>
+                <td>مركز التنميه الاجتماعيه بالقوز</td>
+                <td>الخدمات الاجتماعيه</td>
+                <td>جمعيه التنميه الاهليه بالعوامر</td>
+                <td>966501880305</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                </td>
+                <td>787</td>
+                <td>منطقه الرياض</td>
+                <td>مركز التنميه الاجتماعيه بالرياض</td>
+                <td>التنميه والاسكان</td>
+                <td>جمعيه كيان للايتام</td>
+                <td>0112925559</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="pagination_container">
+        <nav aria-label="Page navigation example" class="pag_nav">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <div class="footer_container">
+          <div class="logo">
+            <img src="assets/images/home-header-logo.svg" alt="" />
+          </div>
+          <div class="copyright">جميع الحقوق محفوظه
+            <script>document.write(new Date().getFullYear())</script>
+          </div>
+          <div class="social">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <section class="Tabel_container">
-      <table>
-        <thead>
-          <tr class="table-headers">
-            <th>اختر</th>
-            <th>رقم التسجيل</th>
-            <th>المنطقه</th>
-            <th>مركز التنميه</th>
-            <th>التصنيف</th>
-            <th>الجمعيه</th>
-            <th>الهاتف</th>
-            <th>موعد وقت الزياره</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>4021</td>
-            <td>المنطقه الشرقيه</td>
-            <td>مركز التنميه الاجتماعيه بالدمام</td>
-            <td>التنميه والاسكان</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td>966562585998</td>
-            <td>9/15/2024</td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>2161</td>
-            <td>منطقه الرياض</td>
-            <td>مركز التنميه الاجتماعيه بالرياض</td>
-            <td>الثقافه والترفيه</td>
-            <td>جمعيه سفراء التراث</td>
-            <td>0110000000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>2100</td>
-            <td>منطقه جازان</td>
-            <td>مركز التنميه الاجتماعيه بجازان</td>
-            <td>الروابط المهنيه</td>
-            <td>جمعيه جازان للكمياء الصناعيه</td>
-            <td>0561030606</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>649</td>
-            <td>منطقه مكه المكرمه</td>
-            <td>مركز التنميه الاجتماعيه بالقوز</td>
-            <td>الخدمات الاجتماعيه</td>
-            <td>جمعيه البر الخيريه بمركزسبت الجاره</td>
-            <td>017700000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>2104</td>
-            <td>المنطقه الشرقيه</td>
-            <td>مركز التنميه الاجتماعيه بالدمام</td>
-            <td>الثقافه والترفيه</td>
-            <td>اسم الجمعيه دروزاه السعاده</td>
-            <td>0</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>2139</td>
-            <td>منطقه القصيم</td>
-            <td>مركز التنميه الاجتماعيه بعنبره</td>
-            <td>التنميه والاسكان</td>
-            <td>جمعيه يقين لشؤن الموتي بمحاافظه عنبره</td>
-            <td>01636500000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>2139</td>
-            <td>المنطقه الشرقيه</td>
-            <td>مركز التنميه الاجتماعيه بالدمام</td>
-            <td>الصحه</td>
-            <td>جمعيه الرمدي</td>
-            <td>0138186777</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>4051</td>
-            <td>المنطقه عسير</td>
-            <td>مركز التنميه الاجتماعيه برجال المع</td>
-            <td>الخدمات الاجتماعيه</td>
-            <td>جمعيه التنميه الاجتماعيه بمركز بمربه</td>
-            <td>0172250768</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>4211</td>
-            <td>منطقه مكه المكرمه</td>
-            <td>مركز التنميه الاجتماعيه بالقوز</td>
-            <td>الخدمات الاجتماعيه</td>
-            <td>جمعيه التنميه الاهليه بالعوامر</td>
-            <td>966501880305</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
-            </td>
-            <td>787</td>
-            <td>منطقه الرياض</td>
-            <td>مركز التنميه الاجتماعيه بالرياض</td>
-            <td>التنميه والاسكان</td>
-            <td>جمعيه كيان للايتام</td>
-            <td>0112925559</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="pagination_container">
-      <nav aria-label="Page navigation example" class="pag_nav">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </section>
-    <footer>
-      <div class="footer_container">
-        <div class="logo">
-          <img src="assets/images/home-header-logo.svg" alt="" />
-        </div>
-        <div class="copyright">جميع الحقوق محفوظه
-          <script>document.write(new Date().getFullYear())</script>
-        </div>
-        <div class="social">
-          <a href="#">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
   </div>
   <!-- tabeel-->
   <!-- 		End of Container -->
@@ -652,7 +652,6 @@
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.js"></script>
-
   <script> layout_rtl_change("true"); </script>
   <!-- charts -->
 </body>

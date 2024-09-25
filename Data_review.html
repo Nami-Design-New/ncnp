@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
   <link rel="stylesheet" href="assets/css/style-preset.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
-
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
@@ -380,232 +379,231 @@
                 <li class="breadcrumb-item">
                   <a href="index.html"> الرئيسية </a>
                 </li>
-                <li class="breadcrumb-item" aria-current="page">...</li>
+                <li class="breadcrumb-item" aria-current="page">
+                  استعراض بيانات الجمعيات
+                </li>
               </ul>
             </div>
-            <div class="col-md-12">
-              <div class="page-header-title_visits">
-                <i class="fa-sharp fa-regular fa-square-info"></i>
-                <h2>
-                  استعراض بيانات الجمعيات / المؤسسات / الصناديق العائليه
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="content_Vsits">
-            <form class="needs-validation" novalidate>
-              <div class="row g-3 forms_container">
-                <div class="col-md-3">
-                  <label for="regionTypeSelect" class="form-label">نوع المنطقة</label>
-                  <select class="form-select" id="regionTypeSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار نوع المنطقة.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="regionSelect" class="form-label">المنطقة</label>
-                  <select class="form-select" id="regionSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار المنطقة.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
-                  <select class="form-select" id="developmentCenterSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="associationInput" class="form-label">الجمعية المؤسسة</label>
-                  <input type="text" class="form-control" id="associationInput" required />
-                  <div class="invalid-feedback">يرجى إدخال اسم الجمعية المؤسسة.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
-                  <input type="text" class="form-control" id="registrationNumberInput" required />
-                  <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
-                </div>
-            
-                <div class="col-md-5">
-                  <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة / الصندوق</label>
-                  <input type="text" class="form-control" id="associationNameInput" required />
-                  <div class="invalid-feedback">يرجى إدخال الاسم الصحيح.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="formStatusSelect" class="form-label">حالة النموذج</label>
-                  <select class="form-select" id="formStatusSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار حالة النموذج.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="lastModifiedFrom" class="form-label">من (تاريخ آخر تعديل)</label>
-                  <input type="date" class="form-control" id="lastModifiedFrom" required />
-                  <div class="invalid-feedback">يرجى اختيار تاريخ البداية.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="lastModifiedTo" class="form-label">إلى (تاريخ آخر تعديل)</label>
-                  <input type="date" class="form-control" id="lastModifiedTo" required />
-                  <div class="invalid-feedback">يرجى اختيار تاريخ النهاية.</div>
-                </div>
-              </div>
-            
-              <div class="col-12">
-                <button class="search_btn" type="submit">بحث</button>
-              </div>
-            </form>
-            
+            <!-- <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h2 class="mb-0">لوحة التحكم</h2>
+                    </div>
+                  </div> -->
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center gap-2">
-        <button class="search_btn">بحث</button>
+      <!-- [ breadcrumb ] end -->
+      <div class="page-header-title_visits p-2">
+        <i class="fa-sharp fa-regular fa-square-info"></i>
+        <h2>
+          استعراض بيانات الجمعيات / المؤسسات / الصناديق العائليه
+        </h2>
+      </div>
+      <div class="content_Vsits">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3 forms_container">
+            <div class="col-md-3">
+              <label for="regionTypeSelect" class="form-label">نوع المنطقة</label>
+              <select class="form-select" id="regionTypeSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار نوع المنطقة.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="regionSelect" class="form-label">المنطقة</label>
+              <select class="form-select" id="regionSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار المنطقة.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
+              <select class="form-select" id="developmentCenterSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="associationInput" class="form-label">الجمعية المؤسسة</label>
+              <input type="text" class="form-control" id="associationInput" required />
+              <div class="invalid-feedback">يرجى إدخال اسم الجمعية المؤسسة.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
+              <input type="text" class="form-control" id="registrationNumberInput" required />
+              <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
+            </div>
+            <div class="col-md-5">
+              <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة / الصندوق</label>
+              <input type="text" class="form-control" id="associationNameInput" required />
+              <div class="invalid-feedback">يرجى إدخال الاسم الصحيح.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="formStatusSelect" class="form-label">حالة النموذج</label>
+              <select class="form-select" id="formStatusSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار حالة النموذج.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="lastModifiedFrom" class="form-label">من (تاريخ آخر تعديل)</label>
+              <input type="date" class="form-control" id="lastModifiedFrom" required />
+              <div class="invalid-feedback">يرجى اختيار تاريخ البداية.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="lastModifiedTo" class="form-label">إلى (تاريخ آخر تعديل)</label>
+              <input type="date" class="form-control" id="lastModifiedTo" required />
+              <div class="invalid-feedback">يرجى اختيار تاريخ النهاية.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="search_btn" type="submit">بحث</button>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex align-items-center gap-2 py-3">
         <button class="search_btn">تصدير الي اكسل</button>
         <button class="search_btn">تصدير الاستبيان</button>
         <button class="search_btn">تصدير البيانات الاساسيه</button>
       </div>
+      <section class="Tabel_container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr class="table-headers">
+                <th>مركز التنميه</th>
+                <th>رقم التسجيل</th>
+                <th>الجمعيه / المؤسسه</th>
+                <th>المنطقه</th>
+                <th>التصنيف</th>
+                <th>الهاتف</th>
+                <th>جوال الممثل</th>
+                <th>اخر تحديث</th>
+                <th>الحاله</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>مركز التنميه الاجتماعيه بالرياض</td>
+                <td>10163</td>
+                <td>تمكين للتدريب والاستشارات</td>
+                <td>منطقه الرياض</td>
+                <td>متعدده الاغراض</td>
+                <td>0508101835</td>
+                <td>966508101835</td>
+                <td>9/15/2024,<br />PM 7.05.52</td>
+                <td>جاري التعبئه</td>
+                <td>غير مسند</td>
+                <td class="tBtn">
+                  <button class="confirm">التفاصيل</button>
+                </td>
+              </tr>
+              <tr>
+                <td>مركز التنميه الاجتماعيه ببدر</td>
+                <td>176</td>
+                <td>
+                  الجمعيه التعاونيه متعدده الاغراض لموظفي التحليه بينبع البحر
+                </td>
+                <td>منطقه المدينه المنوره</td>
+                <td>متعدده الاغراض</td>
+                <td>01432211242</td>
+                <td>966504398151</td>
+                <td>8/26/2024,<br />PM 8.10.52</td>
+                <td>جاري التعبئه</td>
+                <td>تم التقييم</td>
+                <td class="tBtn">
+                  <button class="confirm">التفاصيل</button>
+                </td>
+              </tr>
+              <tr>
+                <td>مركز التنميه الاجتماعيه بالرياض</td>
+                <td>10191</td>
+                <td>الجمعيات التعاونيه لتطوير وتعليم الابحاث متعدهه التخصصات</td>
+                <td>منطقه الرياض</td>
+                <td>التعليم والابحاث</td>
+                <td>966549500009</td>
+                <td>966549500009</td>
+                <td>8/26/2024,<br />PM 5.30.25</td>
+                <td>جاري التعبئه</td>
+                <td>غير مسند</td>
+                <td class="tBtn">
+                  <button class="confirm">التفاصيل</button>
+                </td>
+              </tr>
+              <tr>
+                <td>مركز التنميه الاجتماعيه بالدوادمي</td>
+                <td>125</td>
+                <td>الجمعيه التعاونيه متعدده الاغراض بجهام</td>
+                <td>منطقه الرياض</td>
+                <td>متعدده الاغراض</td>
+                <td>0116333428</td>
+                <td>966500556050</td>
+                <td>8/26/2024,<br />PM 8.10.52</td>
+                <td>جاري التعبئه</td>
+                <td>تم التقييم</td>
+                <td class="tBtn">
+                  <button class="confirm">التفاصيل</button>
+                </td>
+              </tr>
+              <tr>
+                <td>مركز التنميه الاجتماعيه بجده</td>
+                <td>245</td>
+                <td>الجمعيه التعاونيه للاسكان بمنطقه مكه المكرمه</td>
+                <td>منطقه مكه المكرمه</td>
+                <td>الاسكان والتشييد وصيانه المرافق</td>
+                <td>2720713</td>
+                <td>966505624293</td>
+                <td>8/26/2024,<br />PM 1.54.15</td>
+                <td>جاري التعبئه</td>
+                <td>جاري التقييم التقييم</td>
+                <td class="tBtn">
+                  <button class="confirm">التفاصيل</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="pagination_container">
+        <nav aria-label="Page navigation example" class="pag_nav">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
     </div>
-    <section class="Tabel_container">
-      <table>
-        <thead>
-          <tr class="table-headers">
-            <th>مركز التنميه</th>
-            <th>رقم التسجيل</th>
-            <th>الجمعيه / المؤسسه</th>
-            <th>المنطقه</th>
-            <th>التصنيف</th>
-            <th>الهاتف</th>
-            <th>جوال الممثل</th>
-            <th>اخر تحديث</th>
-            <th>الحاله</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>مركز التنميه الاجتماعيه بالرياض</td>
-            <td>10163</td>
-            <td>تمكين للتدريب والاستشارات</td>
-            <td>منطقه الرياض</td>
-            <td>متعدده الاغراض</td>
-            <td>0508101835</td>
-            <td>966508101835</td>
-            <td>9/15/2024,<br />PM 7.05.52</td>
-            <td>جاري التعبئه</td>
-            <td>غير مسند</td>
-            <td class="tBtn">
-              <button class="confirm">التفاصيل</button>
-            </td>
-          </tr>
-          <tr>
-            <td>مركز التنميه الاجتماعيه ببدر</td>
-            <td>176</td>
-            <td>
-              الجمعيه التعاونيه متعدده الاغراض لموظفي التحليه بينبع البحر
-            </td>
-            <td>منطقه المدينه المنوره</td>
-            <td>متعدده الاغراض</td>
-            <td>01432211242</td>
-            <td>966504398151</td>
-            <td>8/26/2024,<br />PM 8.10.52</td>
-            <td>جاري التعبئه</td>
-            <td>تم التقييم</td>
-            <td class="tBtn">
-              <button class="confirm">التفاصيل</button>
-            </td>
-          </tr>
-          <tr>
-            <td>مركز التنميه الاجتماعيه بالرياض</td>
-            <td>10191</td>
-            <td>الجمعيات التعاونيه لتطوير وتعليم الابحاث متعدهه التخصصات</td>
-            <td>منطقه الرياض</td>
-            <td>التعليم والابحاث</td>
-            <td>966549500009</td>
-            <td>966549500009</td>
-            <td>8/26/2024,<br />PM 5.30.25</td>
-            <td>جاري التعبئه</td>
-            <td>غير مسند</td>
-            <td class="tBtn">
-              <button class="confirm">التفاصيل</button>
-            </td>
-          </tr>
-          <tr>
-            <td>مركز التنميه الاجتماعيه بالدوادمي</td>
-            <td>125</td>
-            <td>الجمعيه التعاونيه متعدده الاغراض بجهام</td>
-            <td>منطقه الرياض</td>
-            <td>متعدده الاغراض</td>
-            <td>0116333428</td>
-            <td>966500556050</td>
-            <td>8/26/2024,<br />PM 8.10.52</td>
-            <td>جاري التعبئه</td>
-            <td>تم التقييم</td>
-            <td class="tBtn">
-              <button class="confirm">التفاصيل</button>
-            </td>
-          </tr>
-          <tr>
-            <td>مركز التنميه الاجتماعيه بجده</td>
-            <td>245</td>
-            <td>الجمعيه التعاونيه للاسكان بمنطقه مكه المكرمه</td>
-            <td>منطقه مكه المكرمه</td>
-            <td>الاسكان والتشييد وصيانه المرافق</td>
-            <td>2720713</td>
-            <td>966505624293</td>
-            <td>8/26/2024,<br />PM 1.54.15</td>
-            <td>جاري التعبئه</td>
-            <td>جاري التقييم التقييم</td>
-            <td class="tBtn">
-              <button class="confirm">التفاصيل</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="pagination_container">
-      <nav aria-label="Page navigation example" class="pag_nav">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </section>
     <footer>
       <div class="footer_container">
         <div class="logo">
           <img src="assets/images/home-header-logo.svg" alt="" />
         </div>
-        <div class="copyright">جميع الحقوق محفوظه <script>document.write(new Date().getFullYear())</script> </div>
+        <div class="copyright">جميع الحقوق محفوظه
+          <script>document.write(new Date().getFullYear())</script>
+        </div>
         <div class="social">
           <a href="#">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -619,7 +617,6 @@
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.js"></script>
-
   <script> layout_rtl_change("true"); </script>
 </body>
 <!-- [Body] end -->

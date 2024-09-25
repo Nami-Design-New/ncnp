@@ -18,7 +18,7 @@ function floatchart() {
         dataLabels: {
           enabled: false
         },
-        colors: ['#1de9b6'],
+        colors: ['#11c598'],
         stroke: {
           curve: 'straight',
           lineCap: 'round',
@@ -68,7 +68,7 @@ function floatchart() {
           dataLabels: {
             enabled: false
           },
-          colors: ['#1de9b6'],
+          colors: ['#11c598'],
           stroke: {
             curve: 'straight',
             lineCap: 'round',

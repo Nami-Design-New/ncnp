@@ -258,7 +258,6 @@ form {
   font-size: 12px;
   color: #17ba92;
   border-radius: 7px;
-  margin: 10px;
 }
 .send_btn {
   background-color: rgb(215, 158, 13);
@@ -270,10 +269,10 @@ form {
 }
 // tabel
 
-.Tabel_container {
-  padding: 25px;
-  overflow-y: hidden;
-}
+// .Tabel_container {
+//   padding: 25px;
+//   overflow-y: hidden;
+// }
 
 table {
   border-collapse: collapse;
@@ -285,6 +284,7 @@ table {
     border-top: 1px solid #ecf0f1;
     padding: 10px;
     font-size: 14px;
+    min-width: 120px;
   }
   .Empty_td {
     padding: 14px;
@@ -333,6 +333,7 @@ table {
   align-items: center;
   gap: 4px;
   flex-wrap: wrap;
+  padding: 16px 0;
   .refuse {
     background-color: #fff;
     color: red;
@@ -540,9 +541,28 @@ footer {
     .social {
       display: flex;
       align-items: center;
-      gap: 11px;
-      i {
-        font-size: 25px;
+      gap: 4px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff3f;
+        border-radius: 50%;
+        transition: .3s ease-in-out;
+
+        i {
+          font-size: 16px;
+          color: #fff;
+          transition: .3s ease-in-out;
+        }
+        &:hover {
+          background-color: #fff;
+          i {
+            color: var(--bs-primary);
+          }
+        }
       }
     }
   }
@@ -571,8 +591,7 @@ table {
 
 //Basic Data Steps
 .Basic_Data_steps {
-  margin-top: 10px;
-  padding: 14px;
+
   .card {
     background: #fff;
     border-radius: 10px;
@@ -684,4 +703,9 @@ table {
       background-color: var(--bs-primary);
     }
   }
+}
+
+
+.row{
+  margin: 0;
 }

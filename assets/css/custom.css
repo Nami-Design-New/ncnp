@@ -390,7 +390,6 @@ form {
   font-size: 12px;
   color: #17ba92;
   border-radius: 7px;
-  margin: 10px;
 }
 
 .send_btn {
@@ -400,11 +399,6 @@ form {
   padding: 8px 15px;
   border-radius: 8px;
   float: left;
-}
-
-.Tabel_container {
-  padding: 25px;
-  overflow-y: hidden;
 }
 
 table {
@@ -417,6 +411,7 @@ table th {
   border-top: 1px solid #ecf0f1;
   padding: 10px;
   font-size: 14px;
+  min-width: 120px;
 }
 table .Empty_td {
   padding: 14px;
@@ -459,6 +454,7 @@ table .total td {
   align-items: center;
   gap: 4px;
   flex-wrap: wrap;
+  padding: 16px 0;
 }
 .tBtn .refuse {
   background-color: #fff;
@@ -571,10 +567,28 @@ footer .footer_container .copyright {
 footer .footer_container .social {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 4px;
 }
-footer .footer_container .social i {
-  font-size: 25px;
+footer .footer_container .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2470588235);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+footer .footer_container .social a i {
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+footer .footer_container .social a:hover {
+  background-color: #fff;
+}
+footer .footer_container .social a:hover i {
+  color: var(--bs-primary);
 }
 
 .header-wrapper {
@@ -598,10 +612,6 @@ table {
   border-bottom: 1px solid #ecf0f1;
 }
 
-.Basic_Data_steps {
-  margin-top: 10px;
-  padding: 14px;
-}
 .Basic_Data_steps .card {
   background: #fff;
   border-radius: 10px;
@@ -703,4 +713,8 @@ table {
 }
 .form-wizard .nav-justified .nav-link.active {
   background-color: var(--bs-primary);
+}
+
+.row {
+  margin: 0;
 }/*# sourceMappingURL=custom.css.map */

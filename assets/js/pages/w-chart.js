@@ -140,7 +140,7 @@ function floatchart() {
       dataLabels: {
         enabled: false
       },
-      colors: ['#1DE9B6', '#0398F2'],
+      colors: ['#11c598', '#0398F2'],
       stroke: {
         show: true,
         width: 1,
@@ -342,7 +342,7 @@ function floatchart() {
     // overview bar chart
     var options_overview_bar = {
       chart: { type: 'bar', height: 150, sparkline: { enabled: true } },
-      colors: ['#F44236', '#00A988', '#673ab7', '#1DE9B6', '#F4C22B', '#3EBFEA'],
+      colors: ['#F44236', '#00A988', '#673ab7', '#11c598', '#F4C22B', '#3EBFEA'],
       plotOptions: { bar: { borderRadius: 2, columnWidth: '80%', distributed: true} },
       series: [
         {
@@ -373,7 +373,7 @@ function floatchart() {
         type: 'donut'
       },
       series: [27, 23, 20, 17],
-      colors: ['#00A988', '#F4C22B', '#1DE9B6', '#00A988'],
+      colors: ['#00A988', '#F4C22B', '#11c598', '#00A988'],
       labels: ['Total income', 'Total rent', 'Download', 'Views'],
       fill: {
         opacity: [1, 1, 1, 0.3]
@@ -435,7 +435,7 @@ function floatchart() {
     // project rating chart
     var options_project_rating = {
       chart: { type: 'bar', height: 50, sparkline: { enabled: true } },
-      colors: ['#1DE9B6'],
+      colors: ['#11c598'],
       plotOptions: { bar: { borderRadius: 2, columnWidth: '80%' } },
       series: [
         {
@@ -520,7 +520,7 @@ function floatchart() {
         stacked: true,
         sparkline: { enabled: true }
       },
-      colors: ['#1DE9B6'],
+      colors: ['#11c598'],
       fill: {
         type: 'gradient',
         gradient: {
@@ -621,7 +621,7 @@ function floatchart() {
             position: 'front'
           },
           track: {
-            background: '#1DE9B650',
+            background: '#11c59850',
             strokeWidth: '50%'
           },
 
@@ -635,7 +635,7 @@ function floatchart() {
                 return parseInt(val);
               },
               offsetY: 7,
-              color: '#1DE9B6',
+              color: '#11c598',
               fontSize: '20px',
               fontWeight: '700',
               show: true
@@ -643,7 +643,7 @@ function floatchart() {
           }
         }
       },
-      colors: ['#1DE9B6'],
+      colors: ['#11c598'],
       fill: {
         type: 'solid'
       },
@@ -662,7 +662,7 @@ function floatchart() {
         stacked: true,
         sparkline: { enabled: true }
       },
-      colors: ['#1DE9B6'],
+      colors: ['#11c598'],
       stroke: { curve: 'smooth', width: 2 },
       series: [{ data: [5, 25, 3, 10, 4, 50, 0] }],
       tooltip: {
@@ -755,7 +755,7 @@ function floatchart() {
         stacked: true,
         sparkline: { enabled: true }
       },
-      colors: ['#1DE9B6'],
+      colors: ['#11c598'],
       stroke: { curve: 'smooth', width: 2 },
       series: [{ data: [5, 25, 3, 10, 4, 50, 0] }],
       tooltip: {
@@ -823,7 +823,7 @@ function floatchart() {
           show: false
         }
       },
-      colors: ['#1DE9B6','#A389D4','#0398F2'],
+      colors: ['#11c598','#A389D4','#0398F2'],
       fill: {
         type: 'gradient',
         gradient: {

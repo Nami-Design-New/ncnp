@@ -379,299 +379,298 @@
                 <li class="breadcrumb-item">
                   <a href="index.html"> الرئيسية </a>
                 </li>
-                <li class="breadcrumb-item" aria-current="page">....</li>
+                <li class="breadcrumb-item" aria-current="page">
+                  متابعه اسناد الجمعيات
+                </li>
               </ul>
             </div>
-            <div class="col-md-12">
-              <div class="page-header-title_visits">
-                <i class="fa-sharp fa-regular fa-square-info"></i>
-                <h2>متابعه اسناد الجمعيات والمؤسسات والصناديق للمقيمين</h2>
+            <!-- <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h2 class="mb-0">لوحة التحكم</h2>
+                    </div>
+                  </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- [ breadcrumb ] end -->
+      <div class="page-header-title_visits">
+        <i class="fa-sharp fa-regular fa-square-info"></i>
+        <h2>متابعه اسناد الجمعيات والمؤسسات والصناديق للمقيمين</h2>
+      </div>
+      <div class="content_Vsits">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3 forms_container">
+            <!-- Radio Button Group -->
+            <div class="check_group">
+              <label class="type">الرجاء تحديد نوع الاسناد</label>
+              <div class="check_group_inputs">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="assignType" id="evaluationAssociations" required />
+                  <label class="form-check-label" for="evaluationAssociations">
+                    متابعة التقييم للمقيمين الجمعيات
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="assignType" id="evaluationFinancial" required />
+                  <label class="form-check-label" for="evaluationFinancial">
+                    متابعة التقييم للمقيمين الماليين
+                  </label>
+                </div>
               </div>
+              <div class="invalid-feedback">يرجى تحديد نوع الإسناد.</div>
+            </div>
+            <!-- Dropdown Fields -->
+            <div class="col-md-4">
+              <label for="evaluatorSelect" class="form-label">اختر المقيم</label>
+              <select class="form-select" id="evaluatorSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار المقيم.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="evaluationTypeSelect" class="form-label">النوع</label>
+              <select class="form-select" id="evaluationTypeSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار النوع.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
+              <select class="form-select" id="developmentCenterSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
+            </div>
+            <!-- Input Fields -->
+            <div class="col-md-3">
+              <label for="statusInput" class="form-label">الحالة</label>
+              <input type="text" class="form-control" id="statusInput" required />
+              <div class="invalid-feedback">يرجى إدخال الحالة.</div>
+            </div>
+            <div class="col-md-5">
+              <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة</label>
+              <input type="text" class="form-control" id="associationNameInput" required />
+              <div class="invalid-feedback">يرجى إدخال اسم الجمعية / المؤسسة.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
+              <input type="text" class="form-control" id="registrationNumberInput" required />
+              <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
+            </div>
+            <!-- Submit Button -->
+            <div class="col-12">
+              <button class="search_btn" type="submit">بحث</button>
             </div>
           </div>
-          <div class="content_Vsits">
-            <form class="needs-validation" novalidate>
-              <div class="row g-3 forms_container">
-            
-                <!-- Radio Button Group -->
-                <div class="check_group">
-                  <label class="type">الرجاء تحديد نوع الاسناد</label>
-                  <div class="check_group_inputs">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="assignType" id="evaluationAssociations" required />
-                      <label class="form-check-label" for="evaluationAssociations">
-                        متابعة التقييم للمقيمين الجمعيات
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="assignType" id="evaluationFinancial" required />
-                      <label class="form-check-label" for="evaluationFinancial">
-                        متابعة التقييم للمقيمين الماليين
-                      </label>
-                    </div>
+        </form>
+      </div>
+      <div class="tBtn">
+        <button class="search_btn">1تصدير المعيار</button>
+        <button class="search_btn">تصدير المعيار2</button>
+        <button class="search_btn">تصدير المعيار3</button>
+        <button class="search_btn">تصدير الاستبيان</button>
+        <button class="search_btn">تحميل مرفقات الزياره</button>
+      </div>
+      <section class="Tabel_container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr class="">
+                <th>المقيم</th>
+                <th>رقم التسجيل</th>
+                <th>الجمعيه المؤسسه</th>
+                <th>موعد ووقت الزياره</th>
+                <th>اخر تحديث</th>
+                <th>الحاله</th>
+                <th>1درجه المعيار</th>
+                <th>2درجه المعيار</th>
+                <th>3درجه المعيار</th>
+                <th>المعيار المالي</th>
+                <th>الاجراء</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>عبدالله سالم السري</td>
+                <td>901</td>
+                <td>مؤسسه وثبه التجريبي(2)</td>
+                <td>5/7/2024-2.23:06 PM</td>
+                <td class="time_visit">(2.20) 7/5/2024</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="row" colspan="5">
+                  <div class="tBtn">
+                    <button class="search_btn f-12 nowrap">
+                      الغاء الاسناد
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      استعراض النتيجه
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      فتح التقييم
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      تعديل التقييم
+                    </button>
                   </div>
-                  <div class="invalid-feedback">يرجى تحديد نوع الإسناد.</div>
-                </div>
-            
-                <!-- Dropdown Fields -->
-                <div class="col-md-4">
-                  <label for="evaluatorSelect" class="form-label">اختر المقيم</label>
-                  <select class="form-select" id="evaluatorSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار المقيم.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="evaluationTypeSelect" class="form-label">النوع</label>
-                  <select class="form-select" id="evaluationTypeSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار النوع.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
-                  <select class="form-select" id="developmentCenterSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار مركز التنمية.</div>
-                </div>
-            
-                <!-- Input Fields -->
-                <div class="col-md-3">
-                  <label for="statusInput" class="form-label">الحالة</label>
-                  <input type="text" class="form-control" id="statusInput" required />
-                  <div class="invalid-feedback">يرجى إدخال الحالة.</div>
-                </div>
-            
-                <div class="col-md-5">
-                  <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة</label>
-                  <input type="text" class="form-control" id="associationNameInput" required />
-                  <div class="invalid-feedback">يرجى إدخال اسم الجمعية / المؤسسة.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
-                  <input type="text" class="form-control" id="registrationNumberInput" required />
-                  <div class="invalid-feedback">يرجى إدخال رقم التسجيل.</div>
-                </div>
-            
-                <!-- Submit Button -->
-                <div class="col-12">
-                  <button class="search_btn" type="submit">بحث</button>
-                </div>
-              </div>
-            </form>
-            
-          </div>
+                </td>
+              </tr>
+              <tr>
+                <td>عبدالله سالم السري</td>
+                <td>901</td>
+                <td>جمعيه السري التعاونيه</td>
+                <td>5/7/2024-2.23:06 PM</td>
+                <td class="time_visit">(2.15) 7/5/2024</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="row" colspan="5">
+                  <div class="tBtn">
+                    <button class="search_btn f-12 nowrap">
+                      الغاء الاسناد
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      استعراض النتيجه
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      فتح التقييم
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      تعديل التقييم
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>عبدالله سالم السري</td>
+                <td>901</td>
+                <td>جمعيه السري التعاونيه</td>
+                <td>5/7/2024-2.23:06 PM</td>
+                <td class="time_visit">(2.15) 7/5/2024</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="row" colspan="5">
+                  <div class="tBtn">
+                    <button class="search_btn f-12 nowrap">
+                      الغاء الاسناد
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      استعراض النتيجه
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      فتح التقييم
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      تعديل التقييم
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>عبدالله سالم السري</td>
+                <td>901</td>
+                <td>جمعيه السري التعاونيه</td>
+                <td>5/7/2024-2.23:06 PM</td>
+                <td class="time_visit">(2.15) 7/5/2024</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="row" colspan="5">
+                  <div class="tBtn">
+                    <button class="search_btn f-12 nowrap">
+                      الغاء الاسناد
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      استعراض النتيجه
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      فتح التقييم
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      تعديل التقييم
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>عبدالله سالم السري</td>
+                <td>901</td>
+                <td>جمعيه السري التعاونيه</td>
+                <td>5/7/2024-2.23:06 PM</td>
+                <td class="time_visit">(2.15) 7/5/2024</td>
+                <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="row" colspan="5">
+                  <div class="tBtn">
+                    <button class="search_btn f-12 nowrap">
+                      الغاء الاسناد
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      استعراض النتيجه
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      فتح التقييم
+                    </button>
+                    <button class="search_btn f-12 nowrap">
+                      تعديل التقييم
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <div>
-        <div class="tBtn">
-          <button class="search_btn">1تصدير المعيار</button>
-          <button class="search_btn">تصدير المعيار2</button>
-          <button class="search_btn">تصدير المعيار3</button>
-          <button class="search_btn">تصدير الاستبيان</button>
-          <button class="search_btn">تحميل مرفقات الزياره</button>
-        </div>
-      </div>
+      </section>
+      <section class="pagination_container">
+        <nav aria-label="Page navigation example" class="pag_nav">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
     </div>
-    <section class="Tabel_container">
-      <table>
-        <thead>
-          <tr class="">
-            <th>المقيم</th>
-            <th>رقم التسجيل</th>
-            <th>الجمعيه المؤسسه</th>
-            <th>موعد ووقت الزياره</th>
-            <th>اخر تحديث</th>
-            <th>الحاله</th>
-            <th>1درجه المعيار</th>
-            <th>2درجه المعيار</th>
-            <th>3درجه المعيار</th>
-            <th>المعيار المالي</th>
-            <th>الاجراء</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>عبدالله سالم السري</td>
-            <td>901</td>
-            <td>مؤسسه وثبه التجريبي(2)</td>
-            <td>5/7/2024-2.23:06 PM</td>
-            <td class="time_visit">(2.20) 7/5/2024</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td scope="row" colspan="5">
-              <div class="tBtn">
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  الغاء الاسناد
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  استعراض النتيجه
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  فتح التقييم
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  تعديل التقييم
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>عبدالله سالم السري</td>
-            <td>901</td>
-            <td>جمعيه السري التعاونيه</td>
-            <td>5/7/2024-2.23:06 PM</td>
-            <td class="time_visit">(2.15) 7/5/2024</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td scope="row" colspan="5">
-              <div class="tBtn">
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  الغاء الاسناد
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  استعراض النتيجه
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  فتح التقييم
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  تعديل التقييم
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>عبدالله سالم السري</td>
-            <td>901</td>
-            <td>جمعيه السري التعاونيه</td>
-            <td>5/7/2024-2.23:06 PM</td>
-            <td class="time_visit">(2.15) 7/5/2024</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td scope="row" colspan="5">
-              <div class="tBtn">
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  الغاء الاسناد
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  استعراض النتيجه
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  فتح التقييم
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  تعديل التقييم
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>عبدالله سالم السري</td>
-            <td>901</td>
-            <td>جمعيه السري التعاونيه</td>
-            <td>5/7/2024-2.23:06 PM</td>
-            <td class="time_visit">(2.15) 7/5/2024</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td scope="row" colspan="5">
-              <div class="tBtn">
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  الغاء الاسناد
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  استعراض النتيجه
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  فتح التقييم
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  تعديل التقييم
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>عبدالله سالم السري</td>
-            <td>901</td>
-            <td>جمعيه السري التعاونيه</td>
-            <td>5/7/2024-2.23:06 PM</td>
-            <td class="time_visit">(2.15) 7/5/2024</td>
-            <td>جمعيه التنميه الاهليه بالجبيل الصناعيه</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td scope="row" colspan="5">
-              <div class="tBtn">
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  الغاء الاسناد
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  استعراض النتيجه
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  فتح التقييم
-                </button>
-                <button class="search_btn" style="font-size: 9px; white-space: nowrap">
-                  تعديل التقييم
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="pagination_container">
-      <nav aria-label="Page navigation example" class="pag_nav">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </section>
     <footer>
       <div class="footer_container">
         <div class="logo">
           <img src="assets/images/home-header-logo.svg" alt="" />
         </div>
-        <div class="copyright">جميع الحقوق محفوظه <script>document.write(new Date().getFullYear())</script> </div>
+        <div class="copyright">جميع الحقوق محفوظه
+          <script>document.write(new Date().getFullYear())</script>
+        </div>
         <div class="social">
           <a href="#">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>

@@ -17,13 +17,11 @@
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
   <link rel="stylesheet" href="assets/css/style-preset.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
-
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
 
 <body data-pc-direction="rtl">
-
   <!-- [ Sidebar Menu ] start -->
   <nav class="pc-sidebar">
     <div class="navbar-wrapper">
@@ -381,262 +379,264 @@
                 <li class="breadcrumb-item">
                   <a href="index.html"> الرئيسية </a>
                 </li>
-                <li class="breadcrumb-item" aria-current="page">...</li>
+                <li class="breadcrumb-item" aria-current="page">
+                  الغاء زياره
+                </li>
               </ul>
             </div>
-            <div class="col-md-12">
-              <div class="page-header-title_visits">
-                <i class="fa-sharp fa-regular fa-square-info"></i>
-                <h2>الغاء زياره تغيير الحوكمه للمنظمات غير الربحي</h2>
-              </div>
-            </div>
-          </div>
-          <div class="content_Vsits">
-            <form class="needs-validation" novalidate>
-              <div class="row g-3 forms_container">
-                
-                <!-- Dropdown for Type -->
-                <div class="col-md-4">
-                  <label for="typeSelect" class="form-label">النوع</label>
-                  <select class="form-select" id="typeSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    يرجى اختيار نوع صالح.
-                  </div>
-                </div>
-                
-                <!-- Dropdown for Development Center -->
-                <div class="col-md-4">
-                  <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
-                  <select class="form-select" id="developmentCenterSelect" required>
-                    <option selected disabled value="">اختر ...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    يرجى اختيار مركز تنمية صالح.
-                  </div>
-                </div>
-                
-                <!-- Dropdown for Status -->
-                <div class="col-md-4">
-                  <label for="statusSelect" class="form-label">الحالة</label>
-                  <select class="form-select" id="statusSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    يرجى اختيار حالة صالحة.
-                  </div>
-                </div>
-                
-                <!-- Registration Number Input -->
-                <div class="col-md-3">
-                  <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
-                  <input type="text" class="form-control" id="registrationNumberInput" required />
-                  <div class="invalid-feedback">
-                    يرجى إدخال رقم تسجيل صالح.
-                  </div>
-                </div>
-                
-                <!-- Association Name Input -->
-                <div class="col-md-5">
-                  <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة</label>
-                  <input type="text" class="form-control" id="associationNameInput" required />
-                  <div class="invalid-feedback">
-                    يرجى إدخال اسم صالح للجمعية أو المؤسسة.
-                  </div>
-                </div>
-            
-              </div>
-            
-              <!-- Submit Button -->
-              <div class="col-12">
-                <button class="search_btn" type="submit">بحث</button>
-              </div>
-            </form>
-            
+            <!-- <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h2 class="mb-0">لوحة التحكم</h2>
+                    </div>
+                  </div> -->
           </div>
         </div>
       </div>
+      <!-- [ breadcrumb ] end -->
+      <div class="page-header-title_visits p-2">
+        <i class="fa-sharp fa-regular fa-square-info"></i>
+        <h2>الغاء زياره تغيير الحوكمه للمنظمات غير الربحي</h2>
+      </div>
+      <div class="content_Vsits">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3 forms_container">
+            <!-- Dropdown for Type -->
+            <div class="col-md-4">
+              <label for="typeSelect" class="form-label">النوع</label>
+              <select class="form-select" id="typeSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                يرجى اختيار نوع صالح.
+              </div>
+            </div>
+            <!-- Dropdown for Development Center -->
+            <div class="col-md-4">
+              <label for="developmentCenterSelect" class="form-label">مركز التنمية</label>
+              <select class="form-select" id="developmentCenterSelect" required>
+                <option selected disabled value="">اختر ...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                يرجى اختيار مركز تنمية صالح.
+              </div>
+            </div>
+            <!-- Dropdown for Status -->
+            <div class="col-md-4">
+              <label for="statusSelect" class="form-label">الحالة</label>
+              <select class="form-select" id="statusSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                يرجى اختيار حالة صالحة.
+              </div>
+            </div>
+            <!-- Registration Number Input -->
+            <div class="col-md-3">
+              <label for="registrationNumberInput" class="form-label">رقم التسجيل</label>
+              <input type="text" class="form-control" id="registrationNumberInput" required />
+              <div class="invalid-feedback">
+                يرجى إدخال رقم تسجيل صالح.
+              </div>
+            </div>
+            <!-- Association Name Input -->
+            <div class="col-md-5">
+              <label for="associationNameInput" class="form-label">اسم الجمعية / المؤسسة</label>
+              <input type="text" class="form-control" id="associationNameInput" required />
+              <div class="invalid-feedback">
+                يرجى إدخال اسم صالح للجمعية أو المؤسسة.
+              </div>
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <div class="col-12 p-2">
+            <button class="search_btn" type="submit">بحث</button>
+          </div>
+        </form>
+      </div>
+      <section class="Tabel_container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>سبب الغاء الزياره</th>
+                <th>المقيم</th>
+                <th>رقم التسجيل</th>
+                <th>الجمعيه / المؤسسه</th>
+                <th>موعد و وقت الزياره</th>
+                <th>المرفق</th>
+                <th>طلب بواسطه</th>
+                <th>موعد الجدول</th>
+                <th>الحاله</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>اعتذار الجمعيه عن الموعدالمحدد للزياره</td>
+                <td>عبدالله القرني</td>
+                <td>10111</td>
+                <td>
+                  الجمعيه التعاونيه للثروه الحيوانيه وتسويق منتجاتها بالصبيحه
+                </td>
+                <td class="time_visit">(5.30) 01/5/2023</td>
+                <td class="show_file">عرض الملف</td>
+                <td>عبدالله القرني</td>
+                <td class="time_visit">(5.30) 01/5/2023</td>
+                <td>بانتظار الاعتماد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">
+                  بناء علي معلومات الاتصال الموجوده في اريب فان الرقم الخاطئ وتم
+                  ارسال رساله واتس له ولم يرد ثم تم الاتصال اكثر من مره ولم يرد
+                  ... ورد علي صاحب الرقم الموجود امس وقال لا علاقه لي بالجمعيه ولا
+                  اعرفها .. كما ان جميع البيانات الموجوده في : استعراض نموذج
+                  الافصاح البيانات هنا لا تحمل اي معلومات يمكن الاتصال او التواصل
+                  وحاولت التواصل مع مركز التنميه بمحافظه بيشه لاعطائي اي رقم تواصل
+                  مع الجمعيه وافادوني بالتالي : ماعندي لهم رقم تواصل مايتبعون لنا
+                </td>
+              </tr>
+              <tr>
+                <td>عدم استقبال المقبم اثناء زياره مقيم المنظمه</td>
+                <td>بندر عزان</td>
+                <td>53771</td>
+                <td>جمعيه رؤي متعدده الاغراض</td>
+                <td class="time_visit">(1.00) 16/01/2023</td>
+                <td class="show_file">عرض الملف</td>
+                <td>بندر عزان</td>
+                <td class="time_visit"></td>
+                <td>معتمد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">سبسيب</td>
+              </tr>
+              <tr>
+                <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
+                <td>بندر عزان</td>
+                <td>1000001</td>
+                <td>جمعيه مجد العربيه</td>
+                <td class="time_visit">(1.00) 29/08/2022</td>
+                <td class="show_file">عرض الملف</td>
+                <td>بندر عزان</td>
+                <td class="time_visit"></td>
+                <td>معتمد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">سبسيب</td>
+              </tr>
+              <tr>
+                <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
+                <td>بندر عزان</td>
+                <td>1000001</td>
+                <td>جمعيه مجد العربيه</td>
+                <td class="time_visit">(1.00) 29/08/2022</td>
+                <td class="show_file">عرض الملف</td>
+                <td>بندر عزان</td>
+                <td class="time_visit"></td>
+                <td>معتمد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">
+                  عدم استقبال المقيم
+                </td>
+              </tr>
+              <tr>
+                <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
+                <td>هشام محمد الغامدي</td>
+                <td>10084</td>
+                <td>الجمعيه التعاونيه الزراعيه وتنميه الارياف</td>
+                <td class="time_visit">(1.00) 5/04/2023</td>
+                <td class="show_file">عرض الملف</td>
+                <td>هشام محمد الغامدي</td>
+                <td class="time_visit">(10.00) 12/04/2023</td>
+                <td>معتمد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">
+                  الجمعيه بعيده ولا يمكن الوصول لها خلال الفتره الحاليه واقترح
+                  تحويلها لمقيم اخر قرب
+                </td>
+              </tr>
+              <tr>
+                <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
+                <td>هشام محمد الغامدي</td>
+                <td>10084</td>
+                <td>الجمعيه التعاونيه الزراعيه وتنميه الارياف</td>
+                <td class="time_visit">(1.00) 5/04/2023</td>
+                <td class="show_file">عرض الملف</td>
+                <td>هشام محمد الغامدي</td>
+                <td class="time_visit">(10.00) 12/04/2023</td>
+                <td>معتمد</td>
+                <td class="tBtn">
+                  <button class="confirm">اعتماد</button>
+                  <button class="refuse">رفض</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="Empty_td" scope="row" colspan="10">
+                  تصفيه الجمعيه + ظرف طبي (عمليه جراحيه ) للررئيس المجلس
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="pagination_container">
+        <nav aria-label="Page navigation example" class="pag_nav">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
     </div>
-    <section class="Tabel_container">
-      <table>
-        <thead>
-          <tr>
-            <th>سبب الغاء الزياره</th>
-            <th>المقيم</th>
-            <th>رقم التسجيل</th>
-            <th>الجمعيه / المؤسسه</th>
-            <th>موعد و وقت الزياره</th>
-            <th>المرفق</th>
-            <th>طلب بواسطه</th>
-            <th>موعد الجدول</th>
-            <th>الحاله</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>اعتذار الجمعيه عن الموعدالمحدد للزياره</td>
-            <td>عبدالله القرني</td>
-            <td>10111</td>
-            <td>
-              الجمعيه التعاونيه للثروه الحيوانيه وتسويق منتجاتها بالصبيحه
-            </td>
-            <td class="time_visit">(5.30) 01/5/2023</td>
-            <td class="show_file">عرض الملف</td>
-            <td>عبدالله القرني</td>
-            <td class="time_visit">(5.30) 01/5/2023</td>
-            <td>بانتظار الاعتماد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">
-              بناء علي معلومات الاتصال الموجوده في اريب فان الرقم الخاطئ وتم
-              ارسال رساله واتس له ولم يرد ثم تم الاتصال اكثر من مره ولم يرد
-              ... ورد علي صاحب الرقم الموجود امس وقال لا علاقه لي بالجمعيه ولا
-              اعرفها .. كما ان جميع البيانات الموجوده في : استعراض نموذج
-              الافصاح البيانات هنا لا تحمل اي معلومات يمكن الاتصال او التواصل
-              وحاولت التواصل مع مركز التنميه بمحافظه بيشه لاعطائي اي رقم تواصل
-              مع الجمعيه وافادوني بالتالي : ماعندي لهم رقم تواصل مايتبعون لنا
-            </td>
-          </tr>
-          <tr>
-            <td>عدم استقبال المقبم اثناء زياره مقيم المنظمه</td>
-            <td>بندر عزان</td>
-            <td>53771</td>
-            <td>جمعيه رؤي متعدده الاغراض</td>
-            <td class="time_visit">(1.00) 16/01/2023</td>
-            <td class="show_file">عرض الملف</td>
-            <td>بندر عزان</td>
-            <td class="time_visit"></td>
-            <td>معتمد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">سبسيب</td>
-          </tr>
-          <tr>
-            <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
-            <td>بندر عزان</td>
-            <td>1000001</td>
-            <td>جمعيه مجد العربيه</td>
-            <td class="time_visit">(1.00) 29/08/2022</td>
-            <td class="show_file">عرض الملف</td>
-            <td>بندر عزان</td>
-            <td class="time_visit"></td>
-            <td>معتمد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">سبسيب</td>
-          </tr>
-          <tr>
-            <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
-            <td>بندر عزان</td>
-            <td>1000001</td>
-            <td>جمعيه مجد العربيه</td>
-            <td class="time_visit">(1.00) 29/08/2022</td>
-            <td class="show_file">عرض الملف</td>
-            <td>بندر عزان</td>
-            <td class="time_visit"></td>
-            <td>معتمد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">
-              عدم استقبال المقيم
-            </td>
-          </tr>
-          <tr>
-            <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
-            <td>هشام محمد الغامدي</td>
-            <td>10084</td>
-            <td>الجمعيه التعاونيه الزراعيه وتنميه الارياف</td>
-            <td class="time_visit">(1.00) 5/04/2023</td>
-            <td class="show_file">عرض الملف</td>
-            <td>هشام محمد الغامدي</td>
-            <td class="time_visit">(10.00) 12/04/2023</td>
-            <td>معتمد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">
-              الجمعيه بعيده ولا يمكن الوصول لها خلال الفتره الحاليه واقترح
-              تحويلها لمقيم اخر قرب
-            </td>
-          </tr>
-          <tr>
-            <td>اعتذار الجمعيه عن الموعد المحدد للزياره</td>
-            <td>هشام محمد الغامدي</td>
-            <td>10084</td>
-            <td>الجمعيه التعاونيه الزراعيه وتنميه الارياف</td>
-            <td class="time_visit">(1.00) 5/04/2023</td>
-            <td class="show_file">عرض الملف</td>
-            <td>هشام محمد الغامدي</td>
-            <td class="time_visit">(10.00) 12/04/2023</td>
-            <td>معتمد</td>
-            <td class="tBtn">
-              <button class="confirm">اعتماد</button>
-              <button class="refuse">رفض</button>
-            </td>
-          </tr>
-          <tr>
-            <td class="Empty_td" scope="row" colspan="10">
-              تصفيه الجمعيه + ظرف طبي (عمليه جراحيه ) للررئيس المجلس
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="pagination_container">
-      <nav aria-label="Page navigation example" class="pag_nav">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </section>
     <footer>
       <div class="footer_container">
         <div class="logo">
           <img src="assets/images/home-header-logo.svg" alt="" />
         </div>
-        <div class="copyright">جميع الحقوق محفوظه <script>document.write(new Date().getFullYear())</script> </div>
+        <div class="copyright">جميع الحقوق محفوظه
+          <script>document.write(new Date().getFullYear())</script>
+        </div>
         <div class="social">
           <a href="#">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -648,7 +648,6 @@
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.js"></script>
-
   <script> layout_rtl_change("true"); </script>
 </body>
 <!-- end -->

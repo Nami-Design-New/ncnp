@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
   <link rel="stylesheet" href="assets/css/style-preset.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
-
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
@@ -385,202 +384,200 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-12">
-              <div class="page-header-title_visits">
-                <i class="fa-sharp fa-regular fa-square-info"></i>
-                <h2>الاجراءات التصحيحيه</h2>
-              </div>
-              <p class="warn">
-                تنويه :تراجع الاجراءات الصحيحه خلال 30 يوم عمل من ارسال
-                الاجراءات من قبل المنظمه
-              </p>
-            </div>
-          </div>
-          <div class="content_Vsits">
-            <form class="needs-validation" novalidate>
-              <div class="row g-3 forms_container">
-                <div class="col-md-4">
-                  <label for="standardSelect" class="form-label">المعيار</label>
-                  <select class="form-select" id="standardSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار معيار صحيح.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="indicatorSelect" class="form-label">المؤشر</label>
-                  <select class="form-select" id="indicatorSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار مؤشر صحيح.</div>
-                </div>
-            
-                <div class="col-md-4">
-                  <label for="practiceSelect" class="form-label">الممارسة</label>
-                  <select class="form-select" id="practiceSelect" required>
-                    <option selected disabled value="">اختر...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">يرجى اختيار ممارسة صحيحة.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="statusInput" class="form-label">الحالة</label>
-                  <input type="text" class="form-control" id="statusInput" required />
-                  <div class="invalid-feedback">يرجى إدخال حالة صحيحة.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="typeInput" class="form-label">النوع</label>
-                  <input type="text" class="form-control" id="typeInput" required />
-                  <div class="invalid-feedback">يرجى إدخال النوع الصحيح.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="correctionFromDate" class="form-label">تاريخ التصحيح - من</label>
-                  <input type="date" class="form-control" id="correctionFromDate" required />
-                  <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح من.</div>
-                </div>
-            
-                <div class="col-md-3">
-                  <label for="correctionToDate" class="form-label">تاريخ التصحيح - إلى</label>
-                  <input type="date" class="form-control" id="correctionToDate" required />
-                  <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح إلى.</div>
-                </div>
-              </div>
-            
-              <div class="col-12">
-                <button class="search_btn" type="submit">بحث</button>
-              </div>
-            </form>
-            
+            <!-- <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h2 class="mb-0">لوحة التحكم</h2>
+                    </div>
+                  </div> -->
           </div>
         </div>
       </div>
-      <div>
-        <div class="Title">عد الاجراءات التصحيحه(21)</div>
+      <!-- [ breadcrumb ] end -->
+      <div class="page-header-title_visits p-2">
+        <i class="fa-sharp fa-regular fa-square-info"></i>
+        <h2>الاجراءات التصحيحيه</h2>
       </div>
+      <p class="warn">
+        تنويه :تراجع الاجراءات الصحيحه خلال 30 يوم عمل من ارسال
+        الاجراءات من قبل المنظمه
+      </p>
+      <div class="content_Vsits">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3 forms_container">
+            <div class="col-md-4">
+              <label for="standardSelect" class="form-label">المعيار</label>
+              <select class="form-select" id="standardSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار معيار صحيح.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="indicatorSelect" class="form-label">المؤشر</label>
+              <select class="form-select" id="indicatorSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار مؤشر صحيح.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="practiceSelect" class="form-label">الممارسة</label>
+              <select class="form-select" id="practiceSelect" required>
+                <option selected disabled value="">اختر...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">يرجى اختيار ممارسة صحيحة.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="statusInput" class="form-label">الحالة</label>
+              <input type="text" class="form-control" id="statusInput" required />
+              <div class="invalid-feedback">يرجى إدخال حالة صحيحة.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="typeInput" class="form-label">النوع</label>
+              <input type="text" class="form-control" id="typeInput" required />
+              <div class="invalid-feedback">يرجى إدخال النوع الصحيح.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="correctionFromDate" class="form-label">تاريخ التصحيح - من</label>
+              <input type="date" class="form-control" id="correctionFromDate" required />
+              <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح من.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="correctionToDate" class="form-label">تاريخ التصحيح - إلى</label>
+              <input type="date" class="form-control" id="correctionToDate" required />
+              <div class="invalid-feedback">يرجى اختيار تاريخ التصحيح إلى.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="search_btn" type="submit">بحث</button>
+          </div>
+        </form>
+      </div>
+      <div class="Title my-3">عد الاجراءات التصحيحه(21)</div>
+      <section class="Tabel_container">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th scope="row" colspan="4" style="text-align: start">
+                  الاجراءالتصحيحي
+                </th>
+                <th>النوع</th>
+                <th>الحاله</th>
+                <th>يتطلب التصحيح</th>
+                <th>تاريخ التصحيح</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" colspan="4">
+                  <div class="td_egra">
+                    <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                    <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                  </div>
+                </td>
+                <td>مخالفه</td>
+                <td>جديد</td>
+                <td>لا</td>
+                <td></td>
+                <td>
+                  <button class="search_btn" style="background-color: #17ba92; color: #fff">
+                    اجراء
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" colspan="4">
+                  <div class="td_egra">
+                    <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                    <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                  </div>
+                </td>
+                <td>مخالفه</td>
+                <td>جديد</td>
+                <td>لا</td>
+                <td></td>
+                <td>
+                  <button class="search_btn" style="background-color: #17ba92; color: #fff">
+                    اجراء
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" colspan="4">
+                  <div class="td_egra">
+                    <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                    <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                  </div>
+                </td>
+                <td>مخالفه</td>
+                <td>جديد</td>
+                <td>لا</td>
+                <td></td>
+                <td>
+                  <button class="search_btn" style="background-color: #17ba92; color: #fff">
+                    اجراء
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" colspan="4">
+                  <div class="td_egra">
+                    <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
+                    <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
+                  </div>
+                </td>
+                <td>مخالفه</td>
+                <td>جديد</td>
+                <td>لا</td>
+                <td></td>
+                <td>
+                  <button class="search_btn" style="background-color: #17ba92; color: #fff">
+                    اجراء
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="send_btn mt-4">ارسال الاجراءات التصحيحيه للاعتماد</button>
+      </section>
+      <section class="pagination_container">
+        <nav aria-label="Page navigation example" class="pag_nav">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
     </div>
-    <section class="Tabel_container">
-      <table>
-        <thead>
-          <tr>
-            <th scope="row" colspan="4" style="text-align: start">
-              الاجراءالتصحيحي
-            </th>
-            <th>النوع</th>
-            <th>الحاله</th>
-            <th>يتطلب التصحيح</th>
-            <th>تاريخ التصحيح</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row" colspan="4">
-              <div class="td_egra">
-                <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
-                <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
-              </div>
-            </td>
-            <td>مخالفه</td>
-            <td>جديد</td>
-            <td>لا</td>
-            <td></td>
-            <td>
-              <button class="search_btn" style="background-color: #17ba92; color: #fff">
-                اجراء
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row" colspan="4">
-              <div class="td_egra">
-                <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
-                <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
-              </div>
-            </td>
-            <td>مخالفه</td>
-            <td>جديد</td>
-            <td>لا</td>
-            <td></td>
-            <td>
-              <button class="search_btn" style="background-color: #17ba92; color: #fff">
-                اجراء
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row" colspan="4">
-              <div class="td_egra">
-                <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
-                <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
-              </div>
-            </td>
-            <td>مخالفه</td>
-            <td>جديد</td>
-            <td>لا</td>
-            <td></td>
-            <td>
-              <button class="search_btn" style="background-color: #17ba92; color: #fff">
-                اجراء
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row" colspan="4">
-              <div class="td_egra">
-                <p><span>الممارسه</span> اختصاصات الجمعيه العموميه</p>
-                <p><span>الاجراء</span> اختصاصات الجمعيه العموميه</p>
-              </div>
-            </td>
-            <td>مخالفه</td>
-            <td>جديد</td>
-            <td>لا</td>
-            <td></td>
-            <td>
-              <button class="search_btn" style="background-color: #17ba92; color: #fff">
-                اجراء
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <button class="send_btn mt-4">ارسال الاجراءات التصحيحيه للاعتماد</button>
-    </section>
-    <section class="pagination_container">
-      <nav aria-label="Page navigation example" class="pag_nav">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-    </section>
     <footer>
       <div class="footer_container">
         <div class="logo">
           <img src="assets/images/home-header-logo.svg" alt="" />
         </div>
-        <div class="copyright">جميع الحقوق محفوظه <script>document.write(new Date().getFullYear())</script> </div>
+        <div class="copyright">جميع الحقوق محفوظه
+          <script>document.write(new Date().getFullYear())</script>
+        </div>
         <div class="social">
           <a href="#">
-            <i class="fa-brands fa-square-facebook" style="color: #fff"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-whatsapp" style="color: #fff"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-square-twitter" style="color: #fff"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-linkedin" style="color: #fff"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -594,7 +591,6 @@
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.js"></script>
-
   <script> layout_rtl_change("true"); </script>
   <!-- charts -->
 </body>

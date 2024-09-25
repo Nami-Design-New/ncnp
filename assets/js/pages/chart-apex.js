@@ -169,7 +169,7 @@ setTimeout(function () {
         curve: 'straight',
         dashArray: [0, 8, 5]
       },
-      colors: ['#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#11c598', '#F4C22B', '#F44236'],
       series: [
         {
           name: 'Session Duration',
@@ -692,7 +692,7 @@ setTimeout(function () {
       dataLabels: {
         enabled: false
       },
-      colors: ['#1DE9B6', '#00A988', '#3EBFEA'],
+      colors: ['#11c598', '#00A988', '#3EBFEA'],
       stroke: {
         show: true,
         width: 2,
@@ -742,7 +742,7 @@ setTimeout(function () {
           enabled: true
         }
       },
-      colors: ['#00A988', '#1DE9B6', '#F4C22B', '#3EBFEA'],
+      colors: ['#00A988', '#11c598', '#F4C22B', '#3EBFEA'],
       responsive: [
         {
           breakpoint: 480,
@@ -806,7 +806,7 @@ setTimeout(function () {
           }
         }
       },
-      colors: ['#00A988', '#1DE9B6'],
+      colors: ['#00A988', '#11c598'],
       dataLabels: {
         enabled: true,
         offsetX: -6,
@@ -848,7 +848,7 @@ setTimeout(function () {
           horizontal: true
         }
       },
-      colors: ['#00A988', '#3EBFEA', '#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#3EBFEA', '#11c598', '#F4C22B', '#F44236'],
       stroke: {
         width: 1,
         colors: ['#fff']
@@ -1295,7 +1295,7 @@ setTimeout(function () {
           ]
         }
       ],
-      colors: ['#1DE9B6', '#F44236'],
+      colors: ['#11c598', '#F44236'],
       fill:{
         type: "solid"
       },
@@ -1364,7 +1364,7 @@ setTimeout(function () {
           })
         }
       ],
-      colors: ['#00A988', '#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#11c598', '#F4C22B', '#F44236'],
       fill: {
         opacity: 0.8
       },
@@ -1434,7 +1434,7 @@ setTimeout(function () {
       fill: {
         type: 'gradient'
       },
-      colors: ['#00A988', '#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#11c598', '#F4C22B', '#F44236'],
       xaxis: {
         tickAmount: 12,
         type: 'datetime',
@@ -1463,7 +1463,7 @@ setTimeout(function () {
           type: 'xy'
         }
       },
-      colors: ['#00A988', '#1DE9B6', '#F44236', '#F4C22B', '#3EBFEA'],
+      colors: ['#00A988', '#11c598', '#F44236', '#F4C22B', '#3EBFEA'],
       series: [
         {
           name: 'SAMPLE A',
@@ -1638,7 +1638,7 @@ setTimeout(function () {
       dataLabels: {
         enabled: false
       },
-      colors: ['#00A988', '#1DE9B6', '#F44236', '#F4C22B', '#3EBFEA'],
+      colors: ['#00A988', '#11c598', '#F44236', '#F4C22B', '#3EBFEA'],
       grid: {
         xaxis: {
           showLines: true
@@ -1882,7 +1882,7 @@ setTimeout(function () {
           })
         }
       ],
-      colors: ['#00A988', '#3EBFEA', '#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#3EBFEA', '#11c598', '#F4C22B', '#F44236'],
       xaxis: {
         type: 'category'
       },
@@ -1898,7 +1898,7 @@ setTimeout(function () {
       },
       labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
       series: [44, 55, 13, 43, 22],
-      colors: ['#00A988', '#1DE9B6', '#3EBFEA', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#11c598', '#3EBFEA', '#F4C22B', '#F44236'],
       legend: {
         show: true,
         position: 'bottom'
@@ -1930,7 +1930,7 @@ setTimeout(function () {
         type: 'donut'
       },
       series: [44, 55, 41, 17, 15],
-      colors: ['#00A988', '#1DE9B6', '#3EBFEA', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#11c598', '#3EBFEA', '#F4C22B', '#F44236'],
       legend: {
         show: true,
         position: 'bottom'
@@ -2017,7 +2017,7 @@ setTimeout(function () {
           }
         }
       },
-      colors: ['#00A988', '#1DE9B6', '#F4C22B', '#F44236'],
+      colors: ['#00A988', '#11c598', '#F4C22B', '#F44236'],
       series: [76, 67, 61, 90],
       labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
       legend: {
@@ -2136,7 +2136,7 @@ setTimeout(function () {
           data: [44, 76, 78, 13, 43, 10]
         }
       ],
-      colors: ['#00A988', '#1DE9B6', '#F44236'],
+      colors: ['#00A988', '#11c598', '#F44236'],
       stroke: {
         width: 0
       },
