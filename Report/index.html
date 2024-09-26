@@ -1,0 +1,1309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @font-face {
+            font-family: 'fNormal';
+            src: url('alfont_com_NeoSansArabic.woff2') format('woff2');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'fBold';
+            src: url('alfont_com_NeoSansW23-Bold.woff2') format('woff2');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            font: 12pt 'fNormal';
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .coverPage {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0mm auto;
+            background: white;
+            background-image: url('cover.png');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .coverPage__title {
+            font: 33pt 'fNormal';
+            color: #fff;
+            text-align: center;
+        }
+
+            .coverPage__title span {
+                color: #c2f1c8;
+            }
+
+        .lastPage {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0mm auto;
+            background: white;
+            background-image: url('lastPage.png');
+            background-size: cover;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0mm auto;
+            background: rgb(219, 219, 219);
+            background-image: url('page.png');
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: top;
+        }
+
+        .subpage {
+            direction: rtl;
+            padding: 45px;
+        }
+
+            .subpage.padding-top {
+                padding-top: 150px;
+            }
+
+        .title {
+            font: 20pt 'fBold';
+            color: #43b7a0;
+        }
+
+            .title img {
+                vertical-align: middle;
+            }
+
+            .title span {
+                margin-right: 24px;
+            }
+
+        .title2 {
+            font: 20pt 'fBold';
+            color: #115465;
+            position: relative;
+            z-index: 10;
+        }
+
+        .table-title {
+            font: 12pt 'fNormal';
+            background-color: #1aa99e;
+            box-shadow: #000000 0px 0px 10px;
+            border-radius: 4px;
+            text-align: center;
+            color: #fff;
+            padding: 4px;
+            margin: 8px 0px 4px 40px;
+        }
+
+            .table-title.table-title-dark {
+                background-color: #115465;
+            }
+
+            .table-title.table-title-blue {
+                background-color: #3e7fc0;
+            }
+
+        .line {
+            position: absolute;
+            width: 300px;
+            height: 6px;
+            background-color: #34baa1;
+            right: 0;
+            bottom: 5px;
+            z-index: -1;
+            margin-right: 2px;
+        }
+
+        .subpage p {
+            text-align: justify;
+            color: #235f7a;
+            font-size: 14pt;
+            margin-right: 56px;
+            line-height: 1.5;
+        }
+
+        .summary-table {
+            font-size: 14pt;
+            color: #fff;
+            border-collapse: collapse;
+        }
+
+            .summary-table tr td:first-child {
+                background-color: #115465;
+            }
+
+            .summary-table tr td {
+                padding: 10px;
+                background-color: #d9d9d9;
+            }
+
+            .summary-table tr {
+                border-bottom: 1px solid #fff;
+            }
+
+            .summary-table .split {
+                border-bottom: 4px solid #fff;
+            }
+
+        h3 {
+            color: #178485;
+        }
+
+        .qrcode {
+            text-align: center;
+        }
+
+            .qrcode img {
+                width: 150px;
+            }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                /* width: 210mm;
+          min-height: 295mm; */
+                /* width: initial; */
+                /* min-height: initial; */
+                /* width: 210mm; */
+                /* min-height: 298.8mm; */
+                box-shadow: initial;
+                background: url('page.png') no-repeat;
+                background-size: cover;
+                page-break-after: always;
+            }
+        }
+
+        .divResultChart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0 20px;
+            width: 300px;
+        }
+
+            .divResultChart.main {
+                flex-direction: column;
+            }
+
+        .theResult {
+            margin: 5px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .resultClass {
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 5px;
+            margin-bottom: 15px;
+            color: #1aa99e;
+        }
+
+        .resultSubClass {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            position: relative;
+            z-index: 0;
+            text-align: right;
+        }
+
+            .resultSubClass .line {
+                width: calc(100%);
+            }
+
+        canvas {
+            display: block;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .resultPie {
+            color: #34baa1;
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+            padding-top: 48px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: 144px;
+            margin-right: -74px;
+        }
+
+        .resultPieGeneral {
+            color: #135262;
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+            padding-top: 45px;
+            font-size: 2.8rem;
+            font-weight: 600;
+            width: 150px;
+            margin-right: -75px;
+            margin-top: 40px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .tg {
+            border-spacing: 20px 10px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+            .tg td {
+                border-color: transparent;
+                border-style: solid;
+                /* border-width: 1px; */
+                font-family: 'fNormal';
+                font-size: 14px;
+                overflow: hidden;
+                padding: 2px 5px;
+                word-break: normal;
+            }
+
+            .tg th,
+            .tg td {
+                border-radius: 10px;
+            }
+
+            .tg th {
+                border-color: transparent;
+                border-style: solid;
+                /* border-width: 1px; */
+                font-family: 'fNormal';
+                font-size: 14px;
+                font-weight: normal;
+                overflow: hidden;
+                padding: 1px;
+                word-break: normal;
+            }
+
+            .tg .tg-fpnj {
+                background-color: #158284;
+                border-color: transparent;
+                color: #ffffff;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .tg .tg-lwgv {
+                background-color: #f2f2f2;
+                border-color: transparent;
+                color: #2b5c68;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .tg .tg-mjc2 {
+                background-color: #158284;
+                color: #ffffff;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .tg .tg-cauo,
+            .tg td:first-child {
+                box-shadow: #000000 0px 0px 4px;
+                background-color: #158284;
+            }
+
+            .tg .tg-cauo {
+                border-color: transparent;
+                color: #ffffff;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .tg .tg-rpzk {
+                background-color: #158284;
+                color: #ffffff;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .tg .tg-mz4g {
+                color: #2b5c68;
+                text-align: center;
+                vertical-align: middle;
+                background-color: #f2f2f2;
+            }
+
+            .tg .tg-641c {
+                background-color: #f2f2f2;
+                border-color: transparent;
+                color: #2b5c68;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+        .table-plain {
+            border-collapse: collapse;
+            font-family: 'fNormal';
+            font-size: 10pt;
+        }
+
+            .table-plain th,
+            .table-plain td {
+                border: 1pt solid #808080;
+                text-align: center;
+                padding: 7px;
+            }
+
+            .table-plain tbody th:nth-child(4n + 2),
+            .table-plain tbody td:nth-child(4n + 2) {
+                text-align: right;
+            }
+
+            .table-plain tbody th:nth-child(4n + 1),
+            .table-plain tbody td:nth-child(4n + 1) {
+                font-family: 'fBold';
+            }
+
+            .table-plain th {
+                background-color: #1aa99e;
+                color: #fff;
+                font-weight: 400;
+            }
+
+            .table-plain tfoot td {
+                background-color: #1aa99e;
+                color: #fff;
+                font-family: 'fNormal';
+            }
+
+            .table-plain.table-plain-dark th,
+            .table-plain.table-plain-dark tfoot td {
+                background-color: #115465;
+            }
+
+            .table-plain.table-plain-dark th,
+            .table-plain.table-plain-dark td {
+                padding: 14px;
+            }
+
+            .table-plain.table-plain-blue th,
+            .table-plain.table-plain-blue tfoot td {
+                background-color: #3e7fc0;
+            }
+    </style>
+    <title>Document</title>
+
+    <style></style>
+</head>
+<body>
+    <div class="book">
+        <div class="coverPage">
+            <p class="coverPage__title">
+                تقرير تقييم ذاتي منظمة غير ربحية
+                <br />
+                <br />
+                <span> ....... جمعية </span>
+            </p>
+        </div>
+
+        <div class="page">
+            <div class="subpage">
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div class="title"><img src="titleBullet.png" /><span>إخلاء مسؤولية</span></div>
+                <br /><br /><br />
+                <p>
+                    يؤكد المركز الوطني لتنمية القطاع غير الربحي أن هذا التقرير هو تقرير للتقييم الذاتي بين
+                    المركز والجمعيات الأهلية ولا يحق نشره ولا يمثل التقييم الكامل لمدة التزام الجمعية
+                    بالحوكمة، بل يعكس تقييم ذاتي لمعيار الالتزام والامتثال، ومعيار الشفافية والإفصاح، ومعيار
+                    السلامة المالية لدي الجمعية، وفق حدود مجالات المعايير والشواهد المقدمة أثناء التقييم
+                    الذاتي.
+                </p>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="subpage padding-top">
+                <div class="title2">
+                    تفاصيل بيانات المنظمة
+                    <div class="line"></div>
+                </div>
+                <br />
+                <br />
+                <table class="summary-table">
+                    <tr class="split">
+                        <td><span>اسم المنظمة: </span></td>
+                        <td>demo text</td>
+                    </tr>
+                    <tr>
+                        <td><span>رقم التسجيل: </span></td>
+                        <td>demo text</td>
+                    </tr>
+                    <tr>
+                        <td><span>العنوان: </span></td>
+                        <td width="66%">demo text</td>
+                    </tr>
+                    <tr>
+                        <td><span>المنطقة: </span></td>
+                        <td>demo text</td>
+                    </tr>
+                    <tr>
+                        <td><span>تاريخ التقييم الذاتي: </span></td>
+                        <td>demo text</td>
+                    </tr>
+                    <tr>
+                        <td><span>سنة التقييم: </span></td>
+                        <td>demo text</td>
+                    </tr>
+                </table>
+                <br />
+                <div class="title2">
+                    نتائج التقييم
+                    <div class="line"></div>
+                </div>
+                <table border="0">
+                    <tr>
+                        <td rowspan="3">
+                            <div class="theResult">
+                                <div class="divResultChart main">
+                                    <div class="resultClass">النتيجة العامة</div>
+                                    <div class="chart" id="graph" data-percent="20.52"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="theResult">
+                                <div class="divResultChart">
+                                    <div class="resultSubClass">
+                                        معيار الالتزام والامتثال
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="chart2" id="graph2" data-percent2="50.52"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="theResult">
+                                <div class="divResultChart">
+                                    <div class="resultSubClass">
+                                        معيار الشفافية والإفصاح
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="chart3" id="graph3" data-percent3="10.52"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="theResult">
+                                <div class="divResultChart">
+                                    <div class="resultSubClass">
+                                        معيار السلامة المالية
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="chart4" id="graph4" data-percent4="90.52"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="subpage">
+                <div class="title2" style="margin-top: 4rem">
+                    نتائج المؤشرات
+                    <div class="line"></div>
+                </div>
+                <h3 class="table-title">مؤشرات معيار الالتزام والامتثال</h3>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo" width="40%">المؤشرات</th>
+                            <th class="tg-cauo" width="20%">درجة المؤشر</th>
+                            <th class="tg-cauo" width="20%">الدرجة المحققة</th>
+                            <th class="tg-cauo" width="20%">النسبة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">اللائحة الأساسية</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الجمعية العمومية</td>
+                            <td class="tg-lwgv">19.50</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">مجلس الإدارة</td>
+                            <td class="tg-lwgv">33.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الفروع والمكاتب</td>
+                            <td class="tg-lwgv">3.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">التقارير</td>
+                            <td class="tg-lwgv">8.50</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الأنظمة السارية في المملكة</td>
+                            <td class="tg-lwgv">14.50</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الأنشطة والفعاليات</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الإيرادات والمصروفات والتملك</td>
+                            <td class="tg-lwgv">5.50</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">الوثائق والسجلات</td>
+                            <td class="tg-lwgv">1.50</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-mjc2">تكوين اللجان</td>
+                            <td class="tg-mz4g">3.50</td>
+                            <td class="tg-mz4g"></td>
+                            <td class="tg-mz4g"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="table-title table-title-dark">مؤشرات معيار الشفافية والإفصاح</h3>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo">المؤشرات</th>
+                            <th class="tg-cauo">درجة المؤشر</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                            <th class="tg-cauo">النسبة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">اللوائح والأنظمة</td>
+                            <td class="tg-lwgv">25.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">بيانات القائمين على الجمعية</td>
+                            <td class="tg-lwgv">19.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">بيانات الجمعية</td>
+                            <td class="tg-lwgv">10.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">أهداف وبرامج الجمعية</td>
+                            <td class="tg-lwgv">22.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">القوائم المالية</td>
+                            <td class="tg-lwgv">13.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">نموذج الإفصاح</td>
+                            <td class="tg-lwgv">11.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="table-title table-title-blue">مؤشرات السلامة المالية</h3>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo">المؤشرات</th>
+                            <th class="tg-cauo">درجة المؤشر</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                            <th class="tg-cauo">النسبة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">الأداء المالي</td>
+                            <td class="tg-lwgv">50.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">التنظيم المالي</td>
+                            <td class="tg-lwgv">50.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="subpage">
+                <br /><br /><br /><br />
+                <div class="title2" style="margin-bottom: 0">
+                    نتائج الممارسات
+                    <div class="line"></div>
+                </div>
+                <h3 class="table-title" style="margin-left: 0">ممارسات معيار الالتزام والامتثال</h3>
+                <table class="table-plain">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>الممارسة</th>
+                            <th>الدرجة</th>
+                            <th>الدرجة المحققة</th>
+                            <th>#</th>
+                            <th>الممارسة</th>
+                            <th>الدرجة</th>
+                            <th>الدرجة المحققة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>وجود واعتماد اللائحة الأساسية</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>16</td>
+                            <td>إنشاء الفروع داخل المملكة</td>
+                            <td>3.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>محتويات اللائحة الأساسية</td>
+                            <td>1.00</td>
+                            <td></td>
+                            <td>17</td>
+                            <td>التقارير المالية</td>
+                            <td>3.50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>التعديل على اللائحة الأساسية</td>
+                            <td>2.00</td>
+                            <td></td>
+                            <td>18</td>
+                            <td>التقارير السنوية</td>
+                            <td>3.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>التغير في حالة الأعضاء</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>19</td>
+                            <td>وضع التدابير لتحديد مخاطر جرائم الإرهاب وتمويله والتقييم والتوثيق</td>
+                            <td>1.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>اشتراكات الجمعية العمومية وسجل الأعضاء</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>20</td>
+                            <td>التقييد بالإجراءات النظامية لوسيلة التعاملات النقدية</td>
+                            <td>3.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>اجتماعات الجمعية العمومية العادية</td>
+                            <td>15.00</td>
+                            <td></td>
+                            <td>21</td>
+                            <td>إجراءات الاشتباه في جريمة غسل الأموال</td>
+                            <td>2.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>اجتماعات الجمعية العمومية غير العادية</td>
+                            <td>5.00</td>
+                            <td></td>
+                            <td>22</td>
+                            <td>البرامج التوعوية الداخلية الوقائية من جرائم الإرهاب وتمويله</td>
+                            <td>2.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>اختصاصات مجلس الإدارة</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>23</td>
+                            <td>الترخيص وممارسة الأنشطة</td>
+                            <td>4.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>لوائح وسياسات حوكمة الجمعيات</td>
+                            <td>7.75</td>
+                            <td></td>
+                            <td>24</td>
+                            <td>الأنشطة والفعالية الدولية</td>
+                            <td>0.50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>المسؤوليات والصلاحيات المالية</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>25</td>
+                            <td>جمع التبرعات وصرف الاموال</td>
+                            <td>5.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>انتظام اجتماعات مجلس الإدارة</td>
+                            <td>3.00</td>
+                            <td></td>
+                            <td>26</td>
+                            <td>استقبال الإعانات من خارج المملكة</td>
+                            <td>0.50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>سياسات أعضاء مجلس الإدارة</td>
+                            <td>4.00</td>
+                            <td></td>
+                            <td>27</td>
+                            <td>موافقة الجمعية العمومية على التملك</td>
+                            <td>2.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>التوعية والتعريف لأعضاء مجلس الإدارة</td>
+                            <td>2.00</td>
+                            <td></td>
+                            <td>28</td>
+                            <td>حفظ الوثائق والسجلات</td>
+                            <td>0.50</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>تعيين المدير التنفيذي والمحاسب والمشرف المالي</td>
+                            <td>6.50</td>
+                            <td></td>
+                            <td>29</td>
+                            <td>التدوين في سجلات الجمعية العمومية ومجلس الإدارة</td>
+                            <td>1.25</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">15</td>
+                            <td rowspan="2">التوعية والتعريف لأعضاء مجلس الإدارة</td>
+                            <td rowspan="2">2.50</td>
+                            <td rowspan="2"></td>
+                            <td>30</td>
+                            <td>إصدار بطاقات عضوية الجمعية العمومية.</td>
+                            <td>1.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>تكوين اللجان</td>
+                            <td>4.00</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">المجموع<br /></td>
+                            <td>100%</td>
+                            <td>00%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="subpage">
+                <br /><br /><br /><br />
+                <div class="title2" style="margin-bottom: 0">
+                    نتائج الممارسات
+                    <div class="line"></div>
+                </div>
+                <h3 class="table-title table-title-dark" style="margin-left: 0">
+                    ممارسات معيار الشفافية والإفصاح
+                </h3>
+                <table class="table-plain table-plain-dark">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo">#</th>
+                            <th class="tg-cauo">الممارسة</th>
+                            <th class="tg-cauo">الدرجة</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">1</td>
+                            <td class="tg-fpnj">وجود الموقع الإلكتروني</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">2</td>
+                            <td class="tg-fpnj">نشر اللائحة الأساسية</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">3</td>
+                            <td class="tg-fpnj">نشر اللوائح والسياسات المعتمدة</td>
+                            <td class="tg-lwgv">14.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">4</td>
+                            <td class="tg-fpnj">نشر بيانات أعضاء الجمعية العمومية واجتماعاتها</td>
+                            <td class="tg-lwgv">4.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">5</td>
+                            <td class="tg-fpnj">
+                                الإفصاح عن بيانات أعضاء مجلس الإدارة وتعارض المصالح لهم واللجان الدائمة
+                            </td>
+                            <td class="tg-lwgv">7.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">6</td>
+                            <td class="tg-fpnj">الإفصاح عن بيانات الإدارة التنفيذية والفروع</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">7</td>
+                            <td class="tg-fpnj">التعامل مع الشكاوى والاستفسارات</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">8</td>
+                            <td class="tg-fpnj">عمليات قياس الرضا لأصحاب العلاقة</td>
+                            <td class="tg-lwgv">8.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-rpzk">9</td>
+                            <td class="tg-mjc2">نشر الأهداف الاستراتيجية والتشغيلية</td>
+                            <td class="tg-mz4g">7.00</td>
+                            <td class="tg-mz4g"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">10</td>
+                            <td class="tg-fpnj">نشر تقارير الأنشطة والبرامج</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">11</td>
+                            <td class="tg-fpnj">نشر مبالغ المساعدات النقدية والعينية وأعداد المستفيدين</td>
+                            <td class="tg-lwgv">7.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">12</td>
+                            <td class="tg-fpnj">تبليغ المستفيدين عن السياسات واللوائح عند نشرها أو تحديثها</td>
+                            <td class="tg-lwgv">2.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">13</td>
+                            <td class="tg-fpnj">نشر التقرير المالي السنوي المعتمد</td>
+                            <td class="tg-lwgv">13.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">14</td>
+                            <td class="tg-fpnj">توفير بيانات النموذج الشامل وتطابقه مع واقع الجمعية</td>
+                            <td class="tg-lwgv">11.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="tg-641c" colspan="2">المجموع</td>
+                            <td class="tg-641c">100%</td>
+                            <td class="tg-641c" colspan="2">00.00%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="subpage">
+                <br /><br /><br /><br />
+                <div class="title2" style="margin-bottom: 0">
+                    نتائج الممارسات
+                    <div class="line"></div>
+                </div>
+                <div class="table-title table-title-blue" style="margin-left: 0">
+                    ممارسات مؤشر الاداء المالي
+                </div>
+                <table class="table-plain table-plain-blue">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo">#</th>
+                            <th class="tg-cauo">الممارسة</th>
+                            <th class="tg-cauo">الدرجة</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                            <th class="tg-cauo">#</th>
+                            <th class="tg-cauo">الممارسة</th>
+                            <th class="tg-cauo">الدرجة</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">1</td>
+                            <td class="tg-fpnj">المصاريف الإدارية</td>
+                            <td class="tg-lwgv">20.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">4</td>
+                            <td class="tg-fpnj">جمع الأموال والتبرعات</td>
+                            <td class="tg-lwgv">10.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">2</td>
+                            <td class="tg-fpnj">مصاريف البرامج والأنشطة</td>
+                            <td class="tg-lwgv">45.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">5</td>
+                            <td class="tg-fpnj">قدرة الجمعية على تغطية التزاماتها المستقبلية</td>
+                            <td class="tg-lwgv">15.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">3</td>
+                            <td class="tg-fpnj">الاستدامة المالية (أوقاف واستثمارات)</td>
+                            <td class="tg-lwgv">10.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj"></td>
+                            <td class="tg-fpnj"></td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="tg-641c" colspan="6">المجموع</td>
+                            <td class="tg-641c">100%</td>
+                            <td class="tg-641c">00.00%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br /><br /><br /><br /><br />
+                <div class="table-title table-title-blue" style="margin-left: 0">
+                    ممارسات مؤشر التنظيم المالي
+                </div>
+                <table class="table-plain table-plain-blue">
+                    <thead>
+                        <tr>
+                            <th class="tg-cauo">#</th>
+                            <th class="tg-cauo">الممارسة</th>
+                            <th class="tg-cauo">الدرجة</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                            <th class="tg-cauo">#</th>
+                            <th class="tg-cauo">الممارسة</th>
+                            <th class="tg-cauo">الدرجة</th>
+                            <th class="tg-cauo">الدرجة المحققة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-fpnj">1</td>
+                            <td class="tg-fpnj">الهيكل التنظيمي وبطاقات الوصف الوظيفي للوظائف المالية</td>
+                            <td class="tg-lwgv">8.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">8</td>
+                            <td class="tg-fpnj">
+                                جمع التبرعات واستخدام جزء منها في نشاط آخر غير الغرض الذي جُمعت من أجله
+                            </td>
+                            <td class="tg-lwgv">15.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">2</td>
+                            <td class="tg-fpnj">الصلاحيات المالية والإدارية</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">9</td>
+                            <td class="tg-fpnj">موافقة الجمعية العمومية على التملك</td>
+                            <td class="tg-lwgv">9.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">3</td>
+                            <td class="tg-fpnj">اختصاصات المشرف المالي والمحاسب</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">10</td>
+                            <td class="tg-fpnj">تفعيل السجلات الإدارية والمحاسبية</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">4</td>
+                            <td class="tg-fpnj">اختصاصات مجلس الإدارة في الرقابة والمتابعة</td>
+                            <td class="tg-lwgv">3.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">11</td>
+                            <td class="tg-fpnj">إعداد التقارير المالية</td>
+                            <td class="tg-lwgv">5.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">5</td>
+                            <td class="tg-fpnj">لائحة السياسات المالية</td>
+                            <td class="tg-lwgv">7.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj">12</td>
+                            <td class="tg-fpnj">تطبيق المعايير المحاسبية المعتمدة</td>
+                            <td class="tg-lwgv">6.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">6</td>
+                            <td class="tg-fpnj">دليل الإجراءات المالي</td>
+                            <td class="tg-lwgv">7.00</td>
+                            <td class="tg-lwgv"></td>
+                            <td class="tg-fpnj" rowspan="2">13</td>
+                            <td class="tg-fpnj" rowspan="2">استخدام البرنامج المحاسبي ودليل الحسابات</td>
+                            <td class="tg-lwgv" rowspan="2">16.00</td>
+                            <td class="tg-lwgv" rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-fpnj">7</td>
+                            <td class="tg-fpnj">تفعيل السياسات وأسس الحوكمة</td>
+                            <td class="tg-lwgv">7.00</td>
+                            <td class="tg-lwgv"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="tg-641c" colspan="6">المجموع<br /></td>
+                            <td class="tg-641c">100%</td>
+                            <td class="tg-641c">00%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="lastPage"></div>
+    </div>
+
+
+    <script>
+        var el = document.getElementById('graph'),
+            options = {
+                percent: el.getAttribute('data-percent') || 25,
+                size: el.getAttribute('data-size') || 225,
+                lineWidth: el.getAttribute('data-line') || 25,
+                rotate: el.getAttribute('data-rotate') || 0,
+            },
+            canvas = document.createElement('canvas'),
+            span = document.createElement('span');
+        span.setAttribute('class', 'resultPieGeneral'),
+            (span.textContent = options.percent + '%'),
+            'undefined' != typeof G_vmlCanvasManager && G_vmlCanvasManager.initElement(canvas);
+        var ctx = canvas.getContext('2d');
+        (canvas.width = canvas.height = options.size),
+            el.appendChild(span),
+            el.appendChild(canvas),
+            ctx.translate(options.size / 2, options.size / 2),
+            ctx.rotate((options.rotate / 180 - 0.5) * Math.PI);
+        var radius = (options.size - options.lineWidth) / 2,
+            drawCircle = function (t, e, a) {
+                (a = Math.min(Math.max(0, a || 1), 1)),
+                    ctx.beginPath(),
+                    ctx.arc(0, 0, radius, 0, 2 * Math.PI * a, !1),
+                    (ctx.strokeStyle = t),
+                    (ctx.lineCap = 'square'),
+                    (ctx.lineWidth = e),
+                    ctx.stroke();
+            };
+        drawCircle('#F2F2F2', options.lineWidth, 1),
+            drawCircle('#115465', options.lineWidth, options.percent / 100);
+        var el2 = document.getElementById('graph2'),
+            options2 = {
+                percent2: el2.getAttribute('data-percent2') || 25,
+                size: el2.getAttribute('data-size') || 125,
+                lineWidth: el2.getAttribute('data-line') || 15,
+                rotate: el2.getAttribute('data-rotate') || 0,
+            },
+            canvas2 = document.createElement('canvas'),
+            span2 = document.createElement('span');
+        span2.setAttribute('class', 'resultPie'),
+            (span2.textContent = options2.percent2 + '%'),
+            'undefined' != typeof G_vmlCanvasManager && G_vmlCanvasManager.initElement(canvas2);
+        var ctx2 = canvas2.getContext('2d');
+        (canvas2.width = canvas2.height = options2.size),
+            el2.appendChild(span2),
+            el2.appendChild(canvas2),
+            ctx2.translate(options2.size / 2, options2.size / 2),
+            ctx2.rotate((options2.rotate / 180 - 0.5) * Math.PI);
+        var radius2 = (options2.size - options2.lineWidth) / 2,
+            drawCircle2 = function (t, e, a) {
+                (a = Math.min(Math.max(0, a || 1), 1)),
+                    ctx2.beginPath(),
+                    ctx2.arc(0, 0, radius2, 0, 2 * Math.PI * a, !1),
+                    (ctx2.strokeStyle = t),
+                    (ctx2.lineCap = 'square'),
+                    (ctx2.lineWidth = e),
+                    ctx2.stroke();
+            };
+        drawCircle2('#F2F2F2', options2.lineWidth, 1),
+            drawCircle2('#1AA99E', options2.lineWidth, options2.percent2 / 100);
+        var el3 = document.getElementById('graph3'),
+            options3 = {
+                percent3: el3.getAttribute('data-percent3') || 25,
+                size: el3.getAttribute('data-size') || 125,
+                lineWidth: el3.getAttribute('data-line') || 15,
+                rotate: el3.getAttribute('data-rotate') || 0,
+            },
+            canvas3 = document.createElement('canvas'),
+            span3 = document.createElement('span');
+        span3.setAttribute('class', 'resultPie'),
+            (span3.textContent = options3.percent3 + '%'),
+            'undefined' != typeof G_vmlCanvasManager && G_vmlCanvasManager.initElement(canvas3);
+        var ctx3 = canvas3.getContext('2d');
+        (canvas3.width = canvas3.height = options3.size),
+            el3.appendChild(span3),
+            el3.appendChild(canvas3),
+            ctx3.translate(options3.size / 2, options3.size / 2),
+            ctx3.rotate((options3.rotate / 180 - 0.5) * Math.PI);
+        var radius3 = (options3.size - options3.lineWidth) / 2,
+            drawCircle3 = function (t, e, a) {
+                (a = Math.min(Math.max(0, a || 1), 1)),
+                    ctx3.beginPath(),
+                    ctx3.arc(0, 0, radius3, 0, 2 * Math.PI * a, !1),
+                    (ctx3.strokeStyle = t),
+                    (ctx3.lineCap = 'square'),
+                    (ctx3.lineWidth = e),
+                    ctx3.stroke();
+            };
+        drawCircle3('#F2F2F2', options3.lineWidth, 1),
+            drawCircle3('#115465', options3.lineWidth, options3.percent3 / 100);
+        var el4 = document.getElementById('graph4'),
+            options4 = {
+                percent4: el4.getAttribute('data-percent4') || 25,
+                size: el4.getAttribute('data-size') || 125,
+                lineWidth: el4.getAttribute('data-line') || 15,
+                rotate: el4.getAttribute('data-rotate') || 0,
+            },
+            canvas4 = document.createElement('canvas'),
+            span4 = document.createElement('span');
+        span4.setAttribute('class', 'resultPie'),
+            (span4.textContent = options4.percent4 + '%'),
+            'undefined' != typeof G_vmlCanvasManager && G_vmlCanvasManager.initElement(canvas3);
+        var ctx4 = canvas4.getContext('2d');
+        (canvas4.width = canvas4.height = options4.size),
+            el4.appendChild(span4),
+            el4.appendChild(canvas4),
+            ctx4.translate(options4.size / 2, options4.size / 2),
+            ctx4.rotate((options4.rotate / 180 - 0.5) * Math.PI);
+        var radius4 = (options4.size - options4.lineWidth) / 2,
+            drawCircle4 = function (t, e, a) {
+                (a = Math.min(Math.max(0, a || 1), 1)),
+                    ctx4.beginPath(),
+                    ctx4.arc(0, 0, radius4, 0, 2 * Math.PI * a, !1),
+                    (ctx4.strokeStyle = t),
+                    (ctx4.lineCap = 'square'),
+                    (ctx4.lineWidth = e),
+                    ctx4.stroke();
+            };
+        drawCircle4('#F2F2F2', options4.lineWidth, 1),
+            drawCircle4('#3E7FC0', options4.lineWidth, options4.percent4 / 100);
+    </script>
+</body>
+</html>
