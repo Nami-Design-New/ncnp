@@ -736,3 +736,15 @@ table {
     border-radius: 8px;
   }
 }
+
+.submit {
+  padding: 8px 20px;
+  border: 1px solid #017c64;
+  background-color: #fff;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #017c64;
+    color: #fff;
+  }
+}

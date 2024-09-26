@@ -360,11 +360,16 @@
                               </div>
                             </div>
                           </div>
+                          <div class="m-1">
+                            <button class="submit">تسجيل</button>
+                          </div>
                         </form>
                       </div>
                       <!-- end row -->
                     </div>
+
                     <!-- END: Define your tab pans here -->
+
                     <!-- START: Define your controller buttons here-->
                     <div class="d-flex wizard justify-content-between mt-3">
                       <div class="first d-none">
@@ -372,21 +377,36 @@
                           الاولي
                         </a>
                       </div>
+
                       <div class="d-flex">
-                        <div class="previous me-2">
-                          <a
-                            href="javascript:void(0);"
-                            class="btn btn-outline-secondary"
-                          >
-                            السابق
-                          </a>
-                        </div>
-                        <div class="next">
-                          <a href="javascript:void(0);" class="btn btn-primary">
-                            التالي
-                          </a>
+                        <div class="d-flex wizard justify-content-between mt-3">
+                          <div class="previous me-2">
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-outline-secondary"
+                              >السابق</a
+                            >
+                          </div>
+
+                          <div class="next" id="nextButtonContainer">
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary"
+                              id="nextButton"
+                              >التالي</a
+                            >
+                          </div>
+
+                          <div class="last d-none" id="finalButtonContainer">
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary"
+                              >تسجيل</a
+                            >
+                          </div>
                         </div>
                       </div>
+
                       <div class="last d-none">
                         <a href="javascript:void(0);" class="btn btn-secondary">
                           الاخيره
@@ -396,6 +416,7 @@
                     <!-- END: Define your controller buttons here-->
                   </div>
                 </div>
+
                 <div class="text-center align-items-center gap-1 d-flex p-4">
                   <h6 class="text-secondary f-w-400 mb-0">
                     لديك حساب بالفعل ؟
