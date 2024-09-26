@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html dir="rtl" lang="ar">
   <!-- [Head] start -->
 
@@ -16,7 +16,7 @@
       content=" المركز الوطني لتنميه القطاع الغير ربحي  "
     />
     <!-- Favicon -->
-    <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
+    <link rel="icon" href="assets/images/fav.svg" type="image/x-icon" />
     <!-- icon -->
     <link rel="stylesheet" href="assets/fonts/fontawesome.css" />
     <!--  CSS Files -->
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/style-preset.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
+
   <!-- [Head] end -->
   <!-- [Body] Start -->
 
@@ -95,7 +96,7 @@
             </li>
             <!-- link -->
             <li class="pc-item">
-              <a href="follow_groups.html" class="pc-link">
+              <a href="#!" class="pc-link">
                 <span class="pc-micon">
                   <i class="fa-sharp fa-regular fa-box"></i>
                 </span>
@@ -104,7 +105,7 @@
             </li>
             <!-- link -->
             <li class="pc-item">
-              <a href="follow_groups.html" class="pc-link">
+              <a href="#!" class="pc-link">
                 <span class="pc-micon">
                   <i class="fa-sharp fa-regular fa-file-chart-pie"></i>
                 </span>
@@ -234,7 +235,7 @@
           </ul>
         </div>
         <!-- [Mobile Media Block end] -->
-        <div class="ms-auto">
+        <div class="">
           <ul class="list-unstyled">
             <li class="dropdown pc-h-item">
               <a
@@ -456,6 +457,7 @@
         </div>
       </div>
     </header>
+
     <!-- [ Header ] end -->
     <!-- [ Main Content ] start -->
     <div class="pc-container">
@@ -467,74 +469,144 @@
               <div class="col-md-12">
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="index.html"> الرئيسية </a>
+                    <a href="index.html"> الرئيسية </a>
                   </li>
                   <li class="breadcrumb-item" aria-current="page">
-                    اداره النظام
+                    لوحة التحكم
                   </li>
                 </ul>
               </div>
               <div class="col-md-12">
                 <div class="page-header-title">
-                  <h2 class="mb-0">اداره النظام</h2>
+                  <h2 class="mb-0">العنوان</h2>
                 </div>
               </div>
             </div>
+
+            <form class="needs-validation" novalidate>
+              <div class="row g-3 forms_container">
+                <div class="col-md-4">
+                  <label for="associationName" class="form-label">text </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="associationName"
+                    required
+                  />
+                  <div class="invalid-feedback">يرجى إدخال الاسم الرسمي.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="alternativeName" class="form-label"> email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="alternativeName"
+                    required
+                  />
+                  <div class="invalid-feedback">يرجى إدخال اسم الشهرة.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="classification" class="form-label"> select</label>
+                  <select class="form-select" id="classification" required>
+                    <option selected disabled value="">اختر...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">يرجى اختيار تصنيف صحيح.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="registrationNumber" class="form-label"
+                    >password
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registrationNumber"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    يرجى إدخال رقم شهادة التسجيل.
+                  </div>
+                </div>
+
+                <div class="file col-md-4">
+                  <label for="registrationDoc" class="form-label">file </label>
+                  <input
+                    type="file"
+                    id="registrationDoc"
+                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label class="form-label">CheckBox </label>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="hasExternalSign"
+                        id="externalSignNo"
+                      />
+                      <label class="form-check-label" for="externalSignNo"
+                        >لا</label
+                      >
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="hasExternalSign"
+                        id="externalSignYes"
+                        checked
+                      />
+                      <label class="form-check-label" for="externalSignYes"
+                        >نعم</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="associationName" class="form-label"
+                    >الاسم الرسمي للجمعية</label
+                  >
+
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="associationName"
+                    required
+                  />
+                  <div class="invalid-feedback">يرجى إدخال الاسم الرسمي.</div>
+                </div>
+
+                <div class="form-check mb-3">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="validationFormCheck1"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck1"
+                    >Check this checkbox</label
+                  >
+                  <div class="invalid-feedback">
+                    Example invalid feedback text
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-primary" type="submit">إرسال</button>
+              </div>
+            </form>
           </div>
         </div>
         <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
-        <div class="row">
-          <!-- CONTENT HERE -->
-          <div class="col-sm-12 col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="Edit">تعديل</p>
-                <p class="info">
-                  تعديل البيانات الاساسيه للجميعات التعاونيه / المؤسسات الاهليه
-                  / الجمعيات الاهليه
-                </p>
-              </div>
-              <div class="card-body">
-                <button class="Card_btn">استمرار</button>
-              </div>
-            </div>
-          </div>
-          <!-- END CONTENT -->
-          <!-- CONTENT HERE -->
-          <div class="col-sm-12 col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="Edit" style="color: #276fe5">اضافه جديد</p>
-                <p class="info">
-                  تعديل البيانات الاساسيه للجميعات التعاونيه / المؤسسات الاهليه
-                  / الجمعيات الاهليه
-                </p>
-              </div>
-              <div class="card-body">
-                <button class="Card_btn primary">استمرار</button>
-              </div>
-            </div>
-          </div>
-          <!-- END CONTENT -->
-          <!-- CONTENT HERE -->
-          <div class="col-sm-12 col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="Edit">المستخدمين</p>
-                <p class="info">
-                  تعديل البيانات الاساسيه للجميعات التعاونيه / المؤسسات الاهليه
-                  / الجمعيات الاهليه
-                </p>
-              </div>
-              <div class="card-body">
-                <button class="Card_btn">استمرار</button>
-              </div>
-            </div>
-          </div>
-          <!-- END CONTENT -->
-        </div>
-        <!-- [ Main Content ] end -->
       </div>
       <footer>
         <div class="footer_container">
@@ -570,6 +642,7 @@
         </div>
       </footer>
     </div>
+    <!-- [Page Specific JS] start -->
     <!-- Required Js -->
     <script src="assets/js/plugins/popper.min.js"></script>
     <script src="assets/js/plugins/simplebar.min.js"></script>
@@ -577,23 +650,6 @@
     <script src="assets/js/pcoded.js"></script>
     <script>
       layout_rtl_change("true");
-    </script>
-    <!-- Required Js -->
-    <script src="assets/js/plugins/index.js"></script>
-    <!-- datatable Js -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/plugins/dataTables.min.js"></script>
-    <script src="assets/js/plugins/dataTables.bootstrap5.min.js"></script>
-    <script src="assets/js/plugins/dataTables.responsive.min.js"></script>
-    <script src="assets/js/plugins/responsive.bootstrap5.min.js"></script>
-    <script>
-      // [ Configuration Option ]
-      $(".dataTableTable").DataTable({
-        responsive: true,
-        language: {
-          url: "assets/js/plugins/dataTable-ar.json",
-        },
-      });
     </script>
   </body>
   <!-- [Body] end -->

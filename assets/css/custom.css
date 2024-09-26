@@ -14,7 +14,9 @@
   --bs-link-color: #36b19cb2;
   --bs-link-color-rgb: 18, 81, 98;
   --bs-link-hover-color: #017c64;
-  --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
+  --bs-link-hover-color-rgb: to-rgb(
+    shift-color($pc-primary, $link-shade-percentage)
+  );
   --dt-row-selected: 18, 81, 98;
   --bs-font-sans-serif: "Neo Sans Arabic", sans-serif;
 }
@@ -38,6 +40,10 @@
   font-size: 20px;
 }
 .pc-sidebar .b-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   padding: 4px;
 }
 .pc-sidebar .b-brand img {
@@ -563,8 +569,13 @@ footer .footer_container {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+footer .footer_container .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 footer .footer_container .logo img {
-  width: 150px;
+  width: 135px;
 }
 footer .footer_container .copyright {
   color: #fff;
@@ -722,4 +733,21 @@ table {
 
 .row {
   margin: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo img {
+  width: 130px;
+}
+
+.file input {
+  width: 100%;
+  padding: 0.8rem 0.75rem;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 8px;
 }/*# sourceMappingURL=custom.css.map */

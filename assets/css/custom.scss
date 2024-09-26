@@ -16,7 +16,9 @@
   --bs-link-color: #36b19cb2;
   --bs-link-color-rgb: 18, 81, 98;
   --bs-link-hover-color: #017c64;
-  --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
+  --bs-link-hover-color-rgb: to-rgb(
+    shift-color($pc-primary, $link-shade-percentage)
+  );
   --dt-row-selected: 18, 81, 98;
   --bs-font-sans-serif: "Neo Sans Arabic", sans-serif;
 }
@@ -44,7 +46,12 @@
     }
   }
   .b-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     padding: 4px;
+
     img {
       height: 40px;
       width: 100%;
@@ -531,8 +538,11 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
       img {
-        width: 150px;
+        width: 135px;
       }
     }
     .copyright {
@@ -550,12 +560,12 @@ footer {
         height: 32px;
         background-color: #ffffff3f;
         border-radius: 50%;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
 
         i {
           font-size: 16px;
           color: #fff;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
         }
         &:hover {
           background-color: #fff;
@@ -591,7 +601,6 @@ table {
 
 //Basic Data Steps
 .Basic_Data_steps {
-
   .card {
     background: #fff;
     border-radius: 10px;
@@ -705,7 +714,25 @@ table {
   }
 }
 
-
-.row{
+.row {
   margin: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  img {
+    width: 130px;
+  }
+}
+
+.file {
+  input {
+    width: 100%;
+    padding: 0.8rem 0.75rem;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 8px;
+  }
 }
