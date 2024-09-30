@@ -537,13 +537,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 12px;
     .logo {
       display: flex;
       align-items: center;
       gap: 5px;
-      img {
-        width: 135px;
-      }
+      height: 100px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
     }
     .copyright {
       color: #fff;
