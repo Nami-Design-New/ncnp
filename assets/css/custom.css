@@ -229,12 +229,15 @@
 .auth-main.v2 .auth-form .card .logo {
   padding: 4px;
   margin-bottom: 8px;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.auth-main.v2 .auth-form .card .logo img {
-  height: 80px;
+.auth-main.v2 .auth-form .card img {
+  flex: 1;
+  height: 60px;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100%;
+  min-width: 100px;
 }
 
 [data-pc-direction=rtl] .pc-sidebar .pc-arrow {
@@ -528,7 +531,7 @@ table .total td {
 
 .wizard_steps {
   width: 100%;
-  min-height: calc(100dvh - 201px);
+  min-height: calc(100dvh - 181px);
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -539,11 +542,17 @@ table .total td {
 
 .wizard_nav {
   background-color: rgba(18, 81, 98, 0.9019607843);
-  padding: 10px;
+  padding: 10px 24px;
   display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .wizard_nav img {
-  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 60px;
+  filter: brightness(0) invert(1);
 }
 
 #bar {
@@ -560,7 +569,7 @@ a {
 
 footer {
   background-color: rgba(18, 81, 98, 0.9019607843);
-  padding: 15px;
+  padding: 12px 24px;
   max-height: auto;
 }
 footer .footer_container {
@@ -573,8 +582,7 @@ footer .footer_container {
 footer .footer_container .logo {
   display: flex;
   align-items: center;
-  gap: 5px;
-  height: 100px;
+  gap: 12px;
   -o-object-fit: contain;
      object-fit: contain;
   filter: brightness(0) invert(1);

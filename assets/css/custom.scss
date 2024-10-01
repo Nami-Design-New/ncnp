@@ -89,11 +89,15 @@ $i: 6;
   .logo {
     padding: 4px;
     margin-bottom: 8px;
-    img {
-      height: 80px;
-      object-fit: contain;
-      width: 100%;
-    }
+    width: 100%;
+    flex-wrap: wrap;
+  
+  }
+  img {
+    flex: 1;
+    height: 60px;
+    object-fit: contain;
+    min-width: 100px;
   }
 }
 [data-pc-direction="rtl"] {
@@ -491,7 +495,7 @@ table {
 
 .wizard_steps {
   width: 100%;
-  min-height: calc(100dvh - 201px);
+  min-height: calc(100dvh - 181px);
   padding: 15px;
 
   margin-top: 10px;
@@ -509,10 +513,16 @@ table {
 
 .wizard_nav {
   background-color: #125162e6;
-  padding: 10px;
+  padding: 10px 24px;
   display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   img {
-    width: 150px;
+    object-fit: contain;
+    height: 60px;
+    filter: brightness(0) invert(1);
+
   }
 }
 
@@ -530,7 +540,7 @@ a {
 
 footer {
   background-color: #125162e6;
-  padding: 15px;
+  padding: 12px 24px;
   max-height: auto;
   .footer_container {
     display: flex;
@@ -541,8 +551,7 @@ footer {
     .logo {
       display: flex;
       align-items: center;
-      gap: 5px;
-      height: 100px;
+      gap: 12px;
       object-fit: contain;
       filter: brightness(0) invert(1);
     }

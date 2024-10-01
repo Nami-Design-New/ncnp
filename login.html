@@ -1,130 +1,86 @@
 ﻿<!DOCTYPE html>
 <html dir="rtl" lang="ar">
-  <!-- [Head] start -->
+<!-- [Head] start -->
 
-  <head>
-    <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
-    <!-- [Meta] -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content=" المركز الوطني لتنميه القطاع الغير ربحي  "
-    />
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/fav.svg" type="image/x-icon" />
-    <!-- icon -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome.css" />
-    <!--  CSS Files -->
-    <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
-    <link rel="stylesheet" href="assets/css/style-preset.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-  </head>
-  <!-- [Head] end -->
-  <!-- [Body] Start -->
+<head>
+  <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
+  <!-- [Meta] -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content=" المركز الوطني لتنميه القطاع الغير ربحي  " />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/fav.svg" type="image/x-icon" />
+  <!-- icon -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome.css" />
+  <!--  CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
+  <link rel="stylesheet" href="assets/css/style-preset.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
 
-  <body data-pc-direction="rtl">
-    <div
-      class="auth-main v2"
-      style="
+<body data-pc-direction="rtl">
+  <div class="auth-main v2" style="
         background: url(assets/images/home-header-sm-background.png);
         background-size: cover;
-      "
-    >
-      <!-- <div class="bg-overlay bg-dark"></div> -->
-      <div class="auth-wrapper">
-        <div class="auth-form">
-          <div class="card my-5 mx-3">
-            <form
-              action="index.html"
-              class="card-body needs-validation"
-              novalidate
-            >
-              <div class="logo">
-                <img
-                  src="assets/images/logo2.png"
-                  alt="logo image"
-                  class="logo-lg"
-                />
-
-                <img src="assets/images/logo.svg" alt="img" class="img-fluid" />
+      ">
+    <!-- <div class="bg-overlay bg-dark"></div> -->
+    <div class="auth-wrapper">
+      <div class="auth-form">
+        <div class="card my-5 mx-3">
+          <form action="index.html" class="card-body needs-validation" novalidate>
+            <div class="logo">
+              <img src="assets/images/logo2.png" alt="logo image" class="logo-lg" />
+              <img src="assets/images/logo.svg" alt="img" class="img-fluid" />
+            </div>
+            <h4 class="f-w-500 text-center mb-2">
+              تسجيل الدخول باستخدام البريد الإلكتروني
+            </h4>
+            <div class="Auth_form">
+              <input type="email" class="form-control" id="floatingInput" placeholder="البريد الإلكتروني" required />
+              <div class="invalid-feedback">
+                يرجى إدخال بريد إلكتروني صالح.
               </div>
-              <h4 class="f-w-500 text-center mb-2">
-                تسجيل الدخول باستخدام البريد الإلكتروني
-              </h4>
-              <div class="Auth_form">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="البريد الإلكتروني"
-                  required
-                />
-                <div class="invalid-feedback">
-                  يرجى إدخال بريد إلكتروني صالح.
-                </div>
+            </div>
+            <div class="Auth_form">
+              <input type="password" class="form-control" id="floatingInput1" placeholder="كلمة المرور" required />
+              <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+            </div>
+            <div class="d-flex w-100 mt-1 justify-content-between align-items-center">
+              <div class="form-check">
+                <input class="form-check-input input-primary" type="checkbox" id="customCheckc1" checked="" />
+                <label class="form-check-label text-muted" for="customCheckc1">تذكرني؟</label>
               </div>
-              <div class="Auth_form">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingInput1"
-                  placeholder="كلمة المرور"
-                  required
-                />
-                <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
-              </div>
-              <div
-                class="d-flex w-100 mt-1 justify-content-between align-items-center"
-              >
-                <div class="form-check">
-                  <input
-                    class="form-check-input input-primary"
-                    type="checkbox"
-                    id="customCheckc1"
-                    checked=""
-                  />
-                  <label class="form-check-label text-muted" for="customCheckc1"
-                    >تذكرني؟</label
-                  >
-                </div>
-                <a href="forget_password.html" class="f-w-400 mb-0">
-                  هل نسيت كلمة المرور؟
-                </a>
-              </div>
-              <div class="d-grid">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="border-radius: 25px"
-                >
-                  تسجيل الدخول
-                </button>
-              </div>
-              <div
-                class="text-center align-items-center gap-1 d-flex align-items-center"
-              >
-                <h6 class="text-secondary f-w-400 mb-0">ليس لديك حساب؟</h6>
-                <a href="register.html" class="f-w-400 mb-0"> سجل الان </a>
-              </div>
-            </form>
-          </div>
+              <a href="forget_password.html" class="f-w-400 mb-0">
+                هل نسيت كلمة المرور؟
+              </a>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary" style="border-radius: 25px">
+                تسجيل الدخول
+              </button>
+            </div>
+            <div class="text-center align-items-center gap-1 d-flex align-items-center">
+              <h6 class="text-secondary f-w-400 mb-0">ليس لديك حساب؟</h6>
+              <a href="register.html" class="f-w-400 mb-0"> سجل الان </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- [ Main Content ] end -->
-    <!-- Required Js -->
-    <script src="assets/js/plugins/popper.min.js"></script>
-    <script src="assets/js/plugins/simplebar.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/pcoded.js"></script>
-    <script>
-      layout_rtl_change("true");
-    </script>
-  </body>
-  <!-- [Body] end -->
+  </div>
+  <!-- [ Main Content ] end -->
+  <!-- Required Js -->
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/simplebar.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/pcoded.js"></script>
+  <script>
+    layout_rtl_change("true");
+  </script>
+</body>
+<!-- [Body] end -->
+
 </html>
