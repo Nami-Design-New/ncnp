@@ -862,4 +862,40 @@ table {
   max-height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.wizard-container {
+  width: 100%;
+}
+.wizard-container .wizard-step {
+  display: none;
+}
+.wizard-container .wizard-step.active {
+  display: block;
+}
+.wizard-container .wizard-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+.wizard-container .wizard-nav .wizard-tag {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.wizard-container .wizard-nav .wizard-tag.active {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+.wizard-container .wizard-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=custom.css.map */

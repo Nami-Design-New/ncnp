@@ -843,10 +843,40 @@ table {
     max-height: 300px;
     object-fit: contain;
   }
-
 }
-// .pc-container .pc-content {
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-// }
+
+.wizard-container {
+  width: 100%;
+  .wizard-step {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .wizard-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #eee;
+    border-radius: 8px;
+    .wizard-tag {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 12px;
+      font-weight: bold;
+      &.active {
+        background-color: var(--bs-primary);
+        color: #fff;
+      }
+    }
+  }
+  .wizard-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
