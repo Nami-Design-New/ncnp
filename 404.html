@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <!-- [Head] start -->
-
 <head>
   <title>المركز الوطني لتنميه القطاع الغير ربحي</title>
   <!-- [Meta] -->
@@ -17,10 +16,10 @@
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
   <link rel="stylesheet" href="assets/css/style-preset.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
-
   <body data-pc-direction="rtl">
     <!-- ================ loader ================= -->
     <div class="preloader">
@@ -35,7 +34,6 @@
         <a href="index.html" class="b-brand text-primary">
           <!-- ========   Change your logo from here   ============ -->
           <img src="assets/images/logo2.png" alt="logo image" class="logo-lg" />
-
           <img src="assets/images/logo.svg" alt="logo image" class="logo-lg" />
         </a>
       </div>
@@ -378,255 +376,19 @@
   <!-- [ Main Content ] start -->
   <div class="pc-container">
     <div class="pc-content">
-      <!-- [ breadcrumb ] start -->
-      <div class="page-header">
-        <div class="page-block">
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="index.html"> الرئيسية </a>
-                </li>
-                <li class="breadcrumb-item" aria-current="page">
-                  البيانات الاساسيه
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="col-md-12">
-              <div class="page-header-title">
-                <h2 class="mb-0">لوحة التحكم</h2>
-              </div>
-            </div> -->
-          </div>
+      <div class="notFound">
+        <div class="notFoundImg">
+          <img src="assets/images/404.png" alt="404" />
         </div>
+        <h4> الصفحه التي تبحث عنها غير موجوده         </h4>
+        <a href="index.html" class="btn btn-primary px-5">الرئيسية</a>
       </div>
-      <!-- [ breadcrumb ] end -->
-      <section class="Basic_Data_steps">
-        <div class="card">
-          <div class="card-header">
-            <div class="steps">
-              <div class="step active">
-                <span> البيانات الاساسيه </span>
-              </div>
-              <div class="step">
-                <span>الفروع</span>
-              </div>
-              <div class="step">
-                <span> الاعضاء </span>
-              </div>
-              <div class="step">
-                <span> الاجتماعات العاديه </span>
-              </div>
-              <div class="step">
-                <span> الاجتماعات الغير عاديه </span>
-              </div>
-              <div class="step">
-                <span> اجتماعات مجلس الاداره </span>
-              </div>
-              <div class="step">
-                <span> اللوائح </span>
-              </div>
-              <div class="step">
-                <span> السياسات </span>
-              </div>
-              <div class="step">
-                <span> الافصاح </span>
-              </div>
-            </div>
-          </div>
-          <div id="cardBody" class="card-body">
-            <div class="tabs">
-              <div id="first" class="tab">
-                <form class="needs-validation" novalidate>
-                  <div class="row g-3 forms_container">
-                    <div class="col-md-4">
-                      <label for="associationName" class="form-label">الاسم الرسمي للجمعية</label>
-                      <input type="text" class="form-control" id="associationName" required />
-                      <div class="invalid-feedback">يرجى إدخال الاسم الرسمي.</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="alternativeName" class="form-label">اسم الشهرة (في حال كونه مغايرا للاسم
-                        الرسمي)</label>
-                      <input type="text" class="form-control" id="alternativeName" required />
-                      <div class="invalid-feedback">يرجى إدخال اسم الشهرة.</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="classification" class="form-label">التصنيف النوعي</label>
-                      <select class="form-select" id="classification" required>
-                        <option selected disabled value="">اختر...</option>
-                        <option>...</option>
-                      </select>
-                      <div class="invalid-feedback">يرجى اختيار تصنيف صحيح.</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="registrationNumber" class="form-label">رقم شهادة التسجيل</label>
-                      <input type="text" class="form-control" id="registrationNumber" required />
-                      <div class="invalid-feedback">يرجى إدخال رقم شهادة التسجيل.</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="registrationDoc" class="form-label">إرفاق شهادة التسجيل</label>
-                      <input type="file" id="registrationDoc"
-                        accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                    </div>
-                    <div class="col-md-4">
-                      <label class="form-label">هل يوجد للجمعية لوحة خارجية؟</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="hasExternalSign" id="externalSignNo" />
-                        <label class="form-check-label" for="externalSignNo">لا</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="hasExternalSign" id="externalSignYes"
-                          checked />
-                        <label class="form-check-label" for="externalSignYes">نعم</label>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="form-label">اللوحة توضح رقم التسجيل؟</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="showsRegistration" id="registrationSignNo" />
-                        <label class="form-check-label" for="registrationSignNo">لا</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="showsRegistration" id="registrationSignYes"
-                          checked />
-                        <label class="form-check-label" for="registrationSignYes">نعم</label>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="form-label">اللوحة تنص على أنها جمعية تعاونية؟</label>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cooperativeSign" id="cooperativeSignNo" />
-                        <label class="form-check-label" for="cooperativeSignNo">لا</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cooperativeSign" id="cooperativeSignYes"
-                          checked />
-                        <label class="form-check-label" for="cooperativeSignYes">نعم</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="Title">العنوان</div>
-                  <div class="row g-3 forms_container">
-                    <div class="col-md-3">
-                      <label for="region" class="form-label">المنطقة</label>
-                      <input type="text" class="form-control" id="region" required />
-                      <div class="invalid-feedback">يرجى إدخال المنطقة.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="city" class="form-label">المدينة</label>
-                      <input type="text" class="form-control" id="city" required />
-                      <div class="invalid-feedback">يرجى إدخال المدينة.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="neighborhood" class="form-label">الحي</label>
-                      <input type="text" class="form-control" id="neighborhood" required />
-                      <div class="invalid-feedback">يرجى إدخال الحي.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="street" class="form-label">اسم الشارع</label>
-                      <input type="text" class="form-control" id="street" required />
-                      <div class="invalid-feedback">يرجى إدخال اسم الشارع.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="buildingNumber" class="form-label">رقم المبنى</label>
-                      <input type="text" class="form-control" id="buildingNumber" required />
-                      <div class="invalid-feedback">يرجى إدخال رقم المبنى.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="postalCode" class="form-label">الرمز البريدي</label>
-                      <input type="text" class="form-control" id="postalCode" required />
-                      <div class="invalid-feedback">يرجى إدخال الرمز البريدي.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="poBox" class="form-label">صندوق البريد</label>
-                      <input type="text" class="form-control" id="poBox" required />
-                      <div class="invalid-feedback">يرجى إدخال صندوق البريد.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="additionalNumber" class="form-label">الرقم الإضافي</label>
-                      <input type="text" class="form-control" id="additionalNumber" required />
-                      <div class="invalid-feedback">يرجى إدخال الرقم الإضافي.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="associationMobile" class="form-label">رقم جوال الجمعية</label>
-                      <input type="text" class="form-control" id="associationMobile" required />
-                      <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="phone" class="form-label">الهاتف</label>
-                      <input type="text" class="form-control" id="phone" required />
-                      <div class="invalid-feedback">يرجى إدخال الهاتف.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="fax" class="form-label">الفاكس</label>
-                      <input type="text" class="form-control" id="fax" required />
-                      <div class="invalid-feedback">يرجى إدخال الفاكس.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="website" class="form-label">الموقع الإلكتروني</label>
-                      <input type="url" class="form-control" id="website" required />
-                      <div class="invalid-feedback">يرجى إدخال الموقع الإلكتروني.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="email" class="form-label">البريد الإلكتروني</label>
-                      <input type="email" class="form-control" id="email" required />
-                      <div class="invalid-feedback">يرجى إدخال البريد الإلكتروني.</div>
-                    </div>
-                  </div>
-                  <div class="Title">الموظفين</div>
-                  <div class="row g-3 forms_container">
-                    <div class="col-md-3">
-                      <label for="maleEmployees" class="form-label">الموظفين (ذكور)</label>
-                      <input type="number" class="form-control" id="maleEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفين الذكور.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="femaleEmployees" class="form-label">الموظفين (إناث)</label>
-                      <input type="number" class="form-control" id="femaleEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفين الإناث.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="saudiEmployees" class="form-label">الموظفين (سعوديون)</label>
-                      <input type="number" class="form-control" id="saudiEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفين السعوديين.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="nonSaudiEmployees" class="form-label">الموظفين (غير سعوديين)</label>
-                      <input type="number" class="form-control" id="nonSaudiEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفين غير السعوديين.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="saudiFemaleEmployees" class="form-label">الموظفات (سعوديات)</label>
-                      <input type="number" class="form-control" id="saudiFemaleEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفات السعوديات.</div>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="nonSaudiFemaleEmployees" class="form-label">الموظفات (غير سعوديات)</label>
-                      <input type="number" class="form-control" id="nonSaudiFemaleEmployees" required />
-                      <div class="invalid-feedback">يرجى إدخال عدد الموظفات غير السعوديات.</div>
-                    </div>
-                  </div>
-                  <div class="d-grid gap-2 col-12 mx-auto">
-                    <button class="btn btn-primary" type="submit">إرسال</button>
-                  </div>
-                </form>
-              </div>
-              <div id="second" class="tab">Tab 2</div>
-              <div id="third" class="tab">Tab 3</div>
-              <div id="four" class="tab">Tab 4</div>
-              <div id="five" class="tab">Tab 5</div>
-              <div id="six" class="tab">Tab 6</div>
-              <div id="seven" class="tab">Tab 7</div>
-              <div id="eight" class="tab">Tab 8</div>
-              <div id="nine" class="tab">Tab 9</div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <button id="prevBtn" onclick="next(-1)">السابق</button>
-            <button id="nextBtn" onclick="next(1)">التالي</button>
-          </div>
-        </div>
-      </section>
+      <div class="d-flex justify-content-center gap-2 p-4">
+        <button class="btn btn-success" onclick="showSuccessToast()">نجاح</button>
+        <button class="btn btn-danger" onclick="showErrorToast()">خطأ</button>
+        <button class="btn btn-info" onclick="showInfoToast()">معلومات</button>
+        <button class="btn btn-warning" onclick="showWarningToast()">تحذير</button>
+      </div>
     </div>
     <footer>
       <div class="footer_container">
@@ -636,7 +398,6 @@
           alt="logo image"
           class="logo-lg"
         />
-
           <img src="assets/images/home-header-logo.svg" alt="" />
         </div>
         <div class="copyright">جميع الحقوق محفوظه
@@ -667,44 +428,54 @@
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.js"></script>
   <script> layout_rtl_change("true"); </script>
-  <script>
-    var currentTab = 0;
-    showTab(currentTab);
-    function showTab(n) {
-      var x = document.getElementsByClassName("tab");
-      x[n].style.display = "block";
-      if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
-      } else {
-        document.getElementById("prevBtn").style.display = "inline";
-      }
-      if (n == x.length - 1) {
-        document.getElementById("nextBtn").innerHTML = "تسجيل ";
-      } else {
-        document.getElementById("nextBtn").innerHTML = "التالي";
-      }
-      fixStepIndicator(n);
-    }
-    function next(n) {
-      var x = document.getElementsByClassName("tab");
-      x[currentTab].style.display = "none";
-      currentTab = currentTab + n;
-      if (currentTab >= x.length) {
-        return false;
-      }
-      showTab(currentTab);
-    }
-    function fixStepIndicator(n) {
-      var i,
-        x = document.getElementsByClassName("step");
-      for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-      }
-      x[n].className += " active";
-    }
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+<script>
+  function showSuccessToast() {
+    iziToast.success({
+      title: "نجاح",
+      message: "تمت العملية بنجاح!",
+      position: "topLeft",
+      timeout: 3000,
+    });
+  }
+  function showErrorToast() {
+    iziToast.error({
+      title: "خطأ",
+      message: "حدث خطأ ما!",
+      position: "topLeft",
+      timeout: 3000,
+    });
+  }
+  function showInfoToast() {
+    iziToast.info({
+      title: "معلومات",
+      message: "إليك بعض المعلومات.",
+      position: "topLeft",
+      timeout: 3000,
+    });
+  }
+  function showWarningToast() {
+    iziToast.warning({
+      title: "تحذير",
+      message: "هذه رسالة تحذير.",
+      position: "topLeft",
+      timeout: 3000,
+    });
+  }
+</script>
+<script>
+  iziToast.success({
+    title: "نجاح",
+    message: "Your message here!",
+    position: "topLeft",
+  });
+  iziToast.error({
+    title: "خطأ",
+    message: "Something went wrong!",
+    position: "topLeft",
+  });
+</script>
   <!-- charts -->
 </body>
 <!-- [Body] end -->
-
 </html>
