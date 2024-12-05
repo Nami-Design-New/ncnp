@@ -1,0 +1,266 @@
+.level-statistics-items-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  padding: 24px 0;
+  align-self: stretch;
+  flex-wrap: wrap;
+  .level-statistics-box {
+    display: flex;
+    min-width: 400px;
+    padding: 24px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: var(--bs-white);
+    box-shadow:
+      0px 2px 15px -3px rgba(0, 0, 0, 0.07),
+      0px 10px 20px -2px rgba(0, 0, 0, 0.04);
+    @media (max-width: 768px) {
+      min-width: unset;
+    }
+    .level-box-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+      flex: 1 0 0;
+      p {
+        flex: 1 0 0;
+        color: var(--bs-dark);
+        text-align: right;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      .level-box-link {
+        display: flex;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid var(--bs-primary);
+        border-radius: 12px;
+        color: var(--bs-primary);
+        text-align: right;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+  }
+}
+$PercentSize: 100px;
+.percent {
+  position: relative;
+  width: $PercentSize;
+  height: $PercentSize;
+  overflow: hidden;
+  &.reverse {
+    .percentNum {
+      background-color: #19c2b9b3;
+      color: var(--bs-white);
+      span {
+        color: var(--bs-white);
+      }
+    }
+  }
+  .percentNum {
+    position: absolute;
+    width: calc($PercentSize * 0.8);
+    height: calc($PercentSize * 0.8);
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #eee;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: calc($PercentSize * 0.2) !important;
+    font-weight: bold;
+    span {
+      font-weight: normal;
+      color: #777;
+      font-size: calc($PercentSize * 0.12) !important;
+    }
+  }
+  .slice {
+    position: absolute;
+    width: $PercentSize;
+    height: $PercentSize;
+    clip: rect(0px, $PercentSize, $PercentSize, calc($PercentSize / 2));
+  }
+  .bar {
+    position: absolute;
+    border: calc($PercentSize * 0.04) solid var(--bs-primary);
+    width: $PercentSize;
+    height: $PercentSize;
+    clip: rect(0px, calc($PercentSize / 2), $PercentSize, 0px);
+    border-radius: 50%;
+    transform: rotate(0deg);
+    &.reverse {
+      border-color: #19c2b9b3;
+    }
+  }
+  @for $j from 51 through 100 {
+    &.p#{$j} .slice {
+      clip: rect(auto, auto, auto, auto);
+    }
+    &.p#{$j} .bar:after {
+      transform: rotate(180deg);
+    }
+    &.p#{$j} .fill {
+      position: absolute;
+      border: calc($PercentSize * 0.04) solid var(--bs-primary);
+      width: $PercentSize;
+      height: $PercentSize;
+      clip: rect(0px, calc($PercentSize / 2), $PercentSize, 0px);
+      border-radius: 50%;
+      transform: rotate(180deg);
+      &.reverse {
+        border-color: #19c2b9b3;
+      }
+    }
+  }
+  @for $j from 1 through 100 {
+    &.p#{$j} .bar {
+      transform: rotate((360/100 * $j) + deg);
+    }
+  }
+}
+.statistics-section {
+  width: 100%;
+  display: flex;
+  padding: 24px 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  .statistics-box {
+    display: flex;
+    min-width: 250px;
+    padding: 12px 24px 12px 12px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    background: var(--bs-white);
+    border-radius: 24px;
+    @media (max-width: 768px) {
+      min-width: unset;
+    }
+    &.total {
+      background-color: var(--bs-primary);
+      h6 {
+        color: var(--bs-white);
+      }
+    }
+    h6 {
+      flex: 1 0 0;
+      color: #000;
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}
+.level-statistics-form {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--bs-white);
+  border-radius: 24px;
+  .form-heading-note {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .form-check-container {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
+    .question-title {
+      width: 100%;
+    }
+    .form-check {
+      display: flex;
+      gap: 8px;
+      padding: 0;
+      flex: 1;
+      min-width: 45%;
+
+      input {
+        display: none;
+      }
+      input:checked + label {
+        color: var(--bs-white);
+        background-color: var(--bs-primary);
+      }
+      label {
+        color: #000;
+        padding: 8px 12px;
+        cursor: pointer;
+        width: 100%;
+        background-color: #f4f4f4;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .box-heading {
+          background-color: #ffffff5f;
+          padding: 4px 4px !important;
+          border-radius: 8px;
+          margin: 0;
+          display: flex;
+          span {
+            font-weight: bold;
+            background-color: var(--bs-primary);
+            color: var(--bs-white);
+            padding: 4px 8px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+  .btns-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    align-self: stretch;
+    .btn {
+      display: flex;
+      padding: 16px 20px;
+      min-width: 150px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background: var(--bs-primary);
+      border-radius: 12px;
+      color: var(--bs-white);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      border: none;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,1442 @@
+.level-statistics-items-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  padding: 24px 0;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.level-statistics-items-container .level-statistics-box {
+  display: flex;
+  min-width: 400px;
+  padding: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 16px;
+  background: var(--bs-white);
+  box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.07), 0px 10px 20px -2px rgba(0, 0, 0, 0.04);
+}
+@media (max-width: 768px) {
+  .level-statistics-items-container .level-statistics-box {
+    min-width: unset;
+  }
+}
+.level-statistics-items-container .level-statistics-box .level-box-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.level-statistics-items-container .level-statistics-box .level-box-content p {
+  flex: 1 0 0;
+  color: var(--bs-dark);
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.level-statistics-items-container .level-statistics-box .level-box-content .level-box-link {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--bs-primary);
+  border-radius: 12px;
+  color: var(--bs-primary);
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.percent {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.percent.reverse .percentNum {
+  background-color: rgba(25, 194, 185, 0.7019607843);
+  color: var(--bs-white);
+}
+.percent.reverse .percentNum span {
+  color: var(--bs-white);
+}
+.percent .percentNum {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #eee;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.percent .percentNum span {
+  font-weight: normal;
+  color: #777;
+  font-size: 12px !important;
+}
+.percent .slice {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.percent .bar {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+.percent .bar.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p51 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p51 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p51 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p51 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p52 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p52 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p52 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p52 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p53 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p53 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p53 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p53 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p54 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p54 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p54 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p54 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p55 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p55 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p55 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p55 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p56 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p56 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p56 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p56 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p57 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p57 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p57 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p57 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p58 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p58 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p58 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p58 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p59 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p59 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p59 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p59 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p60 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p60 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p60 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p60 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p61 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p61 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p61 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p61 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p62 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p62 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p62 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p62 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p63 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p63 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p63 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p63 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p64 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p64 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p64 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p64 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p65 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p65 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p65 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p65 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p66 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p66 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p66 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p66 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p67 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p67 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p67 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p67 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p68 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p68 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p68 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p68 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p69 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p69 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p69 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p69 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p70 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p70 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p70 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p70 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p71 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p71 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p71 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p71 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p72 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p72 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p72 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p72 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p73 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p73 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p73 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p73 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p74 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p74 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p74 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p74 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p75 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p75 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p75 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p75 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p76 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p76 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p76 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p76 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p77 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p77 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p77 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p77 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p78 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p78 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p78 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p78 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p79 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p79 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p79 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p79 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p80 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p80 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p80 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p80 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p81 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p81 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p81 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p81 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p82 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p82 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p82 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p82 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p83 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p83 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p83 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p83 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p84 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p84 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p84 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p84 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p85 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p85 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p85 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p85 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p86 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p86 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p86 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p86 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p87 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p87 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p87 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p87 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p88 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p88 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p88 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p88 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p89 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p89 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p89 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p89 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p90 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p90 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p90 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p90 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p91 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p91 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p91 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p91 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p92 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p92 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p92 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p92 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p93 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p93 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p93 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p93 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p94 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p94 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p94 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p94 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p95 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p95 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p95 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p95 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p96 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p96 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p96 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p96 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p97 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p97 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p97 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p97 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p98 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p98 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p98 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p98 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p99 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p99 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p99 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p99 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p100 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+.percent.p100 .bar:after {
+  transform: rotate(180deg);
+}
+.percent.p100 .fill {
+  position: absolute;
+  border: 4px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.percent.p100 .fill.reverse {
+  border-color: rgba(25, 194, 185, 0.7019607843);
+}
+.percent.p1 .bar {
+  transform: rotate(3.6deg);
+}
+.percent.p2 .bar {
+  transform: rotate(7.2deg);
+}
+.percent.p3 .bar {
+  transform: rotate(10.8deg);
+}
+.percent.p4 .bar {
+  transform: rotate(14.4deg);
+}
+.percent.p5 .bar {
+  transform: rotate(18deg);
+}
+.percent.p6 .bar {
+  transform: rotate(21.6deg);
+}
+.percent.p7 .bar {
+  transform: rotate(25.2deg);
+}
+.percent.p8 .bar {
+  transform: rotate(28.8deg);
+}
+.percent.p9 .bar {
+  transform: rotate(32.4deg);
+}
+.percent.p10 .bar {
+  transform: rotate(36deg);
+}
+.percent.p11 .bar {
+  transform: rotate(39.6deg);
+}
+.percent.p12 .bar {
+  transform: rotate(43.2deg);
+}
+.percent.p13 .bar {
+  transform: rotate(46.8deg);
+}
+.percent.p14 .bar {
+  transform: rotate(50.4deg);
+}
+.percent.p15 .bar {
+  transform: rotate(54deg);
+}
+.percent.p16 .bar {
+  transform: rotate(57.6deg);
+}
+.percent.p17 .bar {
+  transform: rotate(61.2deg);
+}
+.percent.p18 .bar {
+  transform: rotate(64.8deg);
+}
+.percent.p19 .bar {
+  transform: rotate(68.4deg);
+}
+.percent.p20 .bar {
+  transform: rotate(72deg);
+}
+.percent.p21 .bar {
+  transform: rotate(75.6deg);
+}
+.percent.p22 .bar {
+  transform: rotate(79.2deg);
+}
+.percent.p23 .bar {
+  transform: rotate(82.8deg);
+}
+.percent.p24 .bar {
+  transform: rotate(86.4deg);
+}
+.percent.p25 .bar {
+  transform: rotate(90deg);
+}
+.percent.p26 .bar {
+  transform: rotate(93.6deg);
+}
+.percent.p27 .bar {
+  transform: rotate(97.2deg);
+}
+.percent.p28 .bar {
+  transform: rotate(100.8deg);
+}
+.percent.p29 .bar {
+  transform: rotate(104.4deg);
+}
+.percent.p30 .bar {
+  transform: rotate(108deg);
+}
+.percent.p31 .bar {
+  transform: rotate(111.6deg);
+}
+.percent.p32 .bar {
+  transform: rotate(115.2deg);
+}
+.percent.p33 .bar {
+  transform: rotate(118.8deg);
+}
+.percent.p34 .bar {
+  transform: rotate(122.4deg);
+}
+.percent.p35 .bar {
+  transform: rotate(126deg);
+}
+.percent.p36 .bar {
+  transform: rotate(129.6deg);
+}
+.percent.p37 .bar {
+  transform: rotate(133.2deg);
+}
+.percent.p38 .bar {
+  transform: rotate(136.8deg);
+}
+.percent.p39 .bar {
+  transform: rotate(140.4deg);
+}
+.percent.p40 .bar {
+  transform: rotate(144deg);
+}
+.percent.p41 .bar {
+  transform: rotate(147.6deg);
+}
+.percent.p42 .bar {
+  transform: rotate(151.2deg);
+}
+.percent.p43 .bar {
+  transform: rotate(154.8deg);
+}
+.percent.p44 .bar {
+  transform: rotate(158.4deg);
+}
+.percent.p45 .bar {
+  transform: rotate(162deg);
+}
+.percent.p46 .bar {
+  transform: rotate(165.6deg);
+}
+.percent.p47 .bar {
+  transform: rotate(169.2deg);
+}
+.percent.p48 .bar {
+  transform: rotate(172.8deg);
+}
+.percent.p49 .bar {
+  transform: rotate(176.4deg);
+}
+.percent.p50 .bar {
+  transform: rotate(180deg);
+}
+.percent.p51 .bar {
+  transform: rotate(183.6deg);
+}
+.percent.p52 .bar {
+  transform: rotate(187.2deg);
+}
+.percent.p53 .bar {
+  transform: rotate(190.8deg);
+}
+.percent.p54 .bar {
+  transform: rotate(194.4deg);
+}
+.percent.p55 .bar {
+  transform: rotate(198deg);
+}
+.percent.p56 .bar {
+  transform: rotate(201.6deg);
+}
+.percent.p57 .bar {
+  transform: rotate(205.2deg);
+}
+.percent.p58 .bar {
+  transform: rotate(208.8deg);
+}
+.percent.p59 .bar {
+  transform: rotate(212.4deg);
+}
+.percent.p60 .bar {
+  transform: rotate(216deg);
+}
+.percent.p61 .bar {
+  transform: rotate(219.6deg);
+}
+.percent.p62 .bar {
+  transform: rotate(223.2deg);
+}
+.percent.p63 .bar {
+  transform: rotate(226.8deg);
+}
+.percent.p64 .bar {
+  transform: rotate(230.4deg);
+}
+.percent.p65 .bar {
+  transform: rotate(234deg);
+}
+.percent.p66 .bar {
+  transform: rotate(237.6deg);
+}
+.percent.p67 .bar {
+  transform: rotate(241.2deg);
+}
+.percent.p68 .bar {
+  transform: rotate(244.8deg);
+}
+.percent.p69 .bar {
+  transform: rotate(248.4deg);
+}
+.percent.p70 .bar {
+  transform: rotate(252deg);
+}
+.percent.p71 .bar {
+  transform: rotate(255.6deg);
+}
+.percent.p72 .bar {
+  transform: rotate(259.2deg);
+}
+.percent.p73 .bar {
+  transform: rotate(262.8deg);
+}
+.percent.p74 .bar {
+  transform: rotate(266.4deg);
+}
+.percent.p75 .bar {
+  transform: rotate(270deg);
+}
+.percent.p76 .bar {
+  transform: rotate(273.6deg);
+}
+.percent.p77 .bar {
+  transform: rotate(277.2deg);
+}
+.percent.p78 .bar {
+  transform: rotate(280.8deg);
+}
+.percent.p79 .bar {
+  transform: rotate(284.4deg);
+}
+.percent.p80 .bar {
+  transform: rotate(288deg);
+}
+.percent.p81 .bar {
+  transform: rotate(291.6deg);
+}
+.percent.p82 .bar {
+  transform: rotate(295.2deg);
+}
+.percent.p83 .bar {
+  transform: rotate(298.8deg);
+}
+.percent.p84 .bar {
+  transform: rotate(302.4deg);
+}
+.percent.p85 .bar {
+  transform: rotate(306deg);
+}
+.percent.p86 .bar {
+  transform: rotate(309.6deg);
+}
+.percent.p87 .bar {
+  transform: rotate(313.2deg);
+}
+.percent.p88 .bar {
+  transform: rotate(316.8deg);
+}
+.percent.p89 .bar {
+  transform: rotate(320.4deg);
+}
+.percent.p90 .bar {
+  transform: rotate(324deg);
+}
+.percent.p91 .bar {
+  transform: rotate(327.6deg);
+}
+.percent.p92 .bar {
+  transform: rotate(331.2deg);
+}
+.percent.p93 .bar {
+  transform: rotate(334.8deg);
+}
+.percent.p94 .bar {
+  transform: rotate(338.4deg);
+}
+.percent.p95 .bar {
+  transform: rotate(342deg);
+}
+.percent.p96 .bar {
+  transform: rotate(345.6deg);
+}
+.percent.p97 .bar {
+  transform: rotate(349.2deg);
+}
+.percent.p98 .bar {
+  transform: rotate(352.8deg);
+}
+.percent.p99 .bar {
+  transform: rotate(356.4deg);
+}
+.percent.p100 .bar {
+  transform: rotate(360deg);
+}
+
+.statistics-section {
+  width: 100%;
+  display: flex;
+  padding: 24px 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.statistics-section .statistics-box {
+  display: flex;
+  min-width: 250px;
+  padding: 12px 24px 12px 12px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  background: var(--bs-white);
+  border-radius: 24px;
+}
+@media (max-width: 768px) {
+  .statistics-section .statistics-box {
+    min-width: unset;
+  }
+}
+.statistics-section .statistics-box.total {
+  background-color: var(--bs-primary);
+}
+.statistics-section .statistics-box.total h6 {
+  color: var(--bs-white);
+}
+.statistics-section .statistics-box h6 {
+  flex: 1 0 0;
+  color: #000;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.level-statistics-form {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--bs-white);
+  border-radius: 24px;
+}
+.level-statistics-form .form-heading-note {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.level-statistics-form .form-check-container {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.level-statistics-form .form-check-container .question-title {
+  width: 100%;
+}
+.level-statistics-form .form-check-container .form-check {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  flex: 1;
+  min-width: 45%;
+}
+.level-statistics-form .form-check-container .form-check input {
+  display: none;
+}
+.level-statistics-form .form-check-container .form-check input:checked + label {
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+}
+.level-statistics-form .form-check-container .form-check label {
+  color: #000;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.level-statistics-form .form-check-container .form-check label .box-heading {
+  background-color: rgba(255, 255, 255, 0.3725490196);
+  padding: 4px 4px !important;
+  border-radius: 8px;
+  margin: 0;
+  display: flex;
+}
+.level-statistics-form .form-check-container .form-check label .box-heading span {
+  font-weight: bold;
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.level-statistics-form .btns-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  align-self: stretch;
+}
+.level-statistics-form .btns-container .btn {
+  display: flex;
+  padding: 16px 20px;
+  min-width: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--bs-primary);
+  border-radius: 12px;
+  color: var(--bs-white);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=levelStyle.css.map */

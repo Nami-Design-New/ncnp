@@ -1,0 +1,5 @@
+{
+    "editor.linkedEditing": true,
+    "xml.completion.autoCloseTags": false,
+    "files.autoSave": "afterDelay"
+}
